@@ -105,10 +105,25 @@ Noise, dust, frustration! Not to be understestimated! Making something stiff, sq
 
 [Decide whether a fixed or moving gantry is better](https://www.cnczone.com/forums/diy-cnc-router-table-machines/209352-fixed-gantry-vs-moving-gantry.html), considering rigidity and squareness, as well as [size constraints](https://www.cnczone.com/forums/diy-cnc-router-table-machines/131290-cnc.html).
 
+Fixed gantry [example](https://hackaday.io/project/7657-cnc-mill)
+
+Another [example}(https://openbuilds.com/builds/fixed-gantry-cnc-router.9779/)
+
+![d](https://openbuilds.com/data/article_images/l/9/9779.jpg?t=1614473148)
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1GKhLaHbSNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Moving gantry option](https://openbuilds.com/builds/m4-1510ss-heavy-mk-i.9393/)
+
+![sss](https://openbuilds.com/attachments/machine_-4_2020-aug-21_09-20-06pm-000_customizedview30844974911-jpg.47287/)
+
 ##### Construction methods
 To be honest, unless you already have access to precision tools, it may be better to build your own lasercutter or plasma cutter instead. In order of preference:
 
-* Cast from [epoxy granite](https://youtu.be/4aBVAbfxLJw?t=491) - at least this allows for taking your time making a mould and making sure its all square. Once its set, no take backsies though! [Here](https://youtu.be/2woA1BxZ7Pg) and [here](https://www.model-engineer.co.uk/forums/postings.asp?th=139042). Will also need quality components.
+* Cast from [epoxy granite](https://youtu.be/4aBVAbfxLJw?t=491) - at least this allows for taking your time making a mould and making sure its all square. Once its set, no take backsies though! [Here](https://youtu.be/2woA1BxZ7Pg) and [here](https://www.model-engineer.co.uk/forums/postings.asp?th=139042). Will also need quality components. Another [good example](https://www.model-engineer.co.uk/forums/postings.asp?th=139042)
+
+![cast example](http://www.mediafire.com/file/9jpakhca88kghtg/750_11-12-2018_8-47-44_PM.jpg/file)
 
 ![Example cast one](https://forum.strojirenstvi.cz/download/file.php?id=33154&mode=view)
 
@@ -122,7 +137,24 @@ To be honest, unless you already have access to precision tools, it may be bette
 
 * Aluminium extrusion frame - these are the most accessible and there are [plenty designs](https://openbuilds.com/) out there. The few which I have tried have been almost commically flexible when milling material, so design needs to be bulletProof. Perhaps, these designs are worth considering: [here](https://wikifactory.com/+mekanika/mekanika-cnc-router) and [here](https://bulkman3d.com/product/queenbee-pro-cnc-machine-mechanical-kit-upgrade-kit/) or [here](https://gitlab.cba.mit.edu/jakeread/clank) or [here](https://openbuilds.com/builds/granite-1-0.7661/)
 
+[Another example](https://jeremyyoungdesign.com/2016/05/26/diy-cnc-router-final-assembly/)
+![Jeremy Young design](https://jeremyyoungdesign.files.wordpress.com/2015/08/dscf0173.jpg?w=820)
+
 ![Granite cnc](https://openbuilds.com/attachments/dscn2266-jpg.35070/)
+
+[CnC from openbuilds with rails](https://openbuilds.com/builds/sphinx-55-on-mgn12-linear-rails.8790/) and [here](https://openbuilds.com/builds/modified-sphinx-55-with-mgn12-linear-rails.9456/)
+
+![x](https://openbuilds.com/attachments/20200712_111103-jpg.46975/)
+
+![Mucho good](https://openbuilds.com/attachments/a0fd159e-3753-470d-982f-88031a916942-jpeg.41859/)
+
+[Another good design](http://www.mycncuk.com/threads/10658-El-Beast-Initial-design-phase-comments-and-critique-welcomed%21)
+
+![El Beast](http://i.imgur.com/oXFql8m.png)
+
+One which uses some [3d printed add ons](https://openbuilds.com/builds/sphinx-55-with-3d-printed-addons.7923/)
+
+![s](https://openbuilds.com/data/article_images/l/7/7923.jpg?t=1546549410)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pKPKe19Dh9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -163,6 +195,12 @@ Explanation of how to make your own lapping plate below:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rHmsQEAx16o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Explanation of the [whitworth method](https://ericweinhoffer.com/blog/2017/7/30/the-whitworth-three-plates-method)
+
+[Commercial lapping](http://metrolap.co.za/lapping_machines_accessories_equipment_polishing_machines_precision_grinding.htm#FlatLappingPlates) operation in SA.
+
+Alternatively, buy or [build a surface grinder](https://www.youtube.com/watch?v=jMmCgQFCXj8&list=RDCMUCzu3cLKzKqEX1JjEqwjuHYw&index=12).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jMmCgQFCXj8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Squareness
 [granite parallels](https://www.starrett.com/category/precision-measuring-tools/granite-parallels/130207#currentPage=1&displayMode=grid&itemsPerPage=12&sortBy=wp/asc) or granite table top offcuts in a pinch.
