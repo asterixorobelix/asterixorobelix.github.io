@@ -107,7 +107,7 @@ Noise, dust, frustration! Not to be understestimated! Making something stiff, sq
 
 Fixed gantry [example](https://hackaday.io/project/7657-cnc-mill)
 
-Another [example}(https://openbuilds.com/builds/fixed-gantry-cnc-router.9779/)
+Another [example](https://openbuilds.com/builds/fixed-gantry-cnc-router.9779/)
 
 ![d](https://openbuilds.com/data/article_images/l/9/9779.jpg?t=1614473148)
 
