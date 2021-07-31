@@ -34,3 +34,6 @@ See this useful video.
 ![Bear image](https://github.com/gregsaun/prusa_i3_bear_upgrade/blob/master/extra/photos/frame_01_900px.jpg?raw=true)
 * My collection of [worthwhile mods on Prusa Printers](https://www.prusaprinters.org/social/144217-asterixorobelix/collections/63688) and others on [Thingiverse](https://www.thingiverse.com/asterixorobelix/collections/printer-mods)
 * Epoxy levelling everywhere, just be careful of the miniscus which forms at the edges.
+* [Voron 3d printer](https://docs.vorondesign.com/)
+
+![voron](https://docs.vorondesign.com/images/Voron2.jpg)
