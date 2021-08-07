@@ -51,3 +51,7 @@ See this useful video.
 Someone's [build log](https://hackaday.io/project/174810-voron-switchwire-3d-printer)
 
 [Team FDM](https://www.teamfdm.com/search/?q=voron%20switchwire&quick=1) forum
+
+#### Kits
+* [Magic studio](https://magicstudio.xyz/product-category/voron/)
+* [Formbot](https://www.formbot3d.com/products/voron-switchwire-diy-corexz-3d-printer-kit-with-high-quality-components)
