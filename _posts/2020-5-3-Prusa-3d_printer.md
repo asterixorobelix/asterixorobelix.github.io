@@ -45,3 +45,9 @@ See this useful video.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/omIBe5ra3HQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YjlXUY1AdEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/onZpUrtfzkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Someone's [build log](https://hackaday.io/project/174810-voron-switchwire-3d-printer)
+
+[Team FDM](https://www.teamfdm.com/search/?q=voron%20switchwire&quick=1) forum
