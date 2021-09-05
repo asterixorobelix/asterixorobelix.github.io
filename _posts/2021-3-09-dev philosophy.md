@@ -14,10 +14,14 @@ category: Software
 ### Architecture ###
 * [Package by feature](https://phauer.com/2020/package-by-feature/)
 * [Layering](https://martinfowler.com/bliki/PresentationDomainDataLayering.html)
+* [Vertical slice architecture](https://jimmybogard.com/vertical-slice-architecture/)
+* [Clean arch](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 
-![Feature package example](https://phauer.com/blog/2020/03-package-by-feature/package-by-feature-big-picture.svg) and ![here](https://medium.com/mobile-app-development-publication/mobile-app-architecture-feature-grouping-vs-functional-grouping-53da05fdc289)
+![Feature package example](https://phauer.com/blog/2020/03-package-by-feature/package-by-feature-big-picture.svg) and ![here](https://jimmybogardsblog.blob.core.windows.net/jimmybogardsblog/3/2018/Picture0030.png)
 
 ![Fowler layering](https://martinfowler.com/bliki/images/presentationDomainDataLayering/all_top.png)
+
+![clean](https://blog.cleancoder.com/uncle-bob/images/2012-08-13-the-clean-architecture/CleanArchitecture.jpg)
 
 ### Patterns ###
 * [Robot pattern](https://qbsw.com/taming-your-ui-tests-with-the-robot-pattern/)
