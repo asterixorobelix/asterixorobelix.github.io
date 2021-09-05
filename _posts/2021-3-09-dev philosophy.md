@@ -37,3 +37,11 @@ category: Software
 * [Focus on fundamentals](https://javascript.plainenglish.io/19-things-i-stole-from-great-developers-85511ff56570)
 * [Keep it simple](https://javascript.plainenglish.io/19-things-i-stole-from-great-developers-85511ff56570)
 * [Earn the right to address technical debt by shipping, not the other way around]()
+
+### TDD ###
+![TDD pyramid](https://developer.android.com/images/training/testing/pyramid.png)
+
+* https://developer.android.com/training/testing/fundamentals#testing-pyramid
+* https://martinfowler.com/articles/practical-test-pyramid.html
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pK7W5npkhho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
