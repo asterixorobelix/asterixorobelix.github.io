@@ -137,6 +137,12 @@ To be honest, unless you already have access to precision tools, it may be bette
 
 * Aluminium extrusion frame - these are the most accessible and there are [plenty designs](https://openbuilds.com/) out there. The few which I have tried have been almost commically flexible when milling material, so design needs to be bulletProof. Perhaps, these designs are worth considering: [here](https://wikifactory.com/+mekanika/mekanika-cnc-router) and [here](https://bulkman3d.com/product/queenbee-pro-cnc-machine-mechanical-kit-upgrade-kit/) or [here](https://gitlab.cba.mit.edu/jakeread/clank) or [here](https://openbuilds.com/builds/granite-1-0.7661/)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RDnGvhdGFEY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d6Sx95dOuvI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Both options are available from his [store](https://ivanmiranda.com/products/3d-printed-cnc) and [here](https://ivanmiranda.com/products/large-3d-printed-cnc-plans)
+
 [Another example](https://jeremyyoungdesign.com/2016/05/26/diy-cnc-router-final-assembly/)
 ![Jeremy Young design](https://jeremyyoungdesign.files.wordpress.com/2015/08/dscf0173.jpg?w=820)
 
@@ -153,8 +159,6 @@ To be honest, unless you already have access to precision tools, it may be bette
 ![El Beast](http://i.imgur.com/oXFql8m.png)
 
 One which uses some [3d printed add ons](https://openbuilds.com/builds/sphinx-55-with-3d-printed-addons.7923/)
-
-![s](https://openbuilds.com/data/article_images/l/7/7923.jpg?t=1546549410)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pKPKe19Dh9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -218,7 +222,6 @@ Alternatively, buy or [build a surface grinder](https://www.youtube.com/watch?v=
 ### Leadscrew vs ballscrew
 [Hackaday discussion](https://hackaday.com/2018/11/13/mechanisms-lead-screws-and-ball-screws/)
 
-Cover:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/iX00YX6wYsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Dust Shoe
