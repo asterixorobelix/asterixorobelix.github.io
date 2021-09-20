@@ -160,6 +160,12 @@ Both options are available from his [store](https://ivanmiranda.com/products/3d-
 
 One which uses some [3d printed add ons](https://openbuilds.com/builds/sphinx-55-with-3d-printed-addons.7923/)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BRpSN7UU1cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rR9ZU63vnVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O2LlD0qsXwY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pKPKe19Dh9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
@@ -176,6 +182,8 @@ More [info](https://www.cnczone.com/forums/uncategorised-metalworking-machines/3
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LiQaFeTy_eU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 With more details [here](http://maxmali.com/ripper-the-different-cnc/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FkGdJMVJ1Fc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 * Full Granite
 
