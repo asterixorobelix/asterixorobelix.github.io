@@ -160,6 +160,10 @@ Both options are available from his [store](https://ivanmiranda.com/products/3d-
 
 One which uses some [3d printed add ons](https://openbuilds.com/builds/sphinx-55-with-3d-printed-addons.7923/)
 
+![myCNCUK](http://www.mycncuk.com/attachment.php?attachmentid=9803&d=1377721941)
+
+From [here](http://www.mycncuk.com/threads/6484-A-sufficiently-strong-machine)
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/BRpSN7UU1cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rR9ZU63vnVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
