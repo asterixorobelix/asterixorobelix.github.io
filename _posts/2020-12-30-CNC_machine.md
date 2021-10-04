@@ -35,7 +35,7 @@ How to [test the parallel port](https://youtu.be/uglCm_qsojk)
 
 I got a result of 26125 ns on the base thread from the Linux latency test.
 
-This [steps per mm calculator](https://blog.prusaprinters.org/calculator_3416/#stepspermmlead) is useful for configuring LinuxCnc.
+This [steps per mm calculator](https://blog.prusaprinters.org/calculator_3416/#stepspermmlead) is useful for configuring LinuxCnc. An alternative is [gSender](https://sienci.com/gsender/)
 
 ### CAD
 I use Solidworks, an alternative might be [freecad](https://www.freecadweb.org/), since it has CAM built in. Fusion360 also has built in CAM, apparently. 

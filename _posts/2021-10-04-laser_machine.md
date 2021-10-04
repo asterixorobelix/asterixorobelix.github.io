@@ -1,0 +1,41 @@
+---
+layout: post
+title: Laser machine
+tags: CNC hardware electronics
+category: Machines
+---
+
+### Potential designs
+
+* [FictionFactory](https://wikifactory.com/+fictionfactory/laser)
+* [LaserEngraver](https://www.thingiverse.com/thing:3371373)
+* [LaserDesign](https://www.furtherfabrication.com/new-blog/2019/4/20/the-laser-cutter-build-series)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7gnD6F0yBH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+* [LaserDuo](http://www.laserduo.com/)
+* [C02 Lasercutter](https://www.instructables.com/Make-Your-Own-High-Quality-CO2-Lasercutter-With-To/)
+
+![image](https://content.instructables.com/ORIG/F9L/GVNT/J1GP4UJ2/F9LGVNTJ1GP4UJ2.png?auto=webp&frame=1&fit=bounds&md=65e2e114d29670cf806803fdb1653087)
+
+* [Open source diy laser](https://www.instructables.com/DIY-CO2-LASER-R-LASER-6020/)
+* [Sams laser FAQ](http://www.repairfaq.org/sam/laserfaq.htm#faqtoc)
+
+* [LaserSaur](http://www.lasersaur.com/)
+![LaserSaur](https://camo.githubusercontent.com/106bfb0ac75c0d617f5b90026a675014f2a3d93690531245ef60882854652161/687474703a2f2f6661726d392e737461746963666c69636b722e636f6d2f383134322f373133393539393332355f316237303336623937655f6e2e6a7067)
+
+* [DIY 40W version](https://www.instructables.com/DIY-40W-CO2-CNC-Laser/?linkId=86791277)
+* [80W ? Laser Diode module](https://www.aliexpress.com/item/1005003041560812.html?spm=a2g0o.productlist.0.0.69ce8140beS23E&algo_pvid=9c8c2abc-d902-48f9-9995-3c2a10279d24&algo_exp_id=9c8c2abc-d902-48f9-9995-3c2a10279d24-0&pdp_ext_f=%7B%22sku_id%22%3A%2212000023418291086%22%7D)
+
+* [Openbuilds laser](https://openbuilds.com/builds/ls-laser.7304/)
+* [Hackaday laser reading](https://hackaday.com/2016/06/29/taming-the-beast-pro-tips-for-designing-a-safe-homebrew-laser-cutter/)
+
+### Local (SA) Suppliers
+* [AM machines](https://am.co.za/laser/cabinet)
+* [Mirrors](https://am.co.za/laser/mirror)
+* [Tubes](https://am.co.za/laser/tube)
+* [Power](https://am.co.za/laser/power)
+* [Laserr Module](https://neotronics.co.za/index.php?route=product/product&product_id=759)
+
+### Software
+* [LaserWeb](https://hackaday.com/2016/07/17/open-source-laser-cutter-software-gets-major-update-new-features/)
