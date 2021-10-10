@@ -32,10 +32,10 @@ category: Machines
 
 ### Local (SA) Suppliers
 * [AM machines](https://am.co.za/laser/cabinet)
-* [Mirrors](https://am.co.za/laser/mirror)
-* [Tubes](https://am.co.za/laser/tube)
-* [Power](https://am.co.za/laser/power)
-* [Laserr Module](https://neotronics.co.za/index.php?route=product/product&product_id=759)
+* [Mirrors](https://am.co.za/laser/mirror) or [here](https://neotronics.co.za/index.php?route=product/category&path=140_153)
+* [Tubes](https://am.co.za/laser/tube), or [here](https://www.maxlaser.co.za/co2-laser-tubes/), or [here](https://neotronics.co.za/index.php?route=product/category&path=140_141)
+* [Power](https://am.co.za/laser/power) or [here](https://neotronics.co.za/index.php?route=product/category&path=140_146)
+* [Laser Module](https://neotronics.co.za/index.php?route=product/product&product_id=759)
 
 ### Software
 * [LaserWeb](https://hackaday.com/2016/07/17/open-source-laser-cutter-software-gets-major-update-new-features/)
