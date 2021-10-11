@@ -30,6 +30,8 @@ category: Machines
 * [Openbuilds laser](https://openbuilds.com/builds/ls-laser.7304/)
 * [Hackaday laser reading](https://hackaday.com/2016/06/29/taming-the-beast-pro-tips-for-designing-a-safe-homebrew-laser-cutter/)
 
+<iframe id="reddit-embed" src="https://www.redditmedia.com/r/lasercutting/comments/ot04oy/i_designed_a_custom_laser_cutter_time_to_see_if_i/h6t5xdg/?depth=1&amp;showmore=false&amp;embed=true&amp;showmedia=false&amp;theme=dark" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="163" width="640" scrolling="no"></iframe>
+
 ### Local (SA) Suppliers
 * [AM machines](https://am.co.za/laser/cabinet)
 * [Mirrors](https://am.co.za/laser/mirror) or [here](https://neotronics.co.za/index.php?route=product/category&path=140_153)
