@@ -30,7 +30,11 @@ category: Machines
 * [Openbuilds laser](https://openbuilds.com/builds/ls-laser.7304/)
 * [Hackaday laser reading](https://hackaday.com/2016/06/29/taming-the-beast-pro-tips-for-designing-a-safe-homebrew-laser-cutter/)
 
-<iframe id="reddit-embed" src="https://www.redditmedia.com/r/lasercutting/comments/ot04oy/i_designed_a_custom_laser_cutter_time_to_see_if_i/h6t5xdg/?depth=1&amp;showmore=false&amp;embed=true&amp;showmedia=false&amp;theme=dark" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="163" width="640" scrolling="no"></iframe>
+### Improvements
+* <iframe id="reddit-embed" src="https://www.redditmedia.com/r/lasercutting/comments/ot04oy/i_designed_a_custom_laser_cutter_time_to_see_if_i/h6t5xdg/?depth=1&amp;showmore=false&amp;embed=true&amp;showmedia=false&amp;theme=dark" sandbox="allow-scripts allow-same-origin allow-popups" style="border: none;" height="163" width="640" scrolling="no"></iframe>
+* [3d printed laminar flow nozzle](https://hackaday.com/2020/11/25/cleaner-laser-cutting-with-a-3d-printed-nozzle/)
+
+![3d printed nozzle](https://hackaday.com/wp-content/uploads/2020/11/PB240240-1536x1152-1.jpg?resize=400,400)
 
 ### Local (SA) Suppliers
 * [AM machines](https://am.co.za/laser/cabinet)
@@ -44,3 +48,4 @@ category: Machines
 
 ### Software
 * [LaserWeb](https://hackaday.com/2016/07/17/open-source-laser-cutter-software-gets-major-update-new-features/)
+* [Lightburn](https://lightburnsoftware.com/collections/frontpage), which works with the [Ruida](https://www.aliexpress.com/item/32714473949.html?spm=a2g0o.productlist.0.0.f5463995rzvRO2&algo_pvid=27b57669-6762-4772-ba69-65851f3260f8&algo_exp_id=27b57669-6762-4772-ba69-65851f3260f8-2&pdp_ext_f=%7B%22sku_id%22%3A%2265198684025%22%7D) controller
