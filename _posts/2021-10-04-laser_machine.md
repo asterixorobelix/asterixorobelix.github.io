@@ -49,3 +49,6 @@ category: Machines
 ### Software
 * [LaserWeb](https://hackaday.com/2016/07/17/open-source-laser-cutter-software-gets-major-update-new-features/)
 * [Lightburn](https://lightburnsoftware.com/collections/frontpage), which works with the [Ruida](https://www.aliexpress.com/item/32714473949.html?spm=a2g0o.productlist.0.0.f5463995rzvRO2&algo_pvid=27b57669-6762-4772-ba69-65851f3260f8&algo_exp_id=27b57669-6762-4772-ba69-65851f3260f8-2&pdp_ext_f=%7B%22sku_id%22%3A%2265198684025%22%7D) controller
+
+### Laser cutting files
+* [Laser-Templates](https://laser-templates.com/collections/best-selling-products)
