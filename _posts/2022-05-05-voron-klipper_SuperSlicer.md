@@ -42,3 +42,15 @@ Add the following to the print_start of your printer.cfg
     G1 X30 E0 F1000.0 ; wipe action to avoid string
     G28 Z                          ; final z homing
 ```
+[Here](https://github.com/th3fallen/voronConfig/blob/master/macros.cfg) and [here](https://docs.vorondesign.com/community/howto/alchemyEngine/chamber_temperature_exhaust_fan.html) are some more macros
+
+You can also adjust the name of the output gcode file:
+```
+ [input_filename_base]_{printer_model}_{nozzle_diameter[0]}n_{filament_type[0]}_[temperature]C_[layer_height]mm_[fill_density]_[print_time].gcode
+ ```
+
+ or
+ ```
+ {input_filename_base}_{layer_height}mm_{filament_type[0]}_{nozzle_diameter}_{print_time}.gcode
+ ```
+ Discussed in more detail [here](https://help.prusa3d.com/article/macros_1775)
