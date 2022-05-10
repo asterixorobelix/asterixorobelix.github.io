@@ -54,3 +54,10 @@ You can also adjust the name of the output gcode file:
  {input_filename_base}_{layer_height}mm_{filament_type[0]}_{nozzle_diameter}_{print_time}.gcode
  ```
  Discussed in more detail [here](https://help.prusa3d.com/article/macros_1775)
+
+ ### Todo
+ * [  ] Pressure advance
+ * [  ] Input shaper
+ * [  ] Switch lights on in print_start macro
+ * [  ] Use thermistor to wait for chamber temp in print_start macro
+ * [  ] Display chamber temp on display
