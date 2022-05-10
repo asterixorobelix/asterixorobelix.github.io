@@ -59,7 +59,7 @@ You can also adjust the name of the output gcode file:
  ```
  Discussed in more detail [here](https://help.prusa3d.com/article/macros_1775)
 
- ### Todo
+### Todo
  * [  ] Pressure advance
  * [  ] Input shaper
  * [  ] Switch lights on in print_start macro
