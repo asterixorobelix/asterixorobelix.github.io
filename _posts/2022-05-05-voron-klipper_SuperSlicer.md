@@ -67,5 +67,5 @@ You can also adjust the name of the output gcode file:
  * [  ] Display chamber temp on display
 
 ### Pressure Advance
- add to the custom g-code for a filament in prusaSlicer/SuperSlicer
+ add to the custom g-code for a filament in prusaSlicer/SuperSlicer for your filament.
  `SET_PRESSURE_ADVANCE ADVANCE=0.043825`
