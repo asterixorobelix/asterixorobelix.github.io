@@ -69,3 +69,6 @@ You can also adjust the name of the output gcode file:
 ### Pressure Advance
  add to the custom g-code for a filament in prusaSlicer/SuperSlicer for your filament.
  `SET_PRESSURE_ADVANCE ADVANCE=0.043825`
+
+ ### FanSaver mod
+ [This](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jappaj/FanSaver) fansaver mod was very helpful for preventing the v0.1 fans from overheating.
