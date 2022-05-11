@@ -66,7 +66,6 @@ You can also adjust the name of the output gcode file:
  * [  ] Use thermistor to wait for chamber temp in print_start macro
  * [  ] Display chamber temp on display
 
-
- ### Pressure Advance
+### Pressure Advance
  add to the custom g-code for a filament in prusaSlicer/SuperSlicer
  `SET_PRESSURE_ADVANCE ADVANCE=0.043825`
