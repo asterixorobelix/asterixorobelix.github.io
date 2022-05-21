@@ -73,8 +73,13 @@ You can also adjust the name of the output gcode file:
 ### FanSaver mod
  [This](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jappaj/FanSaver) fansaver mod was very helpful for preventing the v0.1 fans from overheating.
 
-### Other mods
+### Other v0 mods
  * [Belted z with automatic bed levelling](https://github.com/zruncho3d/tri-zero)
  * [Alternate hotend](https://github.com/PrintersForAnts/Mini-AfterSherpa)
  * [Alternate extruder](https://github.com/CroXY3D/Sailfin-Extruder)
  * [Flying gantry v0 mod](https://github.com/zruncho3d/f-zero)
+ * [Hinged top hat](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron0_Hinged_Top_Hat)
+ * [Klicky probe](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/JosAr/Klicky-Probe)
+
+### XY offset
+https://yewtu.be/embed/r7xHNO10H_8
