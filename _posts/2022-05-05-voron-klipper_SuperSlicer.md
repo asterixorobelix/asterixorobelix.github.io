@@ -80,6 +80,8 @@ You can also adjust the name of the output gcode file:
  * [Flying gantry v0 mod](https://github.com/zruncho3d/f-zero)
  * [Hinged top hat](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron0_Hinged_Top_Hat)
  * [Klicky probe](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/JosAr/Klicky-Probe)
+ * [V0 belt holder](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/TheSquiffy/V0_Belts_holder)
+ * [Bondtech LGX lite](https://www.bondtech.se/2021/12/27/voron-v0-1-toolhead-setup-for-lgx-lite/) - I have been unimpressed with the stock extruder on the v0.1. Its very cramped, its also difficult to get the filament in a lot of times. [Install guide](https://yewtu.be/watch?v=0wKtsrJNYmE)
 
 ### XY offset
 https://yewtu.be/embed/r7xHNO10H_8
