@@ -74,14 +74,18 @@ You can also adjust the name of the output gcode file:
  [This](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jappaj/FanSaver) fansaver mod was very helpful for preventing the v0.1 fans from overheating.
 
 ### Other v0 mods
+ * [ZeroPanels - clippable enclosure design for the panels, without screws](https://github.com/zruncho3d/ZeroPanels)
  * [Belted z with automatic bed levelling](https://github.com/zruncho3d/tri-zero)
  * [Alternate hotend](https://github.com/PrintersForAnts/Mini-AfterSherpa)
  * [Alternate extruder](https://github.com/CroXY3D/Sailfin-Extruder)
  * [Flying gantry v0 mod](https://github.com/zruncho3d/f-zero)
  * [Hinged top hat](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron0_Hinged_Top_Hat)
- * [Klicky probe](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/JosAr/Klicky-Probe)
+ * [Klicky probe](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/JosAr/Klicky-Probe) or [ZeroClick](https://github.com/zruncho3d/ZeroClick)
  * [V0 belt holder](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/TheSquiffy/V0_Belts_holder)
  * [Bondtech LGX lite](https://www.bondtech.se/2021/12/27/voron-v0-1-toolhead-setup-for-lgx-lite/) - I have been unimpressed with the stock extruder on the v0.1. Its very cramped, its also difficult to get the filament in a lot of times. [Install guide](https://yewtu.be/watch?v=0wKtsrJNYmE)
+ * [v0.1 Belted z drive](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/MathematicalPotato/v0.1_belted_z_drive)
+ * [Pulley z drive mod](https://github.com/nhchiu/VoronUsers/tree/pulley_z/printer_mods/nhchiu/V0.1_Movable_Pulley_Z)
+ * There are a bunch more in the [legacy](https://github.com/VoronDesign/VoronUsers/tree/master/legacy_printers/printer_mods) and [user mods](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods) repos
 
 ### XY offset
 https://yewtu.be/embed/r7xHNO10H_8
