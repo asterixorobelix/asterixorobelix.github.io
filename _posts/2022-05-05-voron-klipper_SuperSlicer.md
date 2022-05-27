@@ -87,5 +87,18 @@ You can also adjust the name of the output gcode file:
  * [Pulley z drive mod](https://github.com/nhchiu/VoronUsers/tree/pulley_z/printer_mods/nhchiu/V0.1_Movable_Pulley_Z)
  * There are a bunch more in the [legacy](https://github.com/VoronDesign/VoronUsers/tree/master/legacy_printers/printer_mods) and [user mods](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods) repos
 
+### Switchwire mods
+* [Big belt](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/consibonsi/Y-Mod_SW_9mm)
+
+### v2.4 mods
+* [LgxLite](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Mrgl-Mrgl/LGX_Lite_Mount)
+* [DoomCube](https://github.com/FrankenVoron/DoomCube-2)
+* [DirectZ -drive](https://github.com/FrankenVoron/DoomCube-2/tree/main/Mods/crag-h4k/direct-drive-z)
+* [good doomcube mod example](https://github.com/FrankenVoron/DoomCube-2/tree/main/Mods/mvieleers/my_doomcube)
+* [Magnetic corner panel mounts](https://github.com/FrankenVoron/DoomCube-2/tree/main/Mods/mvieleers/corner_panel_mounts)
+* [Indicator mounts](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/teookie/AB_dial_indicator_mount)
+* [Extrusion mounts](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/whoppingpochard/extrusion_backers)
+
 ### XY offset
-https://yewtu.be/embed/r7xHNO10H_8
+
+<iframe width="560" height="315" src="https://yewtu.be/embed/r7xHNO10H_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
