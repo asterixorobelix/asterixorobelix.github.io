@@ -28,6 +28,9 @@ total 0
 lrwxrwxrwx 1 root root 13 Jan 28 02:37 usb-Klipper_stm32f103xe_39FFD9054247333142751557-if00 -> ../../ttyACM0
 ```
 
+### Mainsail vs Fluidd
+<iframe width="560" height="315" src="https://yewtu.be/embed/BHVVcjtWTyA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### SuperSlicer
 A profile to start with for [SuperSlicer](https://github.com/supermerill/SuperSlicer) is [here](https://github.com/AndrewEllis93/Ellis-PIF-Profile)
 
@@ -74,6 +77,7 @@ You can also adjust the name of the output gcode file:
 There is a very nice website for checking out mods [here](https://voronregistry.com/mods?page=1)
 
 * [Filament runout sensor](https://yewtu.be/watch?v=ThUvS-W7HMw)
+* [LED control with klipper](https://yewtu.be/embed/9MewnxuZY1A)
 
 ### v0.1 part cooling
  [This](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jappaj/FanSaver) fansaver mod was very helpful for preventing the v0.1 fans from overheating.
@@ -84,6 +88,10 @@ Some interesting options are in this video below.
 
 and this is how you can make the berd-air system quieter
 <iframe width="560" height="315" src="https://yewtu.be/embed/1tl-IxJJhd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+[Reddit discussion](https://www.reddit.com/r/VORONDesign/comments/u3go19/v01_berdair_part_cooling_work_in_progress/) about it.
+
+![Berd air](https://external-preview.redd.it/kKMv1evjnB_VSB5eORMWul31ZhSoWS2fGg8wCPcqCrw.jpg?width=960&crop=smart&auto=webp&s=dee01c9a408db3564ccc6c719fbba20d6d267de4)
 
 voron mod parts are [here](https://thangs.com/designer/kazolar/3d-model/Berd-Air-mod-for-Voron-24-any-afterburner-compatible--36833) and you can buy the parts from [aliexpress](https://www.aliexpress.com/item/1005001870469069.html?spm=a2g0s.9042311.0.0.27424c4dnHlhOq) or the [official store](https://the-makerhive.myshopify.com/collections/berd-air-products/products/berd-air-max)
 
@@ -108,6 +116,7 @@ An attachment mod is [here](https://www.thingiverse.com/thing:4912063) or [here]
  * [Improved ADXL345 accelerometer sensor mount](https://voronregistry.com/mods/andre-miniafterburneradxl345mount)
  * [MGN9 rail mod](https://voronregistry.com/mods/hartk1213-voron0mgn9cxaxis)
  * [Electronics bay and enclosure seperator](https://voronregistry.com/mods/weaslus-electronicsbayandenclosureseperator)
+ * [Orbiter extruder mod](https://yewtu.be/embed/Jv1z_7u9nVc)
 
 ### Switchwire mods
 * [Big belt](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/consibonsi/Y-Mod_SW_9mm)
