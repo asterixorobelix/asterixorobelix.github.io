@@ -70,6 +70,11 @@ You can also adjust the name of the output gcode file:
  add to the custom g-code for a filament in prusaSlicer/SuperSlicer for your filament.
  `SET_PRESSURE_ADVANCE ADVANCE=0.043825`
 
+## mods
+There is a very nice website for checking out mods [here](https://voronregistry.com/mods?page=1)
+
+* [Filament runout sensor](https://yewtu.be/watch?v=ThUvS-W7HMw)
+
 ### v0.1 part cooling
  [This](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jappaj/FanSaver) fansaver mod was very helpful for preventing the v0.1 fans from overheating.
  However, I am still finding it to be insufficient.
@@ -81,6 +86,8 @@ and this is how you can make the berd-air system quieter
 <iframe width="560" height="315" src="https://yewtu.be/embed/1tl-IxJJhd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 voron mod parts are [here](https://thangs.com/designer/kazolar/3d-model/Berd-Air-mod-for-Voron-24-any-afterburner-compatible--36833) and you can buy the parts from [aliexpress](https://www.aliexpress.com/item/1005001870469069.html?spm=a2g0s.9042311.0.0.27424c4dnHlhOq) or the [official store](https://the-makerhive.myshopify.com/collections/berd-air-products/products/berd-air-max)
+
+An attachment mod is [here](https://www.thingiverse.com/thing:4912063) or [here](https://yewtu.be/watch?v=2ho0qIzUos8)
 
 ### Other v0 mods
  * [ZeroPanels - clippable enclosure design for the panels, without screws](https://github.com/zruncho3d/ZeroPanels)
@@ -95,9 +102,18 @@ voron mod parts are [here](https://thangs.com/designer/kazolar/3d-model/Berd-Air
  * [v0.1 Belted z drive](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/MathematicalPotato/v0.1_belted_z_drive)
  * [Pulley z drive mod](https://github.com/nhchiu/VoronUsers/tree/pulley_z/printer_mods/nhchiu/V0.1_Movable_Pulley_Z)
  * There are a bunch more in the [legacy](https://github.com/VoronDesign/VoronUsers/tree/master/legacy_printers/printer_mods) and [user mods](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods) repos
+ * [Motor panel mod](https://voronregistry.com/mods/cmrny-v01motorpanelmodification)
+ * [Second x rail mod](https://voronregistry.com/mods/mikesmods-lgxmountforv01with2ndxrail)
+ * [Improved after burner strain relief](https://voronregistry.com/mods/andre-miniafterburnerstrainrelief)
+ * [Improved ADXL345 accelerometer sensor mount](https://voronregistry.com/mods/andre-miniafterburneradxl345mount)
+ * [MGN9 rail mod](https://voronregistry.com/mods/hartk1213-voron0mgn9cxaxis)
+ * [Electronics bay and enclosure seperator](https://voronregistry.com/mods/weaslus-electronicsbayandenclosureseperator)
 
 ### Switchwire mods
 * [Big belt](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/consibonsi/Y-Mod_SW_9mm)
+
+### Trident mods
+* [bed fans](https://voronregistry.com/mods/cannedbass-tridentbedfans)
 
 ### v2.4 mods
 * [LgxLite](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Mrgl-Mrgl/LGX_Lite_Mount)
@@ -107,8 +123,14 @@ voron mod parts are [here](https://thangs.com/designer/kazolar/3d-model/Berd-Air
 * [Magnetic corner panel mounts](https://github.com/FrankenVoron/DoomCube-2/tree/main/Mods/mvieleers/corner_panel_mounts)
 * [Indicator mounts](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/teookie/AB_dial_indicator_mount)
 * [Extrusion mounts](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/whoppingpochard/extrusion_backers)
+* [Bed fans](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Ellis/Bed_Fans)
+* [Shorter z joints](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Ellis/Short_Z_Joints)
+* [Mantis dual toolhead](https://github.com/mandryd/VoronUsers/tree/master/printer_mods/Long/Mantis_Dual_5015)
+* [Pull out electrical store](https://voronregistry.com/mods/zzp8202-pulloutelectricalstore)
 
 <iframe width="560" height="315" src="https://yewtu.be/embed/eH0Dq1uTBVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://yewtu.be/embed/dVByvaQ3abs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### XY offset
 
