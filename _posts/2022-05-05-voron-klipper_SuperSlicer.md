@@ -70,8 +70,17 @@ You can also adjust the name of the output gcode file:
  add to the custom g-code for a filament in prusaSlicer/SuperSlicer for your filament.
  `SET_PRESSURE_ADVANCE ADVANCE=0.043825`
 
-### FanSaver mod
+### v0.1 part cooling
  [This](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jappaj/FanSaver) fansaver mod was very helpful for preventing the v0.1 fans from overheating.
+ However, I am still finding it to be insufficient.
+
+Some interesting options are in this video below.
+<iframe width="560" height="315" src="https://yewtu.be/embed/65FVQ1jArME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+and this is how you can make the berd-air system quieter
+<iframe width="560" height="315" src="https://yewtu.be/embed/1tl-IxJJhd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+voron mod parts are [here](https://thangs.com/designer/kazolar/3d-model/Berd-Air-mod-for-Voron-24-any-afterburner-compatible--36833) and you can buy the parts from [aliexpress](https://www.aliexpress.com/item/1005001870469069.html?spm=a2g0s.9042311.0.0.27424c4dnHlhOq) or the [official store](https://the-makerhive.myshopify.com/collections/berd-air-products/products/berd-air-max)
 
 ### Other v0 mods
  * [ZeroPanels - clippable enclosure design for the panels, without screws](https://github.com/zruncho3d/ZeroPanels)
@@ -98,6 +107,8 @@ You can also adjust the name of the output gcode file:
 * [Magnetic corner panel mounts](https://github.com/FrankenVoron/DoomCube-2/tree/main/Mods/mvieleers/corner_panel_mounts)
 * [Indicator mounts](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/teookie/AB_dial_indicator_mount)
 * [Extrusion mounts](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/whoppingpochard/extrusion_backers)
+
+<iframe width="560" height="315" src="https://yewtu.be/embed/eH0Dq1uTBVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### XY offset
 
