@@ -98,6 +98,7 @@ voron mod parts are [here](https://thangs.com/designer/kazolar/3d-model/Berd-Air
 An attachment mod is [here](https://www.thingiverse.com/thing:4912063) or [here](https://yewtu.be/watch?v=2ho0qIzUos8)
 
 ### Other v0 mods
+ * [The micron](https://github.com/PrintersForAnts/Micron) would probably have been better
  * [ZeroPanels - clippable enclosure design for the panels, without screws](https://github.com/zruncho3d/ZeroPanels)
  * [Belted z with automatic bed levelling](https://github.com/zruncho3d/tri-zero)
  * [Alternate hotend](https://github.com/PrintersForAnts/Mini-AfterSherpa)
