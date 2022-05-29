@@ -99,6 +99,8 @@ An attachment mod is [here](https://www.thingiverse.com/thing:4912063) or [here]
 
 ### Other v0 mods
  * [The micron](https://github.com/PrintersForAnts/Micron) would probably have been better
+ * The [DooMini](https://github.com/zruncho3d/tri-zero) has better insulation
+ * ![Doomini](https://user-images.githubusercontent.com/96996921/154594242-326a16b4-4b39-4a22-ac2f-507204b70afe.gif)
  * [ZeroPanels - clippable enclosure design for the panels, without screws](https://github.com/zruncho3d/ZeroPanels)
  * [Belted z with automatic bed levelling](https://github.com/zruncho3d/tri-zero)
  * [Alternate hotend](https://github.com/PrintersForAnts/Mini-AfterSherpa)
