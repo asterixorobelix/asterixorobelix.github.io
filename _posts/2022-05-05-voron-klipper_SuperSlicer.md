@@ -110,7 +110,7 @@ An attachment mod is [here](https://www.thingiverse.com/thing:4912063) or [here]
 ![Example](https://github.com/zruncho3d/tri-zero/blob/main/Renders/alpha-4/front.png?raw=true)
  * [Alternate hotend](https://github.com/PrintersForAnts/Mini-AfterSherpa)
  * [Alternate extruder](https://github.com/CroXY3D/Sailfin-Extruder)
- * [Flying gantry v0 mod](https://github.com/zruncho3d/f-zero)
+ * FZero - [Flying gantry v0 mod](https://github.com/zruncho3d/f-zero)
 ![FZero](https://github.com/zruncho3d/f-zero/raw/main/Renders/iso.png)
  * [Hinged top hat](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron0_Hinged_Top_Hat)
  * [Klicky probe](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/JosAr/Klicky-Probe) or [ZeroClick](https://github.com/zruncho3d/ZeroClick)
