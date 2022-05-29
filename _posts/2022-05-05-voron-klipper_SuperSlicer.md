@@ -98,9 +98,12 @@ voron mod parts are [here](https://thangs.com/designer/kazolar/3d-model/Berd-Air
 An attachment mod is [here](https://www.thingiverse.com/thing:4912063) or [here](https://yewtu.be/watch?v=2ho0qIzUos8)
 
 ### Other v0 mods
- * [The micron](https://github.com/PrintersForAnts/Micron) would probably have been better. Video [series](https://yewtu.be/embed/9TGh2VwtvoE)
+ * [The micron](https://github.com/PrintersForAnts/Micron) would probably have been better. Video [series](https://yewtu.be/embed/9TGh2VwtvoE) and [manual](https://github.com/PrintersForAnts/Micron/blob/main/Documentation/MicronManual.pdf)
+  ![Micron image](https://github.com/PrintersForAnts/Micron/raw/main/Images/micron-hero.png)
  * The [DooMini](https://github.com/zruncho3d/tri-zero) has better insulation
- * ![Doomini](https://user-images.githubusercontent.com/96996921/154594242-326a16b4-4b39-4a22-ac2f-507204b70afe.gif)
+![Doomini](https://user-images.githubusercontent.com/96996921/154594242-326a16b4-4b39-4a22-ac2f-507204b70afe.gif)
+ * [Top-Hat belt](https://www.printables.com/model/204298-voron-01-hexagon-top-hat-belt)
+![Example](https://media.printables.com/media/prints/204298/images/1879048_482b4b56-fc59-40f4-b33c-e599874f58aa/thumbs/cover/1280x960/jpg/voron0-hex-belt.webp)
  * [ZeroPanels - clippable enclosure design for the panels, without screws](https://github.com/zruncho3d/ZeroPanels)
  * [Belted z with automatic bed levelling](https://github.com/zruncho3d/tri-zero)
  * [Alternate hotend](https://github.com/PrintersForAnts/Mini-AfterSherpa)
@@ -120,6 +123,8 @@ An attachment mod is [here](https://www.thingiverse.com/thing:4912063) or [here]
  * [MGN9 rail mod](https://voronregistry.com/mods/hartk1213-voron0mgn9cxaxis)
  * [Electronics bay and enclosure seperator](https://voronregistry.com/mods/weaslus-electronicsbayandenclosureseperator)
  * [Orbiter extruder mod](https://yewtu.be/embed/Jv1z_7u9nVc)
+ * [Thermistor holder](https://voronregistry.com/mods/3dpandme-thermistorholderzero) for adding chamber temp to klipper. An [alternative](https://voronregistry.com/mods/antoinecellerier-ds18b20sensormount)
+![Thermistor example](https://raw.githubusercontent.com/VoronDesign/VoronUsers/master/printer_mods/3dpandme%2FThermistor_holder_zero/installed.png)
 
 ### Switchwire mods
 * [Big belt](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/consibonsi/Y-Mod_SW_9mm)
