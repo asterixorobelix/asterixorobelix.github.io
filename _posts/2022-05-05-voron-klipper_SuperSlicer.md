@@ -99,6 +99,10 @@ voron mod parts are [here](https://thangs.com/designer/kazolar/3d-model/Berd-Air
 An attachment mod is [here](https://www.thingiverse.com/thing:4912063) or [here](https://yewtu.be/watch?v=2ho0qIzUos8)
 
 ### Other v0 mods
+Note - preloaded nuts are an absolute pain on the v0.1. If you forget or want to add more nuts, most of the frame needs to come apart. A good tip is to file the side of the nuts, so that they can go in without disassembling.
+
+![Filed nut example](https://media.discordapp.net/attachments/980172167763329095/980461625729482842/IMG_6370.jpg?width=1560&height=1170)
+
  * [The micron](https://github.com/PrintersForAnts/Micron) would probably have been better. Video [series](https://yewtu.be/embed/9TGh2VwtvoE) and [manual](https://github.com/PrintersForAnts/Micron/blob/main/Documentation/MicronManual.pdf)
   ![Micron image](https://github.com/PrintersForAnts/Micron/raw/main/Images/micron-hero.png)
  * The [DooMini](https://github.com/TigranDesigner/Voron-Mods/tree/main/DooMini) has better insulation
@@ -106,7 +110,7 @@ An attachment mod is [here](https://www.thingiverse.com/thing:4912063) or [here]
  * [Top-Hat belt](https://www.printables.com/model/204298-voron-01-hexagon-top-hat-belt)
 ![Example](https://media.printables.com/media/prints/204298/images/1879048_482b4b56-fc59-40f4-b33c-e599874f58aa/thumbs/cover/1280x960/jpg/voron0-hex-belt.webp)
  * [ZeroPanels - clippable enclosure design for the panels, without screws](https://github.com/zruncho3d/ZeroPanels)
- * Tri-Zero [Belted z with automatic bed levelling](https://github.com/zruncho3d/tri-zero)
+ * Tri-Zero [Belted z with automatic bed levelling](https://github.com/zruncho3d/tri-zero), but you need a different [control board](https://www.biqu.equipment/products/bigtreetech-octopus-pro-v1-0-chip-f446?variant=39482177257570, because the stock controller (SKR mini e3 v2) doesnt have enough motor drivers :(
 ![Example](https://github.com/zruncho3d/tri-zero/blob/main/Renders/alpha-4/front.png?raw=true)
  * [Alternate hotend](https://github.com/PrintersForAnts/Mini-AfterSherpa)
  * [Alternate extruder](https://github.com/CroXY3D/Sailfin-Extruder)
