@@ -101,13 +101,13 @@ An attachment mod is [here](https://www.thingiverse.com/thing:4912063) or [here]
 ### Other v0 mods
  * [The micron](https://github.com/PrintersForAnts/Micron) would probably have been better. Video [series](https://yewtu.be/embed/9TGh2VwtvoE) and [manual](https://github.com/PrintersForAnts/Micron/blob/main/Documentation/MicronManual.pdf)
   ![Micron image](https://github.com/PrintersForAnts/Micron/raw/main/Images/micron-hero.png)
- * The [DooMini](https://github.com/zruncho3d/tri-zero) has better insulation
+ * The [DooMini](https://github.com/TigranDesigner/Voron-Mods/tree/main/DooMini) has better insulation
 ![Doomini](https://user-images.githubusercontent.com/96996921/154594242-326a16b4-4b39-4a22-ac2f-507204b70afe.gif)
  * [Top-Hat belt](https://www.printables.com/model/204298-voron-01-hexagon-top-hat-belt)
 ![Example](https://media.printables.com/media/prints/204298/images/1879048_482b4b56-fc59-40f4-b33c-e599874f58aa/thumbs/cover/1280x960/jpg/voron0-hex-belt.webp)
  * [ZeroPanels - clippable enclosure design for the panels, without screws](https://github.com/zruncho3d/ZeroPanels)
- * [Belted z with automatic bed levelling](https://github.com/zruncho3d/tri-zero)
- * ![Example](https://github.com/zruncho3d/tri-zero/blob/main/Renders/alpha-4/front.png?raw=true)
+ * Tri-Zero [Belted z with automatic bed levelling](https://github.com/zruncho3d/tri-zero)
+![Example](https://github.com/zruncho3d/tri-zero/blob/main/Renders/alpha-4/front.png?raw=true)
  * [Alternate hotend](https://github.com/PrintersForAnts/Mini-AfterSherpa)
  * [Alternate extruder](https://github.com/CroXY3D/Sailfin-Extruder)
  * [Flying gantry v0 mod](https://github.com/zruncho3d/f-zero)
