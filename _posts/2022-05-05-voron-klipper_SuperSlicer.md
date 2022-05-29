@@ -75,6 +75,7 @@ You can also adjust the name of the output gcode file:
 
 ## mods
 There is a very nice website for checking out mods [here](https://voronregistry.com/mods?page=1)
+![registry](https://preview.redd.it/r5uq78yaxx581.png?width=1156&format=png&auto=webp&s=571047d754db685bf3d3c0bcf1f86662a73b4907)
 
 * [Filament runout sensor](https://yewtu.be/watch?v=ThUvS-W7HMw)
 * [LED control with klipper](https://yewtu.be/embed/9MewnxuZY1A)
@@ -106,19 +107,24 @@ An attachment mod is [here](https://www.thingiverse.com/thing:4912063) or [here]
 ![Example](https://media.printables.com/media/prints/204298/images/1879048_482b4b56-fc59-40f4-b33c-e599874f58aa/thumbs/cover/1280x960/jpg/voron0-hex-belt.webp)
  * [ZeroPanels - clippable enclosure design for the panels, without screws](https://github.com/zruncho3d/ZeroPanels)
  * [Belted z with automatic bed levelling](https://github.com/zruncho3d/tri-zero)
+ * ![Example](https://github.com/zruncho3d/tri-zero/blob/main/Renders/alpha-4/front.png?raw=true)
  * [Alternate hotend](https://github.com/PrintersForAnts/Mini-AfterSherpa)
  * [Alternate extruder](https://github.com/CroXY3D/Sailfin-Extruder)
  * [Flying gantry v0 mod](https://github.com/zruncho3d/f-zero)
+![FZero](https://github.com/zruncho3d/f-zero/raw/main/Renders/iso.png)
  * [Hinged top hat](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron0_Hinged_Top_Hat)
  * [Klicky probe](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/JosAr/Klicky-Probe) or [ZeroClick](https://github.com/zruncho3d/ZeroClick)
  * [V0 belt holder](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/TheSquiffy/V0_Belts_holder)
  * [Bondtech LGX lite](https://www.bondtech.se/2021/12/27/voron-v0-1-toolhead-setup-for-lgx-lite/) - I have been unimpressed with the stock extruder on the v0.1. Its very cramped, its also difficult to get the filament in a lot of times. [Install guide](https://yewtu.be/watch?v=0wKtsrJNYmE)
+<iframe width="560" height="315" src="https://yewtu.be/embed/0wKtsrJNYmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
  * [v0.1 Belted z drive](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/MathematicalPotato/v0.1_belted_z_drive)
  * [Pulley z drive mod](https://github.com/nhchiu/VoronUsers/tree/pulley_z/printer_mods/nhchiu/V0.1_Movable_Pulley_Z)
  * There are a bunch more in the [legacy](https://github.com/VoronDesign/VoronUsers/tree/master/legacy_printers/printer_mods) and [user mods](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods) repos
  * [Motor panel mod](https://voronregistry.com/mods/cmrny-v01motorpanelmodification)
  * [Second x rail mod](https://voronregistry.com/mods/mikesmods-lgxmountforv01with2ndxrail)
  * [Improved after burner strain relief](https://voronregistry.com/mods/andre-miniafterburnerstrainrelief)
+![strainRelief](https://raw.githubusercontent.com/VoronDesign/VoronUsers/master/printer_mods/Andre%2FMini_Afterburner_Strain_Relief/Images/CAD_1.png)
  * [Improved ADXL345 accelerometer sensor mount](https://voronregistry.com/mods/andre-miniafterburneradxl345mount)
  * [MGN9 rail mod](https://voronregistry.com/mods/hartk1213-voron0mgn9cxaxis)
  * [Electronics bay and enclosure seperator](https://voronregistry.com/mods/weaslus-electronicsbayandenclosureseperator)
