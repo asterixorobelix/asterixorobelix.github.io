@@ -110,7 +110,7 @@ Note - preloaded nuts are an absolute pain on the v0.1. If you forget or want to
  * [Top-Hat belt](https://www.printables.com/model/204298-voron-01-hexagon-top-hat-belt)
 ![Example](https://media.printables.com/media/prints/204298/images/1879048_482b4b56-fc59-40f4-b33c-e599874f58aa/thumbs/cover/1280x960/jpg/voron0-hex-belt.webp)
  * [ZeroPanels - clippable enclosure design for the panels, without screws](https://github.com/zruncho3d/ZeroPanels)
- * Tri-Zero [Belted z with automatic bed levelling](https://github.com/zruncho3d/tri-zero), but you need a different [control board](https://www.biqu.equipment/products/bigtreetech-octopus-pro-v1-0-chip-f446?variant=39482177257570, because the stock controller (SKR mini e3 v2) doesnt have enough motor drivers :(
+ * Tri-Zero [Belted z with automatic bed levelling](https://github.com/zruncho3d/tri-zero), but you need a different [control board](https://www.biqu.equipment/products/bigtreetech-octopus-pro-v1-0-chip-f446?variant=39482177257570), because the stock controller (SKR mini e3 v2) doesnt have enough motor drivers :(
 ![Example](https://github.com/zruncho3d/tri-zero/blob/main/Renders/alpha-4/front.png?raw=true)
  * [Alternate hotend](https://github.com/PrintersForAnts/Mini-AfterSherpa)
  * [Alternate extruder](https://github.com/CroXY3D/Sailfin-Extruder)
