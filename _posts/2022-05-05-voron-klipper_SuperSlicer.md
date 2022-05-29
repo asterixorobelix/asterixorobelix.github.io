@@ -136,8 +136,7 @@ Note - preloaded nuts are an absolute pain on the v0.1. If you forget or want to
  * [Thermistor holder](https://voronregistry.com/mods/3dpandme-thermistorholderzero) for adding chamber temp to klipper. An [alternative](https://voronregistry.com/mods/antoinecellerier-ds18b20sensormount)
 ![Thermistor example](https://raw.githubusercontent.com/VoronDesign/VoronUsers/master/printer_mods/3dpandme%2FThermistor_holder_zero/installed.png)
 * [Kirigami bed mod](https://github.com/christophmuellerorg/voron_0_kirigami_bed/blob/master/Readme.md)
-![Example Kirigami v0.1 bed](https://github.com/christophmuellerorg/voron_0_kirigami_bed/raw/master/kirigami_bed.png
-)
+![Example Kirigami v0.1 bed](https://github.com/christophmuellerorg/voron_0_kirigami_bed/raw/master/kirigami_bed.png)
 ### Switchwire mods
 * [Big belt](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/consibonsi/Y-Mod_SW_9mm)
 
