@@ -137,11 +137,11 @@ Note - preloaded nuts are an absolute pain on the v0.1. If you forget or want to
 ![Thermistor example](https://raw.githubusercontent.com/VoronDesign/VoronUsers/master/printer_mods/3dpandme%2FThermistor_holder_zero/installed.png)
 * [Kirigami bed mod](https://github.com/christophmuellerorg/voron_0_kirigami_bed/blob/master/Readme.md)
 ![Example Kirigami v0.1 bed](https://github.com/christophmuellerorg/voron_0_kirigami_bed/raw/master/kirigami_bed.png)
-### Switchwire mods
-* [Big belt](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/consibonsi/Y-Mod_SW_9mm)
 
-### Trident mods
-* [bed fans](https://voronregistry.com/mods/cannedbass-tridentbedfans)
+### Voron
+I feel that it is probably better to buy a [creality machine](https://creality3d-official.aliexpress.com/store/group/Ender-3D-Printer/911499009_10000000752458.html?spm=a2g0o.store_pc_home.pcShopHead_6000552485180.1_1) and then add elements from Voron design, rather than building a Voron from scratch.
+
+For instance, one of the Creality bed flingers could be [enclosed, modded](https://github.com/boubounokefalos/Ender_SW) and turned into a [Switchwire](https://github.com/VoronDesign/Voron-Switchwire). An Ender 6 could be modded to have many of the elements of a [Trident](https://github.com/VoronDesign/Voron-Trident). Especially, considering that you could quite easily [convert the ender 6 to klipper](https://3dprintbeginner.com/how-to-install-klipper-on-creality-ender-6/) and do a bunch of other [mods to improve print quality](https://3dprintbeginner.com/creality-ender-6-upgrades-paid-and-free/) and the ender 6 could be fairly easily enclosed fully as a mod. Also, this [bed levelling mod](https://3dprintbeginner.com/artillery-bed-leveling-mod/)
 
 ### v2.4 mods
 * [LgxLite](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Mrgl-Mrgl/LGX_Lite_Mount)
