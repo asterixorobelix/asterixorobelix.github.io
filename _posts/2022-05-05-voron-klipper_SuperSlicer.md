@@ -6,6 +6,7 @@ category: Machines
 ---
 
 ### Klipper
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iNHta6zljoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 for copying klipper.bin to your machine
 ```
@@ -81,6 +82,8 @@ There is a very nice website for checking out mods [here](https://voronregistry.
 * [LED control with klipper](https://yewtu.be/embed/9MewnxuZY1A)
 
 ### v0.1 part cooling
+I have been far too obsessive about enclosing and insulating a printer for ABS. ABS parts printed in a semi enclosed machine are the best quality parts I have ever seen. So, it would seem that only side panels are necessary and the machine does not need to be fully enclosed. Enclosing and insulating the machine would help with wasting less electricity, but you then need to make very sure that the cooling system is sufficient. 
+
  [This](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jappaj/FanSaver) fansaver mod was very helpful for preventing the v0.1 fans from overheating.
  However, I am still finding it to be insufficient.
 
