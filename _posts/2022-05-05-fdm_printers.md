@@ -1,6 +1,6 @@
 ---
 layout: post
-title: voron/klipper/slicer
+title: FDM printers
 tags: CNC hardware electronics
 category: Machines
 ---
@@ -142,9 +142,9 @@ Note - preloaded nuts are an absolute pain on the v0.1. If you forget or want to
 ![Example Kirigami v0.1 bed](https://github.com/christophmuellerorg/voron_0_kirigami_bed/raw/master/kirigami_bed.png)
 
 ## Voron
-I feel that it is probably better to buy a [creality machine](https://www.creality.com/) or from [Aliexpress[(https://creality3d-official.aliexpress.com/store/group/Ender-3D-Printer/911499009_10000000752458.html?spm=a2g0o.store_pc_home.pcShopHead_6000552485180.1_1) and then add elements from Voron design, rather than building a Voron from scratch.
+I feel that it is probably better to buy a [creality machine](https://www.creality.com/) or from [Aliexpress](https://creality3d-official.aliexpress.com/store/group/Ender-3D-Printer/911499009_10000000752458.html?spm=a2g0o.store_pc_home.pcShopHead_6000552485180.1_1) and then add elements from Voron design, rather than building a Voron from scratch.
 
-For instance, one of the Creality bed flingers could be [enclosed, modded](https://github.com/boubounokefalos/Ender_SW) and turned into a [Switchwire](https://github.com/VoronDesign/Voron-Switchwire). An [Ender 6](https://www.creality.com/products/ender-6-3d-printer?spm=..page_1967279.products_display_1.1&spm_prev=..index.header_1.1) could be modded to have many of the elements of a [Trident](https://github.com/VoronDesign/Voron-Trident). Especially, considering that you could quite easily [convert the ender 6 to klipper](https://3dprintbeginner.com/how-to-install-klipper-on-creality-ender-6/) and do a bunch of other [mods to improve print quality](https://3dprintbeginner.com/creality-ender-6-upgrades-paid-and-free/) and the ender 6 could be fairly easily enclosed fully as a mod. Also, this [bed levelling mod](https://3dprintbeginner.com/artillery-bed-leveling-mod/) and this [mod](https://www.thingiverse.com/thing:5215316), which adds linear rails.
+For instance, one of the Creality bed flingers could be [enclosed, modded](https://github.com/boubounokefalos/Ender_SW) and turned into a [Switchwire](https://github.com/VoronDesign/Voron-Switchwire), an Ender 3 v2 seems like a good choice for this. An [Ender 6](https://www.creality.com/products/ender-6-3d-printer?spm=..page_1967279.products_display_1.1&spm_prev=..index.header_1.1) could be modded to have many of the elements of a [Trident](https://github.com/VoronDesign/Voron-Trident). Especially, considering that you could quite easily [convert the ender 6 to klipper](https://3dprintbeginner.com/how-to-install-klipper-on-creality-ender-6/) and do a bunch of other [mods to improve print quality](https://3dprintbeginner.com/creality-ender-6-upgrades-paid-and-free/) and the ender 6 could be fairly easily enclosed fully as a mod. Also, this [bed levelling mod](https://3dprintbeginner.com/artillery-bed-leveling-mod/) and this [mod](https://www.thingiverse.com/thing:5215316), which adds linear rails.
 Alternatively, an [ender 7](https://www.creality.com/products/ender-7-3d-printer?spm=..page_1967279.products_display_1.1&spm_prev=..index.header_1.1) already has linear rails, so only the z axis would need to be [upgraded](https://www.youtube.com/watch?v=Xi94g_aM6YI)
 
 ### v2.4 mods
@@ -159,14 +159,6 @@ Alternatively, an [ender 7](https://www.creality.com/products/ender-7-3d-printer
 * [Shorter z joints](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Ellis/Short_Z_Joints)
 * [Mantis dual toolhead](https://github.com/mandryd/VoronUsers/tree/master/printer_mods/Long/Mantis_Dual_5015)
 * [Pull out electrical store](https://voronregistry.com/mods/zzp8202-pulloutelectricalstore)
-  
-<iframe width="560" height="315" src="https://yewtu.be/embed/0E0dM0ZdpRE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://yewtu.be/embed/eH0Dq1uTBVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://yewtu.be/embed/dVByvaQ3abs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://yewtu.be/embed/OgzhWdCYNYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## XY offset
 
@@ -176,4 +168,11 @@ Alternatively, an [ender 7](https://www.creality.com/products/ender-7-3d-printer
 * [Formbot](https://www.aliexpress.com/store/2061058?spm=a2g0o.detail.1000007.1.49c83151EX8Yig)
 * [Fytsec](https://www.aliexpress.com/store/3480083?spm=a2g0o.store_pc_groupList.pcShopHead_6610632.0)
 * [Blurolls](https://www.aliexpress.com/store/2808029?spm=a2g0o.detail.1000007.1.2bd65348nlLzQT)
-* [TriangleLab] (https://trianglelab.aliexpress.com/store/1654223?spm=a2g0o.store_pc_groupList.pcShopHead_5872101.0)
+* [TriangleLab](https://trianglelab.aliexpress.com/store/1654223?spm=a2g0o.store_pc_groupList.pcShopHead_5872101.0)
+
+## Deals
+All3DP maintain a [page](https://all3dp.com/1/3d-printers-on-sale-deals/) which lists discounts and deals.
+
+
+## Acetaone smoothing
+You can smooth out ABS prints with Acetone. It gets rid of any visible layer lines, but is kinda difficult to control and melts the part, which could lead to some loss of detail and part deformation.
