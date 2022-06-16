@@ -145,6 +145,10 @@ Note - preloaded nuts are an absolute pain on the v0.1. If you forget or want to
 I feel that it is probably better to buy a [creality machine](https://www.creality.com/) or from [Aliexpress](https://creality3d-official.aliexpress.com/store/group/Ender-3D-Printer/911499009_10000000752458.html?spm=a2g0o.store_pc_home.pcShopHead_6000552485180.1_1) and then add elements from Voron design, rather than building a Voron from scratch.
 
 For instance, one of the Creality [bed flinger Ender3-v2s](https://www.creality.com/products/ender-3-v2-3d-printer-csco?spm=..page_1967279.products_display_1.1&spm_prev=..index.header_1.1) could be [enclosed, modded](https://github.com/boubounokefalos/Ender_SW) and turned into a [Switchwire](https://github.com/VoronDesign/Voron-Switchwire), an Ender 3 v2 seems like a good choice for this. An [Ender 6](https://www.creality.com/products/ender-6-3d-printer?spm=..page_1967279.products_display_1.1&spm_prev=..index.header_1.1) could be modded to have many of the elements of a [Trident](https://github.com/VoronDesign/Voron-Trident). Especially, considering that you could quite easily [convert the ender 6 to klipper](https://3dprintbeginner.com/how-to-install-klipper-on-creality-ender-6/) and do a bunch of other [mods to improve print quality](https://3dprintbeginner.com/creality-ender-6-upgrades-paid-and-free/) and the ender 6 could be fairly easily enclosed fully as a mod. Also, this [bed levelling mod](https://3dprintbeginner.com/artillery-bed-leveling-mod/) and this [mod](https://www.thingiverse.com/thing:5215316), which adds linear rails.
+The Ender 5 pro or Ender 5 plus, could be converted with this [mod](https://zerog.one/index.html) to have many of the aspects that Vorons have.
+
+![ZeroG Mercury](https://github.com/ZeroGDesign/Mercury/blob/main/Renders/render.png?raw=true)
+
 Alternatively, an [ender 7](https://www.creality.com/products/ender-7-3d-printer?spm=..page_1967279.products_display_1.1&spm_prev=..index.header_1.1) already has linear rails, so only the z axis would need to be [upgraded](https://www.youtube.com/watch?v=Xi94g_aM6YI)
 
 ### v2.4 mods
