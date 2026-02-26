@@ -110,6 +110,47 @@ title: Commute Check
     font-size: 0.9rem;
     color: #79747E;
   }
+
+  .screenshots {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .screenshot-item {
+    flex: 0 0 auto;
+    text-align: center;
+  }
+
+  .screenshot-item img {
+    width: 240px;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  }
+
+  .screenshot-item p {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #49454F;
+  }
+
+  @media (max-width: 800px) {
+    .screenshots {
+      justify-content: flex-start;
+      padding-bottom: 0.5rem;
+    }
+
+    .screenshot-item img {
+      width: 200px;
+    }
+  }
 </style>
 
 <div class="app-landing">
@@ -128,6 +169,21 @@ title: Commute Check
     Stay informed about Cape Town's Metrorail Southern Line with crowdsourced service updates.
     Know before you go whether your train is running on time, delayed, or cancelled.
   </p>
+
+  <div class="screenshots">
+    <div class="screenshot-item">
+      <img src="images/home.png" alt="Commute Check home screen showing line status and quick actions">
+      <p>Live Line Status</p>
+    </div>
+    <div class="screenshot-item">
+      <img src="images/schedule.png" alt="Train schedule showing departure and arrival times with platforms">
+      <p>Real-time Schedules</p>
+    </div>
+    <div class="screenshot-item">
+      <img src="images/stations.png" alt="List of 19 Southern Line stations">
+      <p>19 Stations Covered</p>
+    </div>
+  </div>
 
   <div class="features">
     <div class="feature">
