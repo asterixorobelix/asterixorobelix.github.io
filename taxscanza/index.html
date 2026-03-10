@@ -1,0 +1,187 @@
+---
+layout: standalone
+title: TaxScanZA
+---
+
+<style>
+  .app-landing {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .app-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    background: #172640;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(23,38,64,0.2);
+  }
+
+  .app-icon svg {
+    width: 72px;
+    height: 72px;
+  }
+
+  .app-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #172640;
+  }
+
+  .app-tagline {
+    font-size: 1.25rem;
+    color: #5C6B73;
+    margin-bottom: 2rem;
+  }
+
+  .app-description {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #44474A;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: left;
+  }
+
+  .feature {
+    background: #F6F7F8;
+    border: 1px solid #E0E2E5;
+    padding: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .feature h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #172640;
+  }
+
+  .feature p {
+    font-size: 0.95rem;
+    color: #44474A;
+    margin: 0;
+  }
+
+  .store-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+
+  .store-badge {
+    height: 50px;
+  }
+
+  .price-badge {
+    display: inline-block;
+    background: #F6F7F8;
+    border: 1px solid #E0E2E5;
+    color: #172640;
+    padding: 0.5rem 1.25rem;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+
+  .compliance-badge {
+    display: inline-block;
+    background: #D1FAE5;
+    border: 1px solid #A7F3D0;
+    color: #059669;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 2rem;
+  }
+
+  .footer-note {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #E0E2E5;
+    font-size: 0.9rem;
+    color: #5C6B73;
+  }
+
+  .footer-note a {
+    color: #172640;
+  }
+</style>
+
+<div class="app-landing">
+  <div class="app-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+      <path d="M340 180 L684 180 L740 236 L740 844 Q740 860 724 860 L340 860 Q324 860 324 844 L324 196 Q324 180 340 180 Z" fill="#FFFFFF" opacity="0.95"/>
+      <path d="M684 180 L684 236 L740 236 Z" fill="#172640" opacity="0.15"/>
+      <rect x="390" y="320" width="260" height="16" rx="8" fill="#172640" opacity="0.08"/>
+      <rect x="390" y="370" width="220" height="16" rx="8" fill="#172640" opacity="0.08"/>
+      <rect x="390" y="420" width="280" height="16" rx="8" fill="#172640" opacity="0.08"/>
+      <rect x="390" y="470" width="180" height="16" rx="8" fill="#172640" opacity="0.08"/>
+      <circle cx="660" cy="700" r="120" fill="#059669"/>
+      <polyline points="605,700 645,740 720,660" fill="none" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <h1 class="app-title">TaxScanZA</h1>
+  <p class="app-tagline">Scan. Comply. Done.</p>
+
+  <span class="compliance-badge">SARS Compliant</span>
+
+  <p class="app-description">
+    Scan tax documents with your phone camera. TaxScanZA automatically optimises them to meet SARS eFiling requirements — under 5MB, 300 DPI, correct format. In thirty seconds, you have a file that uploads the first time.
+  </p>
+
+  <span class="price-badge">Free to scan. Pro for R49, once.</span>
+
+  <div class="features">
+    <div class="feature">
+      <h3>Scan Documents</h3>
+      <p>Point your camera at any tax document. The app captures a clean, optimised scan ready for eFiling.</p>
+    </div>
+
+    <div class="feature">
+      <h3>SARS Compliant</h3>
+      <p>Every scan is automatically optimised to meet SARS requirements. See the file size drop and the compliance confirmation before you export.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Organised by Category</h3>
+      <p>IRP5, Medical Aid, Travel Logbook, Sec 18A, Home Office, Retirement Annuity — your documents sorted and ready.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Export Anywhere</h3>
+      <p>Share via email, AirDrop, or Files. Your SARS-compliant PDF goes wherever you need it.</p>
+    </div>
+  </div>
+
+  <div class="store-buttons">
+    <a href="#">
+      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="store-badge">
+    </a>
+  </div>
+
+  <div class="footer-note">
+    <p>Built for South African taxpayers.</p>
+    <p><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></p>
+  </div>
+</div>
