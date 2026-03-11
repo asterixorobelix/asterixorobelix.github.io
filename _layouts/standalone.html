@@ -3,7 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{{ page.title }}{% unless page.hide_site_title %} - {{ site.title }}{% endunless %}</title>
+    {% if page.meta_description %}<meta name="description" content="{{ page.meta_description }}">{% endif %}
+    {% if page.meta_keywords %}<meta name="keywords" content="{{ page.meta_keywords }}">{% endif %}
+    {% if page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+    {% if page.og_title %}
+    <meta property="og:title" content="{{ page.og_title }}">
+    <meta property="og:description" content="{{ page.og_description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ page.canonical_url }}">
+    {% if page.og_image %}<meta property="og:image" content="{{ page.og_image }}">{% endif %}
+    {% if page.og_locale %}<meta property="og:locale" content="{{ page.og_locale }}">{% endif %}
+    <meta property="og:site_name" content="{{ page.og_title }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.og_title }}">
+    <meta name="twitter:description" content="{{ page.og_description }}">
+    {% if page.og_image %}<meta name="twitter:image" content="{{ page.og_image }}">{% endif %}
+    {% endif %}
+    {% if page.json_ld %}
+    <script type="application/ld+json">{{ page.json_ld | jsonify }}</script>
+    {% endif %}
+    {% if page.head_extra %}{{ page.head_extra }}{% endif %}
     <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
     <style>
       * {

@@ -1,187 +1,544 @@
 ---
 layout: standalone
-title: TaxScanZA
+title: TaxScanZA -- SARS Document Scanner for iPhone and Android
+hide_site_title: true
+meta_description: "Scan tax documents and get SARS-compliant files ready for eFiling. Under 5MB, 300 DPI, correct format. R49 once, no subscription."
+meta_keywords: "SARS, document scanner, eFiling, tax documents, South Africa, IRP5, 5MB, 300 DPI"
+canonical_url: "https://asterixorobelix.github.io/taxscanza/"
+og_title: "TaxScanZA -- SARS Document Scanner"
+og_description: "Scan tax documents. Get SARS-compliant files. Done."
+og_locale: "en_ZA"
+json_ld:
+  "@context": "https://schema.org"
+  "@type": "SoftwareApplication"
+  name: "TaxScanZA"
+  operatingSystem: "iOS, Android"
+  applicationCategory: "UtilitiesApplication"
+  offers:
+    "@type": "Offer"
+    price: "0"
+    priceCurrency: "ZAR"
+  description: "SARS document scanner for South African taxpayers"
+head_extra: |
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 ---
 
 <style>
-  .app-landing {
-    text-align: center;
-    padding: 2rem 1rem;
+  /* Override standalone layout defaults for this page */
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1A1C1E;
+    background-color: #F6F7F8;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  .app-icon {
-    width: 120px;
-    height: 120px;
-    border-radius: 24px;
-    background: #172640;
-    margin: 0 auto 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(23,38,64,0.2);
+  /* Use wider container for landing page */
+  .container, main.container {
+    max-width: 1080px;
+    padding: 0 16px;
+  }
+  main.container {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
-  .app-icon svg {
-    width: 72px;
-    height: 72px;
-  }
-
-  .app-title {
-    font-size: 2.5rem;
+  /* Typography */
+  h1 {
+    font-size: 2.25rem;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    line-height: 1.2;
     color: #172640;
   }
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #172640;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1A1C1E;
+    margin-bottom: 8px;
+  }
+  p { color: #44474A; }
 
-  .app-tagline {
+  /* Navigation */
+  .nav {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E7EB;
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
     font-size: 1.25rem;
-    color: #5C6B73;
-    margin-bottom: 2rem;
+    font-weight: 700;
+    color: #172640;
+  }
+  .nav-badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .nav-badges .badge-link img { height: 32px; }
+  .badge-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
   }
 
-  .app-description {
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
+  /* Hero */
+  .hero {
+    background-color: #FFFFFF;
+    padding: 64px 0;
+  }
+  .hero-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+  .hero-text {
+    flex: 1;
+    max-width: 640px;
+  }
+  .hero-subtext {
+    font-size: 1.125rem;
     color: #44474A;
+    margin-top: 16px;
+    line-height: 1.7;
   }
-
-  .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    max-width: 800px;
-    margin: 2rem auto;
-    text-align: left;
+  .hero-badges {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    align-items: center;
   }
-
-  .feature {
-    background: #F6F7F8;
-    border: 1px solid #E0E2E5;
-    padding: 1.5rem;
+  .hero-image { flex-shrink: 0; }
+  .hero-image img {
+    max-width: 300px;
+    height: auto;
     border-radius: 12px;
   }
 
-  .feature h3 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #172640;
+  /* How It Works */
+  .how-it-works { padding: 64px 0; }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
   }
-
-  .feature p {
-    font-size: 0.95rem;
-    color: #44474A;
-    margin: 0;
+  .step {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
   }
-
-  .store-buttons {
+  .step-icon {
+    margin-bottom: 16px;
     display: flex;
-    gap: 1rem;
     justify-content: center;
-    flex-wrap: wrap;
-    margin: 2rem 0;
+  }
+  .step p { margin-top: 8px; }
+
+  /* Screenshots */
+  .screenshots {
+    padding: 64px 0;
+    background-color: #FFFFFF;
+  }
+  .screenshots-scroll {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 16px;
+  }
+  .screenshot-item {
+    flex: 0 0 auto;
+    width: 220px;
+    scroll-snap-align: start;
+    text-align: center;
+  }
+  .screenshot-item img {
+    width: 100%;
+    max-height: 440px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    background-color: #F6F7F8;
+  }
+  .screenshot-caption {
+    font-size: 0.875rem;
+    color: #44474A;
+    margin-top: 8px;
+    line-height: 1.4;
   }
 
-  .store-badge {
-    height: 50px;
+  /* Features */
+  .features { padding: 64px 0; }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
   }
-
-  .price-badge {
-    display: inline-block;
-    background: #F6F7F8;
-    border: 1px solid #E0E2E5;
-    color: #172640;
-    padding: 0.5rem 1.25rem;
-    border-radius: 20px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
+  .feature-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 24px;
   }
+  .feature-icon { margin-bottom: 16px; }
+  .feature-card p { margin-top: 8px; }
 
-  .compliance-badge {
-    display: inline-block;
-    background: #D1FAE5;
-    border: 1px solid #A7F3D0;
-    color: #059669;
-    padding: 0.4rem 1rem;
-    border-radius: 4px;
-    font-size: 0.85rem;
+  /* Pricing */
+  .pricing {
+    padding: 64px 0;
+    background-color: #FFFFFF;
+  }
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .pricing-card {
+    background-color: #F6F7F8;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+  }
+  .pricing-card--pro {
+    border: 2px solid #172640;
+    background-color: #FFFFFF;
+  }
+  .price {
+    font-size: 2rem;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 2rem;
-  }
-
-  .footer-note {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid #E0E2E5;
-    font-size: 0.9rem;
-    color: #5C6B73;
-  }
-
-  .footer-note a {
     color: #172640;
+    margin: 16px 0;
+  }
+  .price-detail {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #44474A;
+  }
+  .pricing-card ul {
+    list-style: none;
+    text-align: left;
+    margin: 16px 0;
+  }
+  .pricing-card li {
+    padding: 8px 0;
+    color: #44474A;
+    border-bottom: 1px solid #E5E7EB;
+  }
+  .pricing-card li:last-child { border-bottom: none; }
+  .no-subscription {
+    font-weight: 600;
+    color: #1A1C1E;
+    margin-top: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: #172640;
+    color: #FFFFFF;
+    padding: 48px 0;
+  }
+  .footer-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 16px;
+    text-align: center;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .footer-links a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+  .footer-links a:hover { color: #FFFFFF; }
+  .footer-badges {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .footer-badges .badge-link img { height: 36px; }
+  .copyright {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.6);
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.375rem; }
+    .hero-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-badges { justify-content: center; }
+    .hero-image { order: -1; }
+    .hero-image img { max-width: 220px; }
+    .nav-badges { display: none; }
+    .screenshot-item { width: 180px; }
+    .screenshot-item img { max-height: 360px; }
+    .pricing-grid { grid-template-columns: 1fr; }
   }
 </style>
 
-<div class="app-landing">
-  <div class="app-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-      <path d="M340 180 L684 180 L740 236 L740 844 Q740 860 724 860 L340 860 Q324 860 324 844 L324 196 Q324 180 340 180 Z" fill="#FFFFFF" opacity="0.95"/>
-      <path d="M684 180 L684 236 L740 236 Z" fill="#172640" opacity="0.15"/>
-      <rect x="390" y="320" width="260" height="16" rx="8" fill="#172640" opacity="0.08"/>
-      <rect x="390" y="370" width="220" height="16" rx="8" fill="#172640" opacity="0.08"/>
-      <rect x="390" y="420" width="280" height="16" rx="8" fill="#172640" opacity="0.08"/>
-      <rect x="390" y="470" width="180" height="16" rx="8" fill="#172640" opacity="0.08"/>
-      <circle cx="660" cy="700" r="120" fill="#059669"/>
-      <polyline points="605,700 645,740 720,660" fill="none" stroke="#FFFFFF" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-  </div>
-
-  <h1 class="app-title">TaxScanZA</h1>
-  <p class="app-tagline">Scan. Comply. Done.</p>
-
-  <span class="compliance-badge">SARS Compliant</span>
-
-  <p class="app-description">
-    Scan tax documents with your phone camera. TaxScanZA automatically optimises them to meet SARS eFiling requirements — under 5MB, 300 DPI, correct format. In thirty seconds, you have a file that uploads the first time.
-  </p>
-
-  <span class="price-badge">Free to scan. Pro for R49, once.</span>
-
-  <div class="features">
-    <div class="feature">
-      <h3>Scan Documents</h3>
-      <p>Point your camera at any tax document. The app captures a clean, optimised scan ready for eFiling.</p>
-    </div>
-
-    <div class="feature">
-      <h3>SARS Compliant</h3>
-      <p>Every scan is automatically optimised to meet SARS requirements. See the file size drop and the compliance confirmation before you export.</p>
-    </div>
-
-    <div class="feature">
-      <h3>Organised by Category</h3>
-      <p>IRP5, Medical Aid, Travel Logbook, Sec 18A, Home Office, Retirement Annuity — your documents sorted and ready.</p>
-    </div>
-
-    <div class="feature">
-      <h3>Export Anywhere</h3>
-      <p>Share via email, AirDrop, or Files. Your SARS-compliant PDF goes wherever you need it.</p>
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="logo">TaxScanZA</span>
+    <div class="nav-badges">
+      <a href="#" class="badge-link" aria-label="Download on the App Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="40">
+      </a>
+      <a href="#" class="badge-link" aria-label="Get it on Google Play">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="40">
+      </a>
     </div>
   </div>
+</nav>
 
-  <div class="store-buttons">
-    <a href="#">
-      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="store-badge">
-    </a>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>SARS-ready documents in 30 seconds</h1>
+      <p class="hero-subtext">
+        SARS rejects your uploads? Wrong size, wrong format, no explanation.
+        TaxScanZA fixes that. Scan any tax document and get a file that meets
+        every SARS requirement.
+      </p>
+      <div class="hero-badges">
+        <a href="#" class="badge-link" aria-label="Download on the App Store">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="48">
+        </a>
+        <a href="#" class="badge-link" aria-label="Get it on Google Play">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="48">
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/screenshot-1.png" alt="Document scan showing file size reduction from 12MB to 3.2MB with SARS compliant badge" width="300">
+    </div>
   </div>
+</section>
 
-  <div class="footer-note">
-    <p>Built for South African taxpayers.</p>
-    <p><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></p>
+<!-- How It Works -->
+<section class="how-it-works">
+  <div class="container">
+    <h2>How it works</h2>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="12" fill="#F0F4F8"/>
+            <path d="M24 16C20.69 16 18 18.69 18 22C18 25.31 20.69 28 24 28C27.31 28 30 25.31 30 22C30 18.69 27.31 16 24 16ZM24 26C21.79 26 20 24.21 20 22C20 19.79 21.79 18 24 18C26.21 18 28 19.79 28 22C28 24.21 26.21 26 24 26Z" fill="#172640"/>
+            <path d="M34 14H30.83L29 12H19L17.17 14H14C12.9 14 12 14.9 12 16V30C12 31.1 12.9 32 14 32H34C35.1 32 36 31.1 36 30V16C36 14.9 35.1 14 34 14ZM34 30H14V16H18.05L19.88 14H28.12L29.95 16H34V30Z" fill="#172640"/>
+          </svg>
+        </div>
+        <h3>1. Scan</h3>
+        <p>Point your camera at any tax document. IRP5, medical aid certificate, bank statement -- it handles them all.</p>
+      </div>
+      <div class="step">
+        <div class="step-icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="12" fill="#F0F4F8"/>
+            <path d="M30 18L22 26L18 22" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="24" cy="24" r="10" stroke="#059669" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>2. Optimise</h3>
+        <p>Automatically compressed to under 5MB at 300 DPI. The exact specs SARS requires for eFiling uploads.</p>
+      </div>
+      <div class="step">
+        <div class="step-icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="12" fill="#F0F4F8"/>
+            <path d="M28 14H18C16.9 14 16 14.9 16 16V32C16 33.1 16.9 34 18 34H30C31.1 34 32 33.1 32 32V18L28 14ZM30 32H18V16H27V19H30V32Z" fill="#172640"/>
+            <path d="M20 26H28V28H20V26ZM20 22H28V24H20V22Z" fill="#172640"/>
+          </svg>
+        </div>
+        <h3>3. Export</h3>
+        <p>Share via email or save to Files. The document is SARS compliant and ready for eFiling.</p>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+<!-- App Screenshots Gallery -->
+<section class="screenshots">
+  <div class="container">
+    <h2>See it in action</h2>
+    <div class="screenshots-scroll">
+      <div class="screenshot-item">
+        <img src="assets/screenshot-1.png" alt="Document scan showing file size reduction from 12MB to 3.2MB with SARS compliant badge" loading="lazy">
+        <p class="screenshot-caption">Instant size reduction with SARS compliance confirmation</p>
+      </div>
+      <div class="screenshot-item">
+        <img src="assets/screenshot-2.png" alt="Compliance checklist showing pass and fail status for each SARS requirement" loading="lazy">
+        <p class="screenshot-caption">Every SARS requirement checked automatically</p>
+      </div>
+      <div class="screenshot-item">
+        <img src="assets/screenshot-3.png" alt="Scanner camera view capturing a tax document" loading="lazy">
+        <p class="screenshot-caption">Point, scan, done</p>
+      </div>
+      <div class="screenshot-item">
+        <img src="assets/screenshot-4.png" alt="Document list organised by tax document categories" loading="lazy">
+        <p class="screenshot-caption">All your tax documents, organised by category</p>
+      </div>
+      <div class="screenshot-item">
+        <img src="assets/screenshot-5.png" alt="Export and share sheet for sending SARS-compliant documents" loading="lazy">
+        <p class="screenshot-caption">Export directly to email or Files</p>
+      </div>
+      <div class="screenshot-item">
+        <img src="assets/screenshot-6.png" alt="Pro upgrade screen showing R49 one-time purchase for unlimited documents and export" loading="lazy">
+        <p class="screenshot-caption">R49 once. No subscription.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Grid -->
+<section class="features">
+  <div class="container">
+    <h2>Built for SARS eFiling</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4L4 8V16C4 22.63 9.12 28.81 16 30C22.88 28.81 28 22.63 28 16V8L16 4ZM14 22L8 16L9.41 14.59L14 19.17L22.59 10.58L24 12L14 22Z" fill="#059669"/>
+          </svg>
+        </div>
+        <h3>Under 5MB guaranteed</h3>
+        <p>Every scan is compressed to meet the SARS file size limit. No manual resizing.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M26 4H6C4.9 4 4 4.9 4 6V26C4 27.1 4.9 28 6 28H26C27.1 28 28 27.1 28 26V6C28 4.9 27.1 4 26 4ZM26 26H6V6H26V26ZM8 14H24V16H8V14ZM8 18H20V20H8V18ZM8 10H24V12H8V10Z" fill="#172640"/>
+          </svg>
+        </div>
+        <h3>300 DPI resolution</h3>
+        <p>High-resolution output that SARS accepts without question. Text stays readable.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 10L14 18L10 14" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="4" y="4" width="24" height="24" rx="4" stroke="#059669" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3>SARS compliance check</h3>
+        <p>Validates file size, resolution, format, and filename before you upload to eFiling.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 4H8C6.9 4 4 4.9 6 6V26C6 27.1 6.9 28 8 28H24C25.1 28 26 27.1 26 26V6C26 4.9 25.1 4 24 4ZM24 26H8V6H24V26Z" fill="#172640"/>
+            <path d="M14 12H18V14H14V12ZM11 16H21V18H11V16ZM11 20H21V22H11V20Z" fill="#172640"/>
+            <path d="M12 8L20 8" stroke="#E74C3C" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Encrypted PDF detection</h3>
+        <p>Detects password-protected PDFs that SARS cannot process. Flags them before you waste time uploading.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 8H14V18H4V8ZM18 4H28V12H18V4ZM18 16H28V28H18V16ZM4 22H14V28H4V22Z" fill="#172640"/>
+          </svg>
+        </div>
+        <h3>7 document categories</h3>
+        <p>IRP5, medical aid, retirement, insurance, donations, home office, and other. Organised for tax season.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 6C10.48 6 6 10.48 6 16C6 21.52 10.48 26 16 26C21.52 26 26 21.52 26 16C26 10.48 21.52 6 16 6ZM16 24C11.58 24 8 20.42 8 16C8 11.58 11.58 8 16 8C20.42 8 24 11.58 24 16C24 20.42 20.42 24 16 24Z" fill="#172640"/>
+            <path d="M16 12V16L20 18" stroke="#172640" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Works offline</h3>
+        <p>No internet required. Scan, optimise, and store documents anywhere. Export when you are ready.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing Section -->
+<section class="pricing">
+  <div class="container">
+    <h2>Simple pricing</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Free</h3>
+        <p class="price">R0</p>
+        <ul>
+          <li>Scan and store up to 5 documents</li>
+          <li>Full SARS compliance checking</li>
+          <li>All 7 document categories</li>
+        </ul>
+      </div>
+      <div class="pricing-card pricing-card--pro">
+        <h3>Pro</h3>
+        <p class="price">R49 <span class="price-detail">once</span></p>
+        <ul>
+          <li>Unlimited documents</li>
+          <li>Export and share</li>
+          <li>Everything in Free</li>
+        </ul>
+        <p class="no-subscription">No subscription.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+    </div>
+    <div class="footer-badges">
+      <a href="#" class="badge-link" aria-label="Download on the App Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="40">
+      </a>
+      <a href="#" class="badge-link" aria-label="Get it on Google Play">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="40">
+      </a>
+    </div>
+    <p class="copyright">Copyright 2026 TaxScanZA. All rights reserved.</p>
+  </div>
+</footer>
