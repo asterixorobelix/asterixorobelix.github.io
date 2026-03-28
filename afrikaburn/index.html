@@ -1,0 +1,584 @@
+---
+layout: standalone
+title: AfrikaBurn Companion -- Your Guide to the Tankwa Karoo
+hide_site_title: true
+meta_description: "The unofficial companion app for AfrikaBurn 2026. Offline maps, art installations, theme camps, events, and survival guide. Works without signal."
+meta_keywords: "AfrikaBurn, Tankwa Karoo, burning man, South Africa, companion app, offline maps, theme camps, art installations"
+canonical_url: "https://asterixorobelix.github.io/afrikaburn/"
+og_title: "AfrikaBurn Companion"
+og_description: "Offline maps, art, camps, and survival guide for AfrikaBurn 2026 in the Tankwa Karoo."
+og_locale: "en_ZA"
+json_ld:
+  "@context": "https://schema.org"
+  "@type": "SoftwareApplication"
+  name: "AfrikaBurn Companion"
+  operatingSystem: "iOS, Android"
+  applicationCategory: "TravelApplication"
+  offers:
+    "@type": "Offer"
+    price: "0"
+    priceCurrency: "ZAR"
+  description: "Companion app for AfrikaBurn in the Tankwa Karoo, South Africa"
+head_extra: |
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+---
+
+<style>
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1A1C1E;
+    background-color: #FAF8F5;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .container, main.container {
+    max-width: 1080px;
+    padding: 0 16px;
+  }
+  main.container {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #2D1810;
+  }
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #2D1810;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1A1C1E;
+    margin-bottom: 8px;
+  }
+  p { color: #44474A; }
+
+  /* Navigation */
+  .nav {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E5E0DA;
+    padding: 16px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .nav-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2D1810;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo img {
+    height: 32px;
+    width: 32px;
+  }
+  .nav-badges {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  .nav-badges .badge-link img { height: 32px; }
+  .badge-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+  }
+
+  /* Hero */
+  .hero {
+    background: linear-gradient(135deg, #2D1810 0%, #5C3A28 50%, #C4723A 100%);
+    padding: 80px 0;
+    color: #FFFFFF;
+  }
+  .hero-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    gap: 48px;
+  }
+  .hero-text {
+    flex: 1;
+    max-width: 640px;
+  }
+  .hero h1 {
+    color: #FFFFFF;
+  }
+  .hero-tagline {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #E8B88A;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 8px;
+  }
+  .hero-subtext {
+    font-size: 1.125rem;
+    color: rgba(255,255,255,0.85);
+    margin-top: 16px;
+    line-height: 1.7;
+  }
+  .hero-badges {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    align-items: center;
+  }
+  .hero-image { flex-shrink: 0; }
+  .hero-image img {
+    max-width: 280px;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 24px 48px rgba(0,0,0,0.3);
+  }
+
+  /* How It Works */
+  .how-it-works { padding: 64px 0; }
+  .steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .step {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E0DA;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+  }
+  .step-icon {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+  }
+  .step p { margin-top: 8px; }
+
+  /* Screenshots */
+  .screenshots {
+    padding: 64px 0;
+    background-color: #FFFFFF;
+  }
+  .screenshots-scroll {
+    display: flex;
+    gap: 24px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 16px;
+  }
+  .screenshot-item {
+    flex: 0 0 auto;
+    width: 220px;
+    scroll-snap-align: start;
+    text-align: center;
+  }
+  .screenshot-item img {
+    width: 100%;
+    max-height: 440px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 1px solid #E5E0DA;
+    background-color: #FAF8F5;
+  }
+  .screenshot-caption {
+    font-size: 0.875rem;
+    color: #44474A;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+
+  /* Features */
+  .features { padding: 64px 0; }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .feature-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E0DA;
+    border-radius: 12px;
+    padding: 24px;
+  }
+  .feature-icon { margin-bottom: 16px; }
+  .feature-card p { margin-top: 8px; }
+
+  /* Theme section */
+  .theme-section {
+    padding: 64px 0;
+    background-color: #FFFFFF;
+  }
+  .theme-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .theme-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #C4723A, #E8B88A);
+    color: #FFFFFF;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 100px;
+    margin-bottom: 16px;
+  }
+  .theme-inner p {
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* Getting There */
+  .getting-there { padding: 64px 0; }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .info-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E0DA;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+  }
+  .info-card .info-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #C4723A;
+    margin: 8px 0 4px;
+  }
+
+  /* Footer */
+  .footer {
+    background-color: #2D1810;
+    color: #FFFFFF;
+    padding: 48px 0;
+  }
+  .footer-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 16px;
+    text-align: center;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+  .footer-links a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.875rem;
+  }
+  .footer-links a:hover { color: #FFFFFF; }
+  .footer-badges {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .footer-badges .badge-link img { height: 36px; }
+  .copyright {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.6);
+  }
+  .disclaimer {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.4);
+    margin-top: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.375rem; }
+    .hero { padding: 48px 0; }
+    .hero-inner {
+      flex-direction: column;
+      text-align: center;
+    }
+    .hero-badges { justify-content: center; }
+    .hero-image { order: -1; }
+    .hero-image img { max-width: 200px; }
+    .nav-badges { display: none; }
+    .screenshot-item { width: 180px; }
+    .screenshot-item img { max-height: 360px; }
+  }
+</style>
+
+<!-- Navigation -->
+<nav class="nav">
+  <div class="nav-inner">
+    <span class="logo">
+      <img src="assets/app-icon.png" alt="" width="32" height="32">
+      AfrikaBurn Companion
+    </span>
+    <div class="nav-badges">
+      <a href="https://play.google.com/store/apps/details?id=io.asterixorobelix.afrikaburn" class="badge-link" aria-label="Get it on Google Play">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="40">
+      </a>
+      <a href="https://apps.apple.com/app/afrikaburn/id6742866107" class="badge-link" aria-label="Download on the App Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="40">
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-tagline">AfrikaBurn 2026</p>
+      <h1>Welcome Home, Burner</h1>
+      <p class="hero-subtext">
+        Dust, dreams, and radical self-reliance. The companion app for AfrikaBurn
+        in the Tankwa Karoo -- offline maps, art installations, theme camps, events,
+        and everything you need when there is no signal.
+      </p>
+      <div class="hero-badges">
+        <a href="https://play.google.com/store/apps/details?id=io.asterixorobelix.afrikaburn" class="badge-link" aria-label="Get it on Google Play">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="48">
+        </a>
+        <a href="https://apps.apple.com/app/afrikaburn/id6742866107" class="badge-link" aria-label="Download on the App Store">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="48">
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/screenshot-home.png" alt="AfrikaBurn Companion app home screen showing event categories and navigation" width="280">
+    </div>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="how-it-works">
+  <div class="container">
+    <h2>How it works</h2>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="12" fill="#FFF3E8"/>
+            <path d="M24 14C20.13 14 17 17.13 17 21C17 26.25 24 34 24 34C24 34 31 26.25 31 21C31 17.13 27.87 14 24 14ZM24 23.5C22.62 23.5 21.5 22.38 21.5 21C21.5 19.62 22.62 18.5 24 18.5C25.38 18.5 26.5 19.62 26.5 21C26.5 22.38 25.38 23.5 24 23.5Z" fill="#C4723A"/>
+          </svg>
+        </div>
+        <h3>1. Download before you go</h3>
+        <p>Install the app while you still have signal. All event data is bundled -- no internet needed at the Burn.</p>
+      </div>
+      <div class="step">
+        <div class="step-icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="12" fill="#FFF3E8"/>
+            <path d="M34 16H14C12.9 16 12 16.9 12 18V30C12 31.1 12.9 32 14 32H34C35.1 32 36 31.1 36 30V18C36 16.9 35.1 16 34 16ZM34 30H14V18H34V30Z" fill="#C4723A"/>
+            <circle cx="20" cy="24" r="2" fill="#C4723A"/>
+            <circle cx="28" cy="24" r="2" fill="#C4723A"/>
+            <path d="M18 27C18 27 20 29 24 29C28 29 30 27 30 27" stroke="#C4723A" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>2. Explore the Binnekring</h3>
+        <p>Browse art, theme camps, events, mutant vehicles, and performances. Search, filter, and find what speaks to you.</p>
+      </div>
+      <div class="step">
+        <div class="step-icon" aria-hidden="true">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="48" height="48" rx="12" fill="#FFF3E8"/>
+            <path d="M24 14L14 19V29L24 34L34 29V19L24 14ZM24 16.18L31.5 20L24 23.82L16.5 20L24 16.18ZM16 28.18V21.42L23 24.92V31.68L16 28.18ZM25 31.68V24.92L32 21.42V28.18L25 31.68Z" fill="#C4723A"/>
+          </svg>
+        </div>
+        <h3>3. Navigate the dust</h3>
+        <p>Use the offline map to find your way. Mark your camp, locate art, and never get lost in the Tankwa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- App Screenshots Gallery -->
+<section class="screenshots">
+  <div class="container">
+    <h2>See it in action</h2>
+    <div class="screenshots-scroll">
+      <div class="screenshot-item">
+        <img src="assets/screenshot-home.png" alt="Home screen with event categories" loading="lazy">
+        <p class="screenshot-caption">Welcome home -- discover art, camps, and events</p>
+      </div>
+      <div class="screenshot-item">
+        <img src="assets/screenshot-map.png" alt="Offline map of the event area" loading="lazy">
+        <p class="screenshot-caption">Offline map with camps, art, and services</p>
+      </div>
+      <div class="screenshot-item">
+        <img src="assets/screenshot-projects.png" alt="Browsable list of theme camps and art projects" loading="lazy">
+        <p class="screenshot-caption">Browse all registered projects</p>
+      </div>
+      <div class="screenshot-item">
+        <img src="assets/screenshot-detail.png" alt="Project detail view with description and location" loading="lazy">
+        <p class="screenshot-caption">Full details with Show on Map</p>
+      </div>
+      <div class="screenshot-item">
+        <img src="assets/screenshot-directions.png" alt="Directions screen with GPS coordinates and travel times" loading="lazy">
+        <p class="screenshot-caption">Getting there -- travel times and GPS</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Grid -->
+<section class="features">
+  <div class="container">
+    <h2>Built for the Tankwa</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4C10.48 4 6 8.48 6 14C6 21.5 16 30 16 30C16 30 26 21.5 26 14C26 8.48 21.52 4 16 4ZM16 18C13.79 18 12 16.21 12 14C12 11.79 13.79 10 16 10C18.21 10 20 11.79 20 14C20 16.21 18.21 18 16 18Z" fill="#C4723A"/>
+          </svg>
+        </div>
+        <h3>Offline maps</h3>
+        <p>Full map of the Binnekring with theme camps, artworks, toilets, and services. Works without signal.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 8H14V18H4V8ZM18 4H28V12H18V4ZM18 16H28V28H18V16ZM4 22H14V28H4V22Z" fill="#C4723A"/>
+          </svg>
+        </div>
+        <h3>All projects in your pocket</h3>
+        <p>Art installations, performances, events, theme camps, mutant vehicles, and mobile art. Searchable and filterable.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 6C10.48 6 6 10.48 6 16C6 21.52 10.48 26 16 26C21.52 26 26 21.52 26 16C26 10.48 21.52 6 16 6ZM16 24C11.58 24 8 20.42 8 16C8 11.58 11.58 8 16 8C20.42 8 24 11.58 24 16C24 20.42 20.42 24 16 24Z" fill="#C4723A"/>
+            <path d="M16 12V16L20 18" stroke="#C4723A" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Works offline</h3>
+        <p>No internet required. All event data is bundled in the app. Download once, use all week in the desert.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4L6 8.5V15.5C6 22.12 10.27 28.28 16 30C21.73 28.28 26 22.12 26 15.5V8.5L16 4ZM24 15.5C24 21.06 20.56 26.19 16 27.93C11.44 26.19 8 21.06 8 15.5V9.84L16 6.27L24 9.84V15.5Z" fill="#C4723A"/>
+            <path d="M12 16L15 19L21 13" stroke="#C4723A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Mark your camp</h3>
+        <p>Long-press the map to drop a pin at your camp. Always find your way back through the dust.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28 6H4V22H12L16 26L20 22H28V6ZM26 20H19.17L16 23.17L12.83 20H6V8H26V20Z" fill="#C4723A"/>
+            <path d="M10 12H22V14H10V12ZM10 16H18V18H10V16Z" fill="#C4723A"/>
+          </svg>
+        </div>
+        <h3>Family friendly filter</h3>
+        <p>Filter theme camps and events to show only child-friendly options. Plan safe adventures for the whole family.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 4C9.37 4 4 9.37 4 16C4 22.63 9.37 28 16 28C22.63 28 28 22.63 28 16C28 9.37 22.63 4 16 4ZM16 26C10.48 26 6 21.52 6 16C6 10.48 10.48 6 16 6C21.52 6 26 10.48 26 16C26 21.52 21.52 26 16 26Z" fill="#C4723A"/>
+            <path d="M16 10V16H22" stroke="#C4723A" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Directions and GPS</h3>
+        <p>Travel times from Cape Town, Ceres, and Calvinia. GPS coordinates and offline route guidance.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2026 Theme Section -->
+<section class="theme-section">
+  <div class="container">
+    <div class="theme-inner">
+      <span class="theme-badge">2026 Theme</span>
+      <h2>Through The Prism</h2>
+      <p>
+        The 2026 theme invites you to explore identity, perception, and presence through
+        the metaphor of light refraction. Like a prism bending light, our identities are
+        multifaceted -- not a single story but many intersecting aspects. Drawing from the
+        African principle "Umuntu Ngumuntu Ngabantu" (a person is a person through other people),
+        we are defined through relationship and community.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Getting There -->
+<section class="getting-there">
+  <div class="container">
+    <h2>Getting there</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>From Cape Town</h3>
+        <p class="info-value">~3 hours</p>
+        <p>Via the N1 and R355</p>
+      </div>
+      <div class="info-card">
+        <h3>From Ceres</h3>
+        <p class="info-value">~2 hours</p>
+        <p>Fill up fuel before leaving</p>
+      </div>
+      <div class="info-card">
+        <h3>From Calvinia</h3>
+        <p class="info-value">~1 hour</p>
+        <p>Nearest town to the event</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="support.html">Support</a>
+      <a href="https://www.afrikaburn.org" target="_blank" rel="noopener">AfrikaBurn.org</a>
+    </div>
+    <div class="footer-badges">
+      <a href="https://play.google.com/store/apps/details?id=io.asterixorobelix.afrikaburn" class="badge-link" aria-label="Get it on Google Play">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="40">
+      </a>
+      <a href="https://apps.apple.com/app/afrikaburn/id6742866107" class="badge-link" aria-label="Download on the App Store">
+        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="40">
+      </a>
+    </div>
+    <p class="copyright">Copyright 2026 Nathan Stasin. All rights reserved.</p>
+    <p class="disclaimer">This is an unofficial companion app and is not affiliated with or endorsed by AfrikaBurn.</p>
+  </div>
+</footer>
