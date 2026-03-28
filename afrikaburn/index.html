@@ -156,6 +156,38 @@ head_extra: |
     box-shadow: 0 24px 48px rgba(0,0,0,0.3);
   }
 
+  /* Geofence Notice */
+  .geofence-notice {
+    padding: 32px 0;
+    background-color: #2D1810;
+  }
+  .geofence-notice-inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px 32px;
+    background: linear-gradient(135deg, rgba(196,114,58,0.15), rgba(232,184,138,0.10));
+    border: 2px solid #C4723A;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .geofence-notice-icon {
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .geofence-notice-inner h3 {
+    color: #E8B88A;
+    font-size: 1.125rem;
+    margin-bottom: 6px;
+  }
+  .geofence-notice-inner p {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
   /* How It Works */
   .how-it-works { padding: 64px 0; }
   .steps-grid {
@@ -379,6 +411,24 @@ head_extra: |
     </div>
     <div class="hero-image">
       <img src="assets/screenshot-home.png" alt="AfrikaBurn Companion app home screen showing event categories and navigation" width="280">
+    </div>
+  </div>
+</section>
+
+<!-- Geofence Unlock Notice -->
+<section class="geofence-notice">
+  <div class="container">
+    <div class="geofence-notice-inner">
+      <div class="geofence-notice-icon" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 4C10.48 4 6 8.48 6 14C6 21.5 16 30 16 30C16 30 26 21.5 26 14C26 8.48 21.52 4 16 4Z" fill="#C4723A"/>
+          <path d="M16 10V15M16 15V20M13 15H16M16 15H19" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <h3>Location unlock</h3>
+        <p>Map and project information for the current year are hidden until you arrive at the event. Once the app detects you are near the Tankwa Karoo, all content unlocks automatically -- no action needed on your part.</p>
+      </div>
     </div>
   </div>
 </section>
