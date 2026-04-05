@@ -1,0 +1,324 @@
+---
+layout: standalone
+title: Catapult
+hide_site_title: true
+meta_description: "Marketing automation for indie app developers. Discover where your audience is talking, generate authentic copy, and post directly from one screen."
+meta_keywords: "app marketing, indie developer, social media marketing, Reddit marketing, X Twitter marketing, app promotion, developer tools, macOS app"
+canonical_url: "https://asterixorobelix.github.io/catapult/"
+og_title: "Catapult - Marketing Automation for Indie Developers"
+og_description: "Find where your app's audience is talking, generate community-aware copy, and post it — all from one screen."
+og_locale: "en_US"
+json_ld:
+  "@context": "https://schema.org"
+  "@type": "SoftwareApplication"
+  name: "Catapult"
+  description: "Marketing automation for indie app developers. Discover trending conversations, generate authentic copy, and post directly to social platforms."
+  applicationCategory: "DeveloperApplication"
+  operatingSystem: "macOS"
+  offers:
+    "@type": "Offer"
+    price: "0"
+    priceCurrency: "USD"
+  author:
+    "@type": "Person"
+    name: "Nathan Stasin"
+    url: "https://github.com/asterixorobelix"
+  url: "https://asterixorobelix.github.io/catapult/"
+---
+
+<style>
+  .app-landing {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .app-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #2196F3 0%, #1565C0 100%);
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  .app-icon svg {
+    width: 64px;
+    height: 64px;
+    fill: white;
+  }
+
+  .app-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #1C1B1F;
+  }
+
+  .app-tagline {
+    font-size: 1.25rem;
+    color: #49454F;
+    margin-bottom: 2rem;
+  }
+
+  .app-description {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #49454F;
+  }
+
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: left;
+  }
+
+  .feature {
+    background: #E3F2FD;
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .feature h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #1565C0;
+  }
+
+  .feature p {
+    font-size: 0.95rem;
+    color: #49454F;
+    margin: 0;
+  }
+
+  .platform-badge {
+    display: inline-block;
+    background: #E3F2FD;
+    color: #1565C0;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .how-it-works {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+  }
+
+  .how-it-works h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1C1B1F;
+    margin-bottom: 1.5rem;
+  }
+
+  .step {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .step-number {
+    flex: 0 0 auto;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #1565C0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .step-content h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1C1B1F;
+    margin: 0 0 0.25rem;
+  }
+
+  .step-content p {
+    font-size: 0.95rem;
+    color: #49454F;
+    margin: 0;
+  }
+
+  .platforms {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+
+  .platform-tag {
+    background: #F5F5F5;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #49454F;
+    font-weight: 500;
+  }
+
+  .privacy-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: left;
+    background: #F5F5F5;
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  .privacy-section h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1C1B1F;
+    margin-bottom: 1rem;
+  }
+
+  .privacy-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .privacy-section li {
+    font-size: 0.95rem;
+    color: #49454F;
+    padding: 0.4rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+  }
+
+  .privacy-section li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: #4CAF50;
+    font-weight: 700;
+  }
+
+  .footer-note {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #E7E0EC;
+    font-size: 0.9rem;
+    color: #79747E;
+  }
+</style>
+
+<div class="app-landing">
+  <div class="app-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z"/>
+    </svg>
+  </div>
+
+  <h1 class="app-title">Catapult</h1>
+  <p class="app-tagline">Marketing automation for indie app developers</p>
+
+  <span class="platform-badge">macOS Desktop App</span>
+
+  <p class="app-description">
+    Find where your app's audience is talking, generate authentic community-aware copy,
+    and post it directly — all from one screen. Built for solo developers who'd rather
+    ship features than spend hours on marketing.
+  </p>
+
+  <div class="features">
+    <div class="feature">
+      <h3>Trend Discovery</h3>
+      <p>Scan Reddit, X, and Hacker News for conversations relevant to your app. Surface threads where your app is a genuine answer to someone's question.</p>
+    </div>
+
+    <div class="feature">
+      <h3>AI-Powered Copy</h3>
+      <p>Generate community-aware responses that match each platform's tone. Powered by your local AI CLI — no API keys to manage, no vendor lock-in.</p>
+    </div>
+
+    <div class="feature">
+      <h3>One-Click Posting</h3>
+      <p>Post directly to Reddit and X from Catapult. Authenticate once, then engage with your audience without switching between browser tabs.</p>
+    </div>
+
+    <div class="feature">
+      <h3>Multi-App Management</h3>
+      <p>Register all your iOS and Android apps in one place. Track marketing efforts across your entire portfolio from a single dashboard.</p>
+    </div>
+  </div>
+
+  <div class="how-it-works">
+    <h2>How It Works</h2>
+
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-content">
+        <h3>Register Your Apps</h3>
+        <p>Add your iOS and Android apps with their store URLs. Catapult builds a profile of what your app does and who it's for.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-content">
+        <h3>Connect Your Accounts</h3>
+        <p>Authenticate with Reddit and X using OAuth. Your credentials stay on your machine — Catapult never sees your passwords.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-content">
+        <h3>Discover Opportunities</h3>
+        <p>Catapult scans social platforms for threads where your app is relevant. No spam — only conversations where you can genuinely help.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">4</div>
+      <div class="step-content">
+        <h3>Generate and Post</h3>
+        <p>AI generates a response that fits the community's tone. Review it, edit if you want, and post with one click.</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="color: #1C1B1F; margin-bottom: 1rem;">Supported Platforms</h3>
+  <div class="platforms">
+    <span class="platform-tag">Reddit</span>
+    <span class="platform-tag">X / Twitter</span>
+    <span class="platform-tag">Hacker News</span>
+    <span class="platform-tag">Product Hunt</span>
+  </div>
+
+  <div class="privacy-section">
+    <h2>Privacy First</h2>
+    <ul>
+      <li>All data stored locally on your Mac — nothing leaves your machine</li>
+      <li>OAuth tokens stored in macOS Keychain</li>
+      <li>AI processing via your local CLI — no cloud API calls</li>
+      <li>No analytics, no tracking, no telemetry</li>
+      <li>Open source</li>
+    </ul>
+  </div>
+
+  <div class="footer-note">
+    <p>Built by <a href="https://github.com/asterixorobelix">Nathan Stasin</a> — an indie developer, for indie developers.</p>
+    <p>Questions? <a href="mailto:nathan@asterixorobelix.com">Get in touch</a></p>
+  </div>
+</div>
