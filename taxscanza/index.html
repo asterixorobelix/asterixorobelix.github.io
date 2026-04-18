@@ -200,10 +200,10 @@ title: TaxScanZA
 
   /* Screenshots rail */
   .rail-wrap{margin-top:40px}
-  .rail{display:flex;gap:16px;overflow-x:auto;padding:8px 20px 40px;scroll-snap-type:x mandatory;scrollbar-width:thin;padding-left:max(20px,calc((100vw - 1280px)/2 + 20px))}
+  .rail{display:flex;gap:16px;overflow-x:auto;padding:8px 0 40px;scroll-snap-type:x mandatory;scrollbar-width:thin}
   .rail::-webkit-scrollbar{height:6px}
   .rail::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
-  @media(min-width:900px){.rail{padding:8px 40px 40px;gap:24px;padding-left:max(40px,calc((100vw - 1280px)/2 + 40px))}}
+  @media(min-width:900px){.rail{gap:24px}}
   .shot{flex:0 0 260px;scroll-snap-align:start}
   @media(min-width:900px){.shot{flex:0 0 300px}}
   .shot .frame{
@@ -479,9 +479,6 @@ title: TaxScanZA
       </div>
       <p class="aside">Point, scan, done. Then check the receipts &mdash; every SARS requirement confirmed or flagged.</p>
     </div>
-  </div>
-
-  <div class="rail-wrap">
     <div class="rail">
       <figure class="shot"><div class="frame"><img src="assets/screenshot-1.png" alt="12MB document reduced to 3.2MB with SARS compliant badge"></div>
         <figcaption class="caption"><span class="n">01</span> <span>Instant size reduction, SARS compliance confirmed.</span></figcaption>
