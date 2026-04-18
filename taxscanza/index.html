@@ -1,544 +1,573 @@
 ---
-layout: standalone
-title: TaxScanZA -- SARS Document Scanner for iPhone and Android
-hide_site_title: true
-meta_description: "Scan tax documents and get SARS-compliant files ready for eFiling. Under 5MB, 300 DPI, correct format. R49 once, no subscription."
-meta_keywords: "SARS, document scanner, eFiling, tax documents, South Africa, IRP5, 5MB, 300 DPI"
-canonical_url: "https://asterixorobelix.github.io/taxscanza/"
-og_title: "TaxScanZA -- SARS Document Scanner"
-og_description: "Scan tax documents. Get SARS-compliant files. Done."
-og_locale: "en_ZA"
-json_ld:
-  "@context": "https://schema.org"
-  "@type": "SoftwareApplication"
-  name: "TaxScanZA"
-  operatingSystem: "iOS, Android"
-  applicationCategory: "UtilitiesApplication"
-  offers:
-    "@type": "Offer"
-    price: "0"
-    priceCurrency: "ZAR"
-  description: "SARS document scanner for South African taxpayers"
-head_extra: |
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+layout: null
+title: TaxScanZA
 ---
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>TaxScanZA — SARS-ready documents in 30 seconds</title>
+<meta name="description" content="Scan any tax document and get a file that meets every SARS eFiling requirement. Under 5MB, 300 DPI, SARS compliant. iOS and Android." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  /* Override standalone layout defaults for this page */
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    color: #1A1C1E;
-    background-color: #F6F7F8;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  :root{
+    --bg:#0E1013;
+    --ink:#F7F5F0;
+    --paper:#F5F1E8;
+    --paper-2:#EBE6D8;
+    --ink-paper:#111214;
+    --muted:#8A8B8E;
+    --muted-paper:#6B6A64;
+    --line:rgba(247,245,240,.12);
+    --line-paper:rgba(17,18,20,.12);
+    --green:#5BD37A;
+    --green-ink:#0C3A18;
+    --red:#FF5A4E;
+    --gold:#E8C36B;
+    --blue:#B8C6E8;
   }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font-family:'Geist',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+  body{font-size:16px;line-height:1.45}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  button{font-family:inherit}
+  .mono{font-family:'Geist Mono',ui-monospace,monospace;font-feature-settings:"ss01"}
+  .serif{font-family:'Instrument Serif',serif;font-weight:400;letter-spacing:-.01em}
 
-  /* Use wider container for landing page */
-  .container, main.container {
-    max-width: 1080px;
-    padding: 0 16px;
-  }
-  main.container {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
+  /* Layout */
+  .wrap{width:100%;max-width:1280px;margin:0 auto;padding:0 20px}
+  @media(min-width:900px){.wrap{padding:0 40px}}
 
-  /* Typography */
-  h1 {
-    font-size: 2.25rem;
-    font-weight: 700;
-    line-height: 1.2;
-    color: #172640;
-  }
-  h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #172640;
-    margin-bottom: 24px;
-    text-align: center;
-  }
-  h3 {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: #1A1C1E;
-    margin-bottom: 8px;
-  }
-  p { color: #44474A; }
+  /* Nav */
+  nav.top{position:sticky;top:0;z-index:40;background:rgba(14,16,19,.72);backdrop-filter:saturate(140%) blur(14px);-webkit-backdrop-filter:saturate(140%) blur(14px);border-bottom:1px solid var(--line)}
+  .nav-row{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em;font-size:17px}
+  .brand .mark{width:26px;height:26px;border-radius:7px;background:linear-gradient(160deg,#5BD37A,#2E9E4A);display:grid;place-items:center;color:#06220D;font-weight:800;font-size:12px;font-family:'Geist Mono',monospace}
+  .nav-links{display:none;gap:28px;font-size:14px;color:#C8C9CC}
+  .nav-links a:hover{color:var(--ink)}
+  .nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:var(--bg);padding:8px 14px;border-radius:999px;font-weight:600;font-size:13px}
+  @media(min-width:760px){.nav-links{display:flex}}
 
-  /* Navigation */
-  .nav {
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #E5E7EB;
-    padding: 16px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-  }
-  .nav-inner {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 0 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .logo {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #172640;
-  }
-  .nav-badges {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-  }
-  .nav-badges .badge-link img { height: 32px; }
-  .badge-link {
-    display: inline-flex;
-    align-items: center;
-    text-decoration: none;
-  }
+  /* Eyebrow / chip */
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;padding:6px 12px 6px 8px;border:1px solid var(--line);border-radius:999px;font-size:12px;color:#C8C9CC;font-family:'Geist Mono',monospace;letter-spacing:.02em}
+  .eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(91,211,122,.18)}
 
-  /* Hero */
-  .hero {
-    background-color: #FFFFFF;
-    padding: 64px 0;
+  /* HERO */
+  .hero{position:relative;padding:28px 0 40px;overflow:hidden}
+  @media(min-width:900px){.hero{padding:56px 0 72px}}
+  .hero-grid{position:relative;z-index:2}
+  .hero h1{
+    font-family:'Geist',sans-serif;
+    font-weight:700;
+    letter-spacing:-.035em;
+    font-size:clamp(44px,10.5vw,132px);
+    line-height:.94;
+    margin:18px 0 0;
+    text-wrap:balance;
   }
-  .hero-inner {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 0 16px;
-    display: flex;
-    align-items: center;
-    gap: 48px;
+  .hero h1 em{font-style:normal;font-family:'Instrument Serif',serif;font-weight:400;letter-spacing:-.01em}
+  .hero h1 .strike{position:relative;display:inline-block;color:#9AA0A6}
+  .hero h1 .strike::after{content:"";position:absolute;left:-4%;right:-4%;top:58%;height:.09em;background:var(--red);transform:rotate(-3deg);border-radius:2px}
+  .hero h1 .ok{color:var(--green)}
+  .hero .sub{
+    max-width:560px;margin:22px 0 0;color:#C8C9CC;font-size:clamp(15px,2.4vw,19px);line-height:1.5
   }
-  .hero-text {
-    flex: 1;
-    max-width: 640px;
-  }
-  .hero-subtext {
-    font-size: 1.125rem;
-    color: #44474A;
-    margin-top: 16px;
-    line-height: 1.7;
-  }
-  .hero-badges {
-    display: flex;
-    gap: 16px;
-    margin-top: 24px;
-    align-items: center;
-  }
-  .hero-image { flex-shrink: 0; }
-  .hero-image img {
-    max-width: 300px;
-    height: auto;
-    border-radius: 12px;
-  }
+  .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;align-items:center}
+  .store{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;background:#fff;color:#0E1013;border-radius:14px;font-weight:600;font-size:14px;border:1px solid rgba(0,0,0,.06)}
+  .store.dark{background:var(--ink-paper);color:#fff;border:1px solid rgba(255,255,255,.1)}
+  .store .label{display:flex;flex-direction:column;line-height:1.05;text-align:left}
+  .store .label small{font-size:10px;opacity:.65;letter-spacing:.04em;text-transform:uppercase;font-weight:500}
+  .store svg{width:22px;height:22px;flex:none}
 
-  /* How It Works */
-  .how-it-works { padding: 64px 0; }
-  .steps-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-  }
-  .step {
-    background-color: #FFFFFF;
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
-    padding: 24px;
-    text-align: center;
-  }
-  .step-icon {
-    margin-bottom: 16px;
-    display: flex;
-    justify-content: center;
-  }
-  .step p { margin-top: 8px; }
+  .trust-row{display:flex;flex-wrap:wrap;gap:18px 26px;margin-top:28px;color:#8A8B8E;font-size:12px;font-family:'Geist Mono',monospace;letter-spacing:.04em;text-transform:uppercase}
+  .trust-row span{display:inline-flex;align-items:center;gap:8px}
+  .trust-row .tick{width:14px;height:14px;border-radius:50%;background:var(--green);display:inline-grid;place-items:center;color:#06220D}
+  .trust-row .tick svg{width:9px;height:9px}
 
-  /* Screenshots */
-  .screenshots {
-    padding: 64px 0;
-    background-color: #FFFFFF;
+  /* Document collage */
+  .collage{
+    position:relative;margin-top:36px;height:420px;
   }
-  .screenshots-scroll {
-    display: flex;
-    gap: 24px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 16px;
+  @media(min-width:900px){
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}
+    .collage{margin-top:0;height:560px}
   }
-  .screenshot-item {
-    flex: 0 0 auto;
-    width: 220px;
-    scroll-snap-align: start;
-    text-align: center;
+  .doc{
+    position:absolute;background:var(--paper);color:var(--ink-paper);border-radius:10px;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.55), 0 2px 0 rgba(255,255,255,.04) inset;
+    padding:14px;overflow:hidden;
+    border:1px solid rgba(0,0,0,.08);
+    transition:transform .4s cubic-bezier(.2,.8,.2,1);
   }
-  .screenshot-item img {
-    width: 100%;
-    max-height: 440px;
-    object-fit: contain;
-    border-radius: 12px;
-    border: 1px solid #E5E7EB;
-    background-color: #F6F7F8;
-  }
-  .screenshot-caption {
-    font-size: 0.875rem;
-    color: #44474A;
-    margin-top: 8px;
-    line-height: 1.4;
-  }
+  .doc:hover{transform:translate(var(--tx,0),var(--ty,0)) rotate(var(--rot,0deg)) scale(1.03)!important}
+  .doc .head{display:flex;align-items:center;justify-content:space-between;font-family:'Geist Mono',monospace;font-size:9px;letter-spacing:.08em;color:#6B6A64;text-transform:uppercase;border-bottom:1px dashed rgba(0,0,0,.18);padding-bottom:8px;margin-bottom:10px}
+  .doc .title{font-weight:700;font-size:13px;letter-spacing:-.01em;margin-bottom:2px;color:#111}
+  .doc .sub{font-size:10px;color:#6B6A64;margin-bottom:10px}
+  .doc .bar{height:6px;background:rgba(0,0,0,.08);border-radius:3px;margin:4px 0}
+  .doc .bar.short{width:55%}
+  .doc .bar.mid{width:78%}
+  .doc .row{display:flex;justify-content:space-between;font-size:10px;font-family:'Geist Mono',monospace;color:#333;padding:4px 0;border-bottom:1px dotted rgba(0,0,0,.15)}
+  .doc .stamp{position:absolute;bottom:10px;right:10px;font-family:'Geist Mono',monospace;font-size:8px;padding:4px 7px;border-radius:4px;letter-spacing:.08em;text-transform:uppercase}
+  .doc .stamp.pass{background:rgba(91,211,122,.2);color:#14502A;border:1px solid rgba(46,158,74,.4)}
+  .doc .stamp.fail{background:rgba(255,90,78,.15);color:#8A1A12;border:1px solid rgba(255,90,78,.5)}
 
-  /* Features */
-  .features { padding: 64px 0; }
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-  }
-  .feature-card {
-    background-color: #FFFFFF;
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
-    padding: 24px;
-  }
-  .feature-icon { margin-bottom: 16px; }
-  .feature-card p { margin-top: 8px; }
+  .doc-1{width:58%;left:4%;top:4%;transform:rotate(-8deg);--rot:-8deg;z-index:3;background:#FFFBF0}
+  .doc-2{width:54%;right:3%;top:14%;transform:rotate(6deg);--rot:6deg;z-index:2;background:#F2ECDC}
+  .doc-3{width:48%;left:12%;bottom:8%;transform:rotate(-3deg);--rot:-3deg;z-index:4;background:#fff}
+  .doc-4{width:42%;right:8%;bottom:2%;transform:rotate(9deg);--rot:9deg;z-index:1;background:#EBE6D8}
 
-  /* Pricing */
-  .pricing {
-    padding: 64px 0;
-    background-color: #FFFFFF;
+  /* Green badge floating on collage */
+  .badge{
+    position:absolute;z-index:5;right:-2%;bottom:32%;
+    width:120px;height:120px;border-radius:50%;
+    background:var(--green);color:var(--green-ink);
+    display:grid;place-items:center;text-align:center;
+    font-family:'Geist Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;
+    transform:rotate(-12deg);
+    box-shadow:0 20px 40px -10px rgba(46,158,74,.5);
+    animation:spin 22s linear infinite;
   }
-  .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-    max-width: 640px;
-    margin: 0 auto;
+  @keyframes spin{to{transform:rotate(348deg)}}
+  .badge-inner{display:grid;place-items:center;gap:2px;font-weight:700}
+  .badge-inner .big{font-family:'Instrument Serif',serif;font-size:28px;line-height:1;letter-spacing:-.02em;text-transform:none}
+  @media(min-width:900px){.badge{width:150px;height:150px;right:-4%;bottom:40%}.badge-inner .big{font-size:36px}}
+
+  /* KPI strip */
+  .kpi-strip{background:var(--paper);color:var(--ink-paper);border-top:1px solid var(--line-paper);border-bottom:1px solid var(--line-paper)}
+  .kpi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0}
+  @media(min-width:760px){.kpi-grid{grid-template-columns:repeat(4,1fr)}}
+  .kpi{padding:28px 20px;border-right:1px dashed var(--line-paper);border-bottom:1px dashed var(--line-paper)}
+  .kpi:nth-child(2n){border-right:none}
+  @media(min-width:760px){.kpi{border-bottom:none}.kpi:nth-child(2n){border-right:1px dashed var(--line-paper)}.kpi:last-child{border-right:none}}
+  .kpi .num{font-family:'Instrument Serif',serif;font-size:clamp(44px,6vw,68px);line-height:1;letter-spacing:-.02em}
+  .kpi .num sup{font-size:.45em;vertical-align:super;letter-spacing:0;font-family:'Geist Mono',monospace;font-weight:500;color:var(--muted-paper)}
+  .kpi .lbl{margin-top:8px;font-size:12px;font-family:'Geist Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-paper)}
+
+  /* Section shells */
+  section{padding:72px 0}
+  @media(min-width:900px){section{padding:120px 0}}
+  .section-head{display:flex;flex-direction:column;gap:14px;margin-bottom:40px}
+  @media(min-width:900px){.section-head{flex-direction:row;justify-content:space-between;align-items:flex-end;margin-bottom:64px}}
+  .section-tag{font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .section-head h2{font-family:'Geist',sans-serif;font-weight:600;letter-spacing:-.03em;font-size:clamp(32px,5.5vw,60px);line-height:1;margin:0;max-width:14ch;text-wrap:balance}
+  .section-head h2 em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+  .section-head .aside{max-width:360px;color:var(--muted);font-size:15px}
+
+  /* Paper theme section */
+  .paper{background:var(--paper);color:var(--ink-paper)}
+  .paper .section-tag{color:var(--muted-paper)}
+  .paper .section-head .aside{color:var(--muted-paper)}
+
+  /* Features grid */
+  .features{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line-paper);border:1px solid var(--line-paper);border-radius:20px;overflow:hidden}
+  @media(min-width:720px){.features{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1080px){.features{grid-template-columns:repeat(3,1fr)}}
+  .feat{background:var(--paper);padding:28px 24px 32px;display:flex;flex-direction:column;gap:14px;min-height:260px;position:relative}
+  .feat .num{font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:.1em;color:var(--muted-paper)}
+  .feat h3{font-family:'Geist',sans-serif;font-weight:600;letter-spacing:-.02em;font-size:24px;line-height:1.1;margin:0}
+  .feat p{margin:0;color:var(--muted-paper);font-size:14.5px;line-height:1.55}
+  .feat .visual{margin-top:auto;height:80px;display:flex;align-items:flex-end}
+
+  /* Mini visuals in features */
+  .v-bar{display:flex;align-items:flex-end;gap:6px;height:100%;width:100%}
+  .v-bar span{display:block;flex:1;background:var(--ink-paper);border-radius:3px;opacity:.15}
+  .v-bar span.hi{background:var(--green);opacity:1}
+
+  .v-checklist{display:flex;flex-direction:column;gap:6px;width:100%}
+  .v-checklist .line{display:flex;align-items:center;gap:8px;font-family:'Geist Mono',monospace;font-size:11px;color:var(--muted-paper)}
+  .v-checklist .box{width:13px;height:13px;border-radius:3px;background:var(--green);display:grid;place-items:center;color:#06220D;flex:none}
+  .v-checklist .box svg{width:9px;height:9px}
+  .v-checklist .box.x{background:var(--red);color:#3a0a08}
+
+  .v-dial{width:76px;height:76px;border-radius:50%;background:conic-gradient(var(--green) 0 78%,rgba(0,0,0,.08) 0);display:grid;place-items:center;position:relative}
+  .v-dial::before{content:"";position:absolute;inset:8px;background:var(--paper);border-radius:50%}
+  .v-dial span{position:relative;font-family:'Instrument Serif',serif;font-size:22px}
+
+  .v-lock{width:64px;height:80px;border:2px solid var(--ink-paper);border-radius:8px;position:relative;display:grid;place-items:center}
+  .v-lock::before{content:"";position:absolute;top:-18px;width:32px;height:32px;border:2px solid var(--ink-paper);border-bottom:none;border-radius:20px 20px 0 0}
+  .v-lock span{width:12px;height:12px;border-radius:50%;background:var(--red)}
+
+  .v-chips{display:flex;flex-wrap:wrap;gap:6px;width:100%}
+  .v-chips span{font-family:'Geist Mono',monospace;font-size:10px;padding:5px 8px;border:1px solid var(--line-paper);border-radius:999px;text-transform:uppercase;letter-spacing:.06em}
+
+  .v-offline{display:flex;align-items:center;gap:10px;font-family:'Geist Mono',monospace;font-size:11px;color:var(--muted-paper)}
+  .v-offline .wifi{width:32px;height:32px;border-radius:50%;background:var(--ink-paper);color:#fff;display:grid;place-items:center;position:relative}
+  .v-offline .wifi::after{content:"";position:absolute;inset:-4px;border:2px solid var(--red);border-radius:50%;opacity:.7;transform:rotate(-45deg) scaleX(.08)}
+
+  /* Screenshots rail */
+  .rail-wrap{margin-top:40px}
+  .rail{display:flex;gap:16px;overflow-x:auto;padding:8px 20px 40px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+  .rail::-webkit-scrollbar{height:6px}
+  .rail::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+  @media(min-width:900px){.rail{padding:8px 40px 40px;gap:24px}}
+  .shot{flex:0 0 260px;scroll-snap-align:start}
+  @media(min-width:900px){.shot{flex:0 0 300px}}
+  .shot .frame{
+    position:relative;aspect-ratio:1284/2778;border-radius:32px;overflow:hidden;
+    background:#000;border:10px solid #1A1C20;
+    box-shadow:0 30px 60px -20px rgba(0,0,0,.6);
   }
-  .pricing-card {
-    background-color: #F6F7F8;
-    border: 1px solid #E5E7EB;
-    border-radius: 12px;
-    padding: 24px;
-    text-align: center;
-  }
-  .pricing-card--pro {
-    border: 2px solid #172640;
-    background-color: #FFFFFF;
-  }
-  .price {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #172640;
-    margin: 16px 0;
-  }
-  .price-detail {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #44474A;
-  }
-  .pricing-card ul {
-    list-style: none;
-    text-align: left;
-    margin: 16px 0;
-  }
-  .pricing-card li {
-    padding: 8px 0;
-    color: #44474A;
-    border-bottom: 1px solid #E5E7EB;
-  }
-  .pricing-card li:last-child { border-bottom: none; }
-  .no-subscription {
-    font-weight: 600;
-    color: #1A1C1E;
-    margin-top: 16px;
-  }
+  @media(min-width:900px){.shot .frame{border-radius:40px;border-width:12px}}
+  .shot .frame img{width:100%;height:100%;object-fit:cover}
+  .shot .caption{margin-top:14px;display:flex;gap:10px;font-size:13px;color:#C8C9CC}
+  .shot .caption .n{font-family:'Geist Mono',monospace;color:var(--muted);flex:none}
+
+  /* CTA footer */
+  .cta-block{padding:72px 0;border-top:1px solid var(--line)}
+  @media(min-width:900px){.cta-block{padding:120px 0}}
+  .cta-block h2{font-family:'Geist',sans-serif;font-weight:700;letter-spacing:-.035em;font-size:clamp(40px,8vw,96px);line-height:.95;margin:0;text-wrap:balance}
+  .cta-block h2 em{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;color:var(--green)}
 
   /* Footer */
-  .footer {
-    background-color: #172640;
-    color: #FFFFFF;
-    padding: 48px 0;
-  }
-  .footer-inner {
-    max-width: 1080px;
-    margin: 0 auto;
-    padding: 0 16px;
-    text-align: center;
-  }
-  .footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    margin-bottom: 24px;
-  }
-  .footer-links a {
-    color: rgba(255,255,255,0.8);
-    text-decoration: none;
-    font-size: 0.875rem;
-  }
-  .footer-links a:hover { color: #FFFFFF; }
-  .footer-badges {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    margin-bottom: 24px;
-  }
-  .footer-badges .badge-link img { height: 36px; }
-  .copyright {
-    font-size: 0.75rem;
-    color: rgba(255,255,255,0.6);
-  }
+  footer{border-top:1px solid var(--line);padding:32px 0 120px;color:var(--muted);font-size:13px}
+  .foot-row{display:flex;flex-wrap:wrap;gap:16px 28px;justify-content:space-between;align-items:center}
+  .foot-links{display:flex;gap:20px;flex-wrap:wrap}
+  .foot-links a{color:#C8C9CC}
+  .foot-links a:hover{color:var(--ink)}
 
-  /* Responsive */
-  @media (max-width: 768px) {
-    h1 { font-size: 1.75rem; }
-    h2 { font-size: 1.375rem; }
-    .hero-inner {
-      flex-direction: column;
-      text-align: center;
-    }
-    .hero-badges { justify-content: center; }
-    .hero-image { order: -1; }
-    .hero-image img { max-width: 220px; }
-    .nav-badges { display: none; }
-    .screenshot-item { width: 180px; }
-    .screenshot-item img { max-height: 360px; }
-    .pricing-grid { grid-template-columns: 1fr; }
+  /* Sticky mobile CTA */
+  .sticky-cta{
+    position:fixed;left:12px;right:12px;bottom:12px;z-index:50;
+    background:rgba(14,16,19,.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    border:1px solid var(--line);border-radius:16px;padding:10px;
+    display:flex;gap:8px;align-items:center;
+    box-shadow:0 12px 30px -10px rgba(0,0,0,.6);
+  }
+  .sticky-cta .copy{flex:1;min-width:0}
+  .sticky-cta .copy b{display:block;font-size:14px}
+  .sticky-cta .copy small{font-size:11px;color:var(--muted);font-family:'Geist Mono',monospace;text-transform:uppercase;letter-spacing:.06em}
+  .sticky-cta .btns{display:flex;gap:6px}
+  .sticky-cta .btns a{width:38px;height:38px;border-radius:10px;background:var(--ink);color:var(--bg);display:grid;place-items:center}
+  .sticky-cta .btns a svg{width:18px;height:18px}
+  @media(min-width:760px){.sticky-cta{display:none}}
+
+  /* Section dividers */
+  .edge{position:relative}
+  .edge::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--line-paper)}
+
+  /* Hidden visually but accessible */
+  .sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+  /* Tiny accent note before headline */
+  .note-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .note-row .divider{width:24px;height:1px;background:var(--line)}
+
+  /* Rejected stamp floating */
+  .rejected{
+    position:absolute;left:6%;top:-6px;z-index:6;
+    font-family:'Geist Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--red);border:2px solid var(--red);padding:6px 10px;border-radius:4px;
+    transform:rotate(-8deg);opacity:.85;background:rgba(255,90,78,.06)
   }
 </style>
+</head>
+<body data-screen-label="Landing">
 
-<!-- Navigation -->
-<nav class="nav">
-  <div class="nav-inner">
-    <span class="logo">TaxScanZA</span>
-    <div class="nav-badges">
-      <a href="https://apps.apple.com/us/app/taxscanza-sa-tax-scanner/id6760349919" class="badge-link" aria-label="Download on the App Store">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="40">
-      </a>
-      <a href="https://play.google.com/store/apps/details?id=za.co.taxscan" class="badge-link" aria-label="Get it on Google Play">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="40">
-      </a>
+<nav class="top">
+  <div class="wrap nav-row">
+    <a href="#" class="brand" aria-label="TaxScanZA">
+      <span class="mark">TS</span>
+      <span>TaxScanZA</span>
+    </a>
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#screens">Screenshots</a>
+      <a href="#pricing">Pricing</a>
     </div>
+    <a href="#download" class="nav-cta">Get the app
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
   </div>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-text">
-      <h1>SARS-ready documents in 30 seconds</h1>
-      <p class="hero-subtext">
-        SARS rejects your uploads? Wrong size, wrong format, no explanation.
-        TaxScanZA fixes that. Scan any tax document and get a file that meets
-        every SARS requirement.
-      </p>
-      <div class="hero-badges">
-        <a href="https://apps.apple.com/us/app/taxscanza-sa-tax-scanner/id6760349919" class="badge-link" aria-label="Download on the App Store">
-          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="48">
-        </a>
-        <a href="https://play.google.com/store/apps/details?id=za.co.taxscan" class="badge-link" aria-label="Get it on Google Play">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="48">
-        </a>
-      </div>
-    </div>
-    <div class="hero-image">
-      <img src="assets/screenshot-1.png" alt="Document scan showing file size reduction from 12MB to 3.2MB with SARS compliant badge" width="300">
-    </div>
-  </div>
-</section>
+<!-- HERO -->
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="note-row">
+          <span class="eyebrow"><span class="dot"></span> Live on App Store &amp; Google Play</span>
+          <span class="divider"></span>
+          <span>Built for SA taxpayers</span>
+        </div>
 
-<!-- How It Works -->
-<section class="how-it-works">
-  <div class="container">
-    <h2>How it works</h2>
-    <div class="steps-grid">
-      <div class="step">
-        <div class="step-icon" aria-hidden="true">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="48" height="48" rx="12" fill="#F0F4F8"/>
-            <path d="M24 16C20.69 16 18 18.69 18 22C18 25.31 20.69 28 24 28C27.31 28 30 25.31 30 22C30 18.69 27.31 16 24 16ZM24 26C21.79 26 20 24.21 20 22C20 19.79 21.79 18 24 18C26.21 18 28 19.79 28 22C28 24.21 26.21 26 24 26Z" fill="#172640"/>
-            <path d="M34 14H30.83L29 12H19L17.17 14H14C12.9 14 12 14.9 12 16V30C12 31.1 12.9 32 14 32H34C35.1 32 36 31.1 36 30V16C36 14.9 35.1 14 34 14ZM34 30H14V16H18.05L19.88 14H28.12L29.95 16H34V30Z" fill="#172640"/>
-          </svg>
-        </div>
-        <h3>1. Scan</h3>
-        <p>Point your camera at any tax document. IRP5, medical aid certificate, bank statement -- it handles them all.</p>
-      </div>
-      <div class="step">
-        <div class="step-icon" aria-hidden="true">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="48" height="48" rx="12" fill="#F0F4F8"/>
-            <path d="M30 18L22 26L18 22" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="24" cy="24" r="10" stroke="#059669" stroke-width="2"/>
-          </svg>
-        </div>
-        <h3>2. Optimise</h3>
-        <p>Automatically compressed to under 5MB at 300 DPI. The exact specs SARS requires for eFiling uploads.</p>
-      </div>
-      <div class="step">
-        <div class="step-icon" aria-hidden="true">
-          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="48" height="48" rx="12" fill="#F0F4F8"/>
-            <path d="M28 14H18C16.9 14 16 14.9 16 16V32C16 33.1 16.9 34 18 34H30C31.1 34 32 33.1 32 32V18L28 14ZM30 32H18V16H27V19H30V32Z" fill="#172640"/>
-            <path d="M20 26H28V28H20V26ZM20 22H28V24H20V22Z" fill="#172640"/>
-          </svg>
-        </div>
-        <h3>3. Export</h3>
-        <p>Share via email or save to Files. The document is SARS compliant and ready for eFiling.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <h1>
+          SARS said<br>
+          <span class="strike">no.</span>
+          <em>Now it says</em>
+          <span class="ok">yes.</span>
+        </h1>
 
-<!-- App Screenshots Gallery -->
-<section class="screenshots">
-  <div class="container">
-    <h2>See it in action</h2>
-    <div class="screenshots-scroll">
-      <div class="screenshot-item">
-        <img src="assets/screenshot-1.png" alt="Document scan showing file size reduction from 12MB to 3.2MB with SARS compliant badge" loading="lazy">
-        <p class="screenshot-caption">Instant size reduction with SARS compliance confirmation</p>
-      </div>
-      <div class="screenshot-item">
-        <img src="assets/screenshot-2.png" alt="Compliance checklist showing pass and fail status for each SARS requirement" loading="lazy">
-        <p class="screenshot-caption">Every SARS requirement checked automatically</p>
-      </div>
-      <div class="screenshot-item">
-        <img src="assets/screenshot-3.png" alt="Scanner camera view capturing a tax document" loading="lazy">
-        <p class="screenshot-caption">Point, scan, done</p>
-      </div>
-      <div class="screenshot-item">
-        <img src="assets/screenshot-4.png" alt="Document list organised by tax document categories" loading="lazy">
-        <p class="screenshot-caption">All your tax documents, organised by category</p>
-      </div>
-      <div class="screenshot-item">
-        <img src="assets/screenshot-5.png" alt="Export and share sheet for sending SARS-compliant documents" loading="lazy">
-        <p class="screenshot-caption">Export directly to email or Files</p>
-      </div>
-      <div class="screenshot-item">
-        <img src="assets/screenshot-6.png" alt="Pro upgrade screen showing R49 one-time purchase for unlimited documents and export" loading="lazy">
-        <p class="screenshot-caption">R49 once. No subscription.</p>
-      </div>
-    </div>
-  </div>
-</section>
+        <p class="sub">
+          Wrong size. Wrong format. No explanation. TaxScanZA scans any tax document and spits out a file that meets every single SARS eFiling requirement &mdash; in about 30 seconds.
+        </p>
 
-<!-- Features Grid -->
-<section class="features">
-  <div class="container">
-    <h2>Built for SARS eFiling</h2>
-    <div class="features-grid">
-      <div class="feature-card">
-        <div class="feature-icon" aria-hidden="true">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 4L4 8V16C4 22.63 9.12 28.81 16 30C22.88 28.81 28 22.63 28 16V8L16 4ZM14 22L8 16L9.41 14.59L14 19.17L22.59 10.58L24 12L14 22Z" fill="#059669"/>
-          </svg>
+        <div class="cta-row" id="download">
+          <a href="https://apps.apple.com/us/app/taxscanza-sa-tax-scanner/id6760349919" class="store dark" aria-label="Download on the App Store">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+            <span class="label"><small>Download on the</small>App Store</span>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=za.co.taxscan" class="store" aria-label="Get it on Google Play">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00D7FE" d="M3.6 2.3c-.4.3-.6.8-.6 1.5v16.4c0 .7.2 1.2.6 1.5l9.3-9.6-9.3-9.8z"/><path fill="#FFCE00" d="M16.8 15.1l-3.1-3.2L3.6 21.7c.4.3 1 .3 1.8-.1l11.4-6.5z"/><path fill="#00F076" d="M16.8 8.7L5.4 2.2c-.7-.4-1.4-.4-1.8-.1l10 10.4 3.2-3.8z"/><path fill="#F63448" d="M16.8 8.7l-3.2 3.2 3.2 3.2 4.2-2.4c1.2-.7 1.2-1.9 0-2.6l-4.2-2.4z"/></svg>
+            <span class="label"><small>Get it on</small>Google Play</span>
+          </a>
         </div>
-        <h3>Under 5MB guaranteed</h3>
-        <p>Every scan is compressed to meet the SARS file size limit. No manual resizing.</p>
+
+        <div class="trust-row">
+          <span><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span> Under 5&nbsp;MB</span>
+          <span><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span> 300 DPI</span>
+          <span><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span> Works offline</span>
+          <span><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span> R49 once</span>
+        </div>
       </div>
-      <div class="feature-card">
-        <div class="feature-icon" aria-hidden="true">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M26 4H6C4.9 4 4 4.9 4 6V26C4 27.1 4.9 28 6 28H26C27.1 28 28 27.1 28 26V6C28 4.9 27.1 4 26 4ZM26 26H6V6H26V26ZM8 14H24V16H8V14ZM8 18H20V20H8V18ZM8 10H24V12H8V10Z" fill="#172640"/>
-          </svg>
+
+      <!-- Document collage -->
+      <div class="collage" aria-hidden="true">
+        <div class="rejected">Rejected by eFiling</div>
+
+        <div class="doc doc-1">
+          <div class="head"><span>IRP5 / IT3(a)</span><span>2025</span></div>
+          <div class="title">Employer Tax Certificate</div>
+          <div class="sub">Income, PAYE, UIF, SDL</div>
+          <div class="row"><span>Gross income</span><span>R 542,180.00</span></div>
+          <div class="row"><span>PAYE</span><span>R 108,430.00</span></div>
+          <div class="row"><span>UIF</span><span>R 2,112.00</span></div>
+          <div class="bar mid"></div>
+          <div class="bar short"></div>
+          <div class="stamp fail">12.4 MB &middot; 600 DPI</div>
         </div>
-        <h3>300 DPI resolution</h3>
-        <p>High-resolution output that SARS accepts without question. Text stays readable.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon" aria-hidden="true">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M22 10L14 18L10 14" stroke="#059669" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <rect x="4" y="4" width="24" height="24" rx="4" stroke="#059669" stroke-width="2"/>
-          </svg>
+
+        <div class="doc doc-2">
+          <div class="head"><span>Medical Aid</span><span>IT3(f)</span></div>
+          <div class="title">Scheme Tax Certificate</div>
+          <div class="sub">Contributions &amp; credits</div>
+          <div class="bar mid"></div>
+          <div class="bar short"></div>
+          <div class="bar mid"></div>
+          <div class="row"><span>Main member</span><span>12 mo</span></div>
+          <div class="row"><span>Dependants</span><span>2</span></div>
+          <div class="stamp pass">3.2 MB &middot; 300 DPI</div>
         </div>
-        <h3>SARS compliance check</h3>
-        <p>Validates file size, resolution, format, and filename before you upload to eFiling.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon" aria-hidden="true">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M24 4H8C6.9 4 4 4.9 6 6V26C6 27.1 6.9 28 8 28H24C25.1 28 26 27.1 26 26V6C26 4.9 25.1 4 24 4ZM24 26H8V6H24V26Z" fill="#172640"/>
-            <path d="M14 12H18V14H14V12ZM11 16H21V18H11V16ZM11 20H21V22H11V20Z" fill="#172640"/>
-            <path d="M12 8L20 8" stroke="#E74C3C" stroke-width="2" stroke-linecap="round"/>
-          </svg>
+
+        <div class="doc doc-3">
+          <div class="head"><span>Bank Statement</span><span>Q4</span></div>
+          <div class="title">Savings Account &bull; ****4921</div>
+          <div class="row"><span>01 Oct</span><span>+ R 18,400</span></div>
+          <div class="row"><span>04 Oct</span><span>- R 2,310</span></div>
+          <div class="row"><span>15 Oct</span><span>- R 890</span></div>
+          <div class="row"><span>28 Oct</span><span>+ R 42,100</span></div>
+          <div class="stamp pass">Compliant</div>
         </div>
-        <h3>Encrypted PDF detection</h3>
-        <p>Detects password-protected PDFs that SARS cannot process. Flags them before you waste time uploading.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon" aria-hidden="true">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M4 8H14V18H4V8ZM18 4H28V12H18V4ZM18 16H28V28H18V16ZM4 22H14V28H4V22Z" fill="#172640"/>
-          </svg>
+
+        <div class="doc doc-4">
+          <div class="head"><span>S18A Donation</span><span>PBO</span></div>
+          <div class="title">Receipt &mdash; NGO</div>
+          <div class="bar short"></div>
+          <div class="bar mid"></div>
+          <div class="row"><span>Amount</span><span>R 5,000</span></div>
+          <div class="stamp pass">SARS-ready</div>
         </div>
-        <h3>7 document categories</h3>
-        <p>IRP5, medical aid, retirement, insurance, donations, home office, and other. Organised for tax season.</p>
-      </div>
-      <div class="feature-card">
-        <div class="feature-icon" aria-hidden="true">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16 6C10.48 6 6 10.48 6 16C6 21.52 10.48 26 16 26C21.52 26 26 21.52 26 16C26 10.48 21.52 6 16 6ZM16 24C11.58 24 8 20.42 8 16C8 11.58 11.58 8 16 8C20.42 8 24 11.58 24 16C24 20.42 20.42 24 16 24Z" fill="#172640"/>
-            <path d="M16 12V16L20 18" stroke="#172640" stroke-width="2" stroke-linecap="round"/>
-          </svg>
+
+        <div class="badge">
+          <div class="badge-inner">
+            <div class="big">✓</div>
+            <div>SARS Ready</div>
+            <div style="opacity:.7">30 sec</div>
+          </div>
         </div>
-        <h3>Works offline</h3>
-        <p>No internet required. Scan, optimise, and store documents anywhere. Export when you are ready.</p>
       </div>
     </div>
   </div>
-</section>
+</header>
 
-<!-- Pricing Section -->
-<section class="pricing">
-  <div class="container">
-    <h2>Simple pricing</h2>
-    <div class="pricing-grid">
-      <div class="pricing-card">
-        <h3>Free</h3>
-        <p class="price">R0</p>
-        <ul>
-          <li>Scan and store up to 5 documents</li>
-          <li>Full SARS compliance checking</li>
-          <li>All 7 document categories</li>
-        </ul>
+<!-- KPI strip -->
+<div class="kpi-strip">
+  <div class="wrap">
+    <div class="kpi-grid">
+      <div class="kpi"><div class="num">30<sup>sec</sup></div><div class="lbl">Scan to ready</div></div>
+      <div class="kpi"><div class="num">&lt;5<sup>MB</sup></div><div class="lbl">Size cap, guaranteed</div></div>
+      <div class="kpi"><div class="num">7</div><div class="lbl">Document categories</div></div>
+      <div class="kpi"><div class="num">R49</div><div class="lbl">One-time, no sub</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section id="features" class="paper edge">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-tag">// Built for SARS eFiling</div>
+        <h2>Every spec SARS <em>actually</em> requires.</h2>
       </div>
-      <div class="pricing-card pricing-card--pro">
-        <h3>Pro</h3>
-        <p class="price">R49 <span class="price-detail">once</span></p>
-        <ul>
-          <li>Unlimited documents</li>
-          <li>Export and share</li>
-          <li>Everything in Free</li>
-        </ul>
-        <p class="no-subscription">No subscription.</p>
+      <p class="aside">No manual resizing. No mystery rejections. TaxScanZA checks file size, resolution, format and filename before you ever tap upload.</p>
+    </div>
+
+    <div class="features">
+      <div class="feat">
+        <div class="num">01 &mdash; SIZE</div>
+        <h3>Under 5&nbsp;MB, guaranteed.</h3>
+        <p>Every scan is compressed to meet the SARS file size limit. No manual resizing, no guessing, no retries.</p>
+        <div class="visual"><div class="v-bar">
+          <span style="height:90%"></span><span style="height:70%"></span><span style="height:85%"></span>
+          <span class="hi" style="height:40%"></span><span class="hi" style="height:35%"></span><span class="hi" style="height:25%"></span>
+        </div></div>
+      </div>
+
+      <div class="feat">
+        <div class="num">02 &mdash; RESOLUTION</div>
+        <h3>300 DPI. Text stays readable.</h3>
+        <p>High-resolution output that SARS accepts without question. Not compressed to mush.</p>
+        <div class="visual"><div class="v-dial"><span>300</span></div></div>
+      </div>
+
+      <div class="feat">
+        <div class="num">03 &mdash; COMPLIANCE</div>
+        <h3>The whole checklist, ticked.</h3>
+        <p>Size, resolution, format, filename &mdash; validated before you upload to eFiling.</p>
+        <div class="visual"><div class="v-checklist">
+          <div class="line"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span> Size &lt; 5MB</div>
+          <div class="line"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span> 300 DPI</div>
+          <div class="line"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span> PDF format</div>
+          <div class="line"><span class="box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></span> Filename OK</div>
+        </div></div>
+      </div>
+
+      <div class="feat">
+        <div class="num">04 &mdash; SECURITY</div>
+        <h3>Encrypted PDFs, flagged.</h3>
+        <p>Password-protected PDFs break eFiling uploads silently. TaxScanZA catches them before you waste an hour.</p>
+        <div class="visual"><div class="v-lock"><span></span></div></div>
+      </div>
+
+      <div class="feat">
+        <div class="num">05 &mdash; ORGANISED</div>
+        <h3>Seven tax-season folders.</h3>
+        <p>IRP5, medical aid, retirement, insurance, donations, home office, other. Sorted the way SARS asks.</p>
+        <div class="visual"><div class="v-chips">
+          <span>IRP5</span><span>Medical</span><span>Retirement</span><span>Insurance</span><span>S18A</span><span>Home Office</span><span>Other</span>
+        </div></div>
+      </div>
+
+      <div class="feat">
+        <div class="num">06 &mdash; OFFLINE</div>
+        <h3>No signal? No problem.</h3>
+        <p>Scan, optimise and store anywhere. Export when you&rsquo;re back online. Your documents never touch a server.</p>
+        <div class="visual"><div class="v-offline">
+          <span class="wifi">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/></svg>
+          </span>
+          <div>No internet<br>required &mdash; ever.</div>
+        </div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-links">
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="support.html">Support</a>
+<!-- SCREENSHOTS -->
+<section id="screens" style="padding-bottom:40px">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-tag">// The app</div>
+        <h2>See it <em>actually</em> working.</h2>
+      </div>
+      <p class="aside">Point, scan, done. Then check the receipts &mdash; every SARS requirement confirmed or flagged.</p>
     </div>
-    <div class="footer-badges">
-      <a href="https://apps.apple.com/us/app/taxscanza-sa-tax-scanner/id6760349919" class="badge-link" aria-label="Download on the App Store">
-        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" height="40">
+  </div>
+
+  <div class="rail-wrap">
+    <div class="rail">
+      <figure class="shot"><div class="frame"><img src="assets/screenshot-1.png" alt="12MB document reduced to 3.2MB with SARS compliant badge"></div>
+        <figcaption class="caption"><span class="n">01</span> <span>Instant size reduction, SARS compliance confirmed.</span></figcaption>
+      </figure>
+      <figure class="shot"><div class="frame"><img src="assets/screenshot-2.png" alt="Compliance checklist with pass / fail per SARS requirement"></div>
+        <figcaption class="caption"><span class="n">02</span> <span>Every SARS requirement, automatically checked.</span></figcaption>
+      </figure>
+      <figure class="shot"><div class="frame"><img src="assets/screenshot-3.png" alt="Scanner camera view capturing a tax document"></div>
+        <figcaption class="caption"><span class="n">03</span> <span>Point the camera. That&rsquo;s the whole workflow.</span></figcaption>
+      </figure>
+      <figure class="shot"><div class="frame"><img src="assets/screenshot-4.png" alt="Document list organised by tax category"></div>
+        <figcaption class="caption"><span class="n">04</span> <span>All your tax documents, organised by category.</span></figcaption>
+      </figure>
+      <figure class="shot"><div class="frame"><img src="assets/screenshot-5.png" alt="Export sheet for SARS-compliant documents"></div>
+        <figcaption class="caption"><span class="n">05</span> <span>Export straight to email, Files or AirDrop.</span></figcaption>
+      </figure>
+      <figure class="shot"><div class="frame"><img src="assets/screenshot-6.png" alt="Pro upgrade screen &mdash; R49 one-time purchase"></div>
+        <figcaption class="caption"><span class="n">06</span> <span>R49 once. No subscription. Ever.</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-block" id="get">
+  <div class="wrap">
+    <h2>Stop fighting eFiling.<br><em>Start filing.</em></h2>
+    <div class="cta-row" style="margin-top:36px">
+      <a href="https://apps.apple.com/us/app/taxscanza-sa-tax-scanner/id6760349919" class="store dark">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+        <span class="label"><small>Download on the</small>App Store</span>
       </a>
-      <a href="https://play.google.com/store/apps/details?id=za.co.taxscan" class="badge-link" aria-label="Get it on Google Play">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Get it on Google Play" height="40">
+      <a href="https://play.google.com/store/apps/details?id=za.co.taxscan" class="store">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00D7FE" d="M3.6 2.3c-.4.3-.6.8-.6 1.5v16.4c0 .7.2 1.2.6 1.5l9.3-9.6-9.3-9.8z"/><path fill="#FFCE00" d="M16.8 15.1l-3.1-3.2L3.6 21.7c.4.3 1 .3 1.8-.1l11.4-6.5z"/><path fill="#00F076" d="M16.8 8.7L5.4 2.2c-.7-.4-1.4-.4-1.8-.1l10 10.4 3.2-3.8z"/><path fill="#F63448" d="M16.8 8.7l-3.2 3.2 3.2 3.2 4.2-2.4c1.2-.7 1.2-1.9 0-2.6l-4.2-2.4z"/></svg>
+        <span class="label"><small>Get it on</small>Google Play</span>
       </a>
     </div>
-    <p class="copyright">Copyright 2026 TaxScanZA. All rights reserved.</p>
+    <p class="mono" style="margin-top:28px;color:var(--muted);font-size:12px;letter-spacing:.06em;text-transform:uppercase">Free to try &middot; R49 one-time unlock for unlimited scans &amp; export &middot; no subscription</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-row">
+    <div class="brand" style="color:var(--ink)">
+      <span class="mark">TS</span>
+      <span>TaxScanZA</span>
+    </div>
+    <div class="foot-links">
+      <a href="https://asterixorobelix.github.io/taxscanza/privacy.html">Privacy</a>
+      <a href="https://asterixorobelix.github.io/taxscanza/support.html">Support</a>
+      <a href="#features">Features</a>
+      <a href="#get">Download</a>
+    </div>
+    <div class="mono" style="font-size:11px;letter-spacing:.06em;text-transform:uppercase">© 2026 TaxScanZA</div>
   </div>
 </footer>
+
+<!-- Sticky mobile CTA -->
+<div class="sticky-cta" id="stickyCta" role="region" aria-label="Download the app">
+  <div class="copy">
+    <b>SARS-ready in 30 sec</b>
+    <small>Free · R49 one-time</small>
+  </div>
+  <div class="btns">
+    <a href="https://apps.apple.com/us/app/taxscanza-sa-tax-scanner/id6760349919" aria-label="App Store">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.08zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+    </a>
+    <a href="https://play.google.com/store/apps/details?id=za.co.taxscan" aria-label="Google Play">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00D7FE" d="M3.6 2.3c-.4.3-.6.8-.6 1.5v16.4c0 .7.2 1.2.6 1.5l9.3-9.6-9.3-9.8z"/><path fill="#FFCE00" d="M16.8 15.1l-3.1-3.2L3.6 21.7c.4.3 1 .3 1.8-.1l11.4-6.5z"/><path fill="#00F076" d="M16.8 8.7L5.4 2.2c-.7-.4-1.4-.4-1.8-.1l10 10.4 3.2-3.8z"/><path fill="#F63448" d="M16.8 8.7l-3.2 3.2 3.2 3.2 4.2-2.4c1.2-.7 1.2-1.9 0-2.6l-4.2-2.4z"/></svg>
+    </a>
+  </div>
+</div>
+
+<script>
+  // Hide sticky CTA once the final CTA block is on screen
+  const sticky = document.getElementById('stickyCta');
+  const finalCta = document.getElementById('get');
+  if ('IntersectionObserver' in window && finalCta) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => sticky.style.opacity = e.isIntersecting ? '0' : '1');
+    }, { threshold: .2 });
+    io.observe(finalCta);
+    sticky.style.transition = 'opacity .3s ease';
+  }
+</script>
+
+</body>
+</html>
