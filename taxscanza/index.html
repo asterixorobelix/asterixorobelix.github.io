@@ -200,10 +200,10 @@ title: TaxScanZA
 
   /* Screenshots rail */
   .rail-wrap{margin-top:40px}
-  .rail{display:flex;gap:16px;overflow-x:auto;padding:8px 20px 40px;scroll-snap-type:x mandatory;scrollbar-width:thin}
+  .rail{display:flex;gap:16px;overflow-x:auto;padding:8px 20px 40px;scroll-snap-type:x mandatory;scrollbar-width:thin;padding-left:max(20px,calc((100vw - 1280px)/2 + 20px))}
   .rail::-webkit-scrollbar{height:6px}
   .rail::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
-  @media(min-width:900px){.rail{padding:8px 40px 40px;gap:24px}}
+  @media(min-width:900px){.rail{padding:8px 40px 40px;gap:24px;padding-left:max(40px,calc((100vw - 1280px)/2 + 40px))}}
   .shot{flex:0 0 260px;scroll-snap-align:start}
   @media(min-width:900px){.shot{flex:0 0 300px}}
   .shot .frame{
