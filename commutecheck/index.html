@@ -1,255 +1,666 @@
 ---
-layout: standalone
+layout: null
 title: Commute Check
-hide_site_title: true
 meta_description: "Real-time crowdsourced train updates for Cape Town's Metrorail Southern Line. Live delays, cancellations, schedules and service reports from fellow commuters."
-meta_keywords: "Cape Town train, Metrorail Southern Line, train delays, commuter updates, train schedule, Metrorail app, Cape Town commute, train tracker South Africa"
-canonical_url: "https://asterixorobelix.github.io/commutecheck/"
-og_title: "Commute Check - Real-Time Cape Town Train Updates"
-og_description: "Crowdsourced service updates for Cape Town's Metrorail Southern Line. Know before you go whether your train is on time, delayed, or cancelled."
-og_image: "https://asterixorobelix.github.io/commutecheck/images/og-image.png"
-og_locale: "en_ZA"
-json_ld:
-  "@context": "https://schema.org"
-  "@type": "SoftwareApplication"
-  name: "Commute Check"
-  description: "Real-time crowdsourced train updates for Cape Town's Metrorail Southern Line. Live delays, cancellations, schedules and service reports from fellow commuters."
-  applicationCategory: "TravelApplication"
-  operatingSystem: "iOS, Android"
-  offers:
-    "@type": "Offer"
-    price: "0"
-    priceCurrency: "ZAR"
-  aggregateRating:
-    "@type": "AggregateRating"
-    ratingValue: "5.0"
-    ratingCount: "1"
-  author:
-    "@type": "Person"
-    name: "Nathan Stasin"
-    url: "https://github.com/asterixorobelix"
-  url: "https://asterixorobelix.github.io/commutecheck/"
-  downloadUrl:
-    - "https://apps.apple.com/za/app/commute-check/id6758906848"
-    - "https://play.google.com/store/apps/details?id=asterixorobelix.commutecheck"
-  screenshot: "https://asterixorobelix.github.io/commutecheck/images/home.png"
 ---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Commute Check — Real-time Southern Line updates</title>
+<meta name="description" content="Real-time crowdsourced train updates for Cape Town's Metrorail Southern Line. Live delays, cancellations, schedules and service reports from fellow commuters.">
+<meta name="keywords" content="Cape Town train, Metrorail Southern Line, train delays, commuter updates, train schedule, Metrorail app, Cape Town commute, train tracker South Africa">
+<link rel="canonical" href="https://asterixorobelix.github.io/commutecheck/">
+<meta property="og:title" content="Commute Check - Real-Time Cape Town Train Updates">
+<meta property="og:description" content="Crowdsourced service updates for Cape Town's Metrorail Southern Line. Know before you go whether your train is on time, delayed, or cancelled.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://asterixorobelix.github.io/commutecheck/">
+<meta property="og:image" content="https://asterixorobelix.github.io/commutecheck/images/og-image.png">
+<meta property="og:locale" content="en_ZA">
+<meta property="og:site_name" content="Commute Check">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Commute Check - Real-Time Cape Town Train Updates">
+<meta name="twitter:description" content="Crowdsourced service updates for Cape Town's Metrorail Southern Line. Know before you go whether your train is on time, delayed, or cancelled.">
+<meta name="twitter:image" content="https://asterixorobelix.github.io/commutecheck/images/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Commute Check",
+  "description": "Real-time crowdsourced train updates for Cape Town's Metrorail Southern Line. Live delays, cancellations, schedules and service reports from fellow commuters.",
+  "applicationCategory": "TravelApplication",
+  "operatingSystem": "iOS, Android",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "ZAR" },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "1" },
+  "author": { "@type": "Person", "name": "Nathan Stasin", "url": "https://github.com/asterixorobelix" },
+  "url": "https://asterixorobelix.github.io/commutecheck/",
+  "downloadUrl": [
+    "https://apps.apple.com/za/app/commute-check/id6758906848",
+    "https://play.google.com/store/apps/details?id=asterixorobelix.commutecheck"
+  ],
+  "screenshot": "https://asterixorobelix.github.io/commutecheck/images/home.png"
+}
+</script>
+<link rel="icon" href="/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" crossorigin="anonymous"></script>
 
 <style>
-  .app-landing {
-    text-align: center;
-    padding: 2rem 1rem;
-  }
+:root{
+  --bg:#1A1714;
+  --bg-deep:#131110;
+  --on-bg:#E5E2D9;
+  --surface:#23201A;
+  --surface-2:#2C2920;
+  --surface-variant:#48463C;
+  --on-surface-variant:#CAC6B9;
+  --outline:#938F83;
+  --outline-variant:#48463C;
+  --primary:#7AD4BF;
+  --on-primary:#003829;
+  --primary-container:#005140;
+  --on-primary-container:#A0F2DC;
+  --secondary:#C5C8AD;
+  --secondary-container:#444739;
+  --on-secondary-container:#E1E4C8;
+  --tertiary:#FFBF5E;
+  --tertiary-container:#6A4700;
+  --on-tertiary-container:#FFDEA6;
+  --error:#FFB4AB;
+  --error-container:#93000A;
+  --on-error-container:#FFDAD6;
+  --on-time:#8DD4A6;
+  --on-time-container:#1A3D2A;
+  --delayed:#FFB74D;
+  --delayed-container:#4A3000;
+  --cancelled:#FFB4AB;
+  --cancelled-container:#690005;
+  --r-sm:4px; --r-md:12px; --r-lg:16px; --r-xl:24px;
+  --border:2px;
+}
 
-  .app-icon {
-    width: 120px;
-    height: 120px;
-    border-radius: 24px;
-    background: linear-gradient(135deg, #6750A4 0%, #7D5260 100%);
-    margin: 0 auto 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  }
+html[data-theme="light"]{
+  --bg:#F9F6F0;
+  --bg-deep:#F1EDE3;
+  --on-bg:#1C1B17;
+  --surface:#FFFFFF;
+  --surface-2:#FFFFFF;
+  --surface-variant:#E5E1D4;
+  --on-surface-variant:#48463C;
+  --outline:#7A776B;
+  --outline-variant:#CAC6B9;
+  --primary:#1A6B5A;
+  --on-primary:#FFFFFF;
+  --primary-container:#A0F2DC;
+  --on-primary-container:#002117;
+  --secondary:#5C5F4B;
+  --secondary-container:#E1E4C8;
+  --on-secondary-container:#1A1D0D;
+  --tertiary:#8B5E00;
+  --tertiary-container:#FFDEA6;
+  --on-tertiary-container:#2C1700;
+  --error:#BA1A1A;
+  --error-container:#FFDAD6;
+  --on-error-container:#410002;
+  --on-time:#2D6B45;
+  --on-time-container:#E8F5EC;
+  --delayed:#C47A1A;
+  --delayed-container:#FFF3E0;
+  --cancelled:#BA1A1A;
+  --cancelled-container:#FFEAE6;
+}
 
-  .app-icon svg {
-    width: 64px;
-    height: 64px;
-    fill: white;
-  }
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--on-bg);font-family:'Space Grotesk',ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-feature-settings:"ss01","tnum";}
+body{min-height:100vh;overflow-x:hidden}
+a{color:inherit}
+img{display:block;max-width:100%}
 
-  .app-title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-    color: #1C1B1F;
-  }
+.display-lg{font-size:clamp(48px,7vw,96px);line-height:1.02;font-weight:300;letter-spacing:-0.03em}
+.display-md{font-size:clamp(40px,5vw,64px);line-height:1.05;font-weight:300;letter-spacing:-0.02em}
+.headline-lg{font-size:32px;line-height:1.2;font-weight:700;letter-spacing:-0.01em}
+.headline-md{font-size:28px;line-height:1.25;font-weight:600}
+.headline-sm{font-size:24px;line-height:1.3;font-weight:600}
+.title-lg{font-size:22px;line-height:1.3;font-weight:500}
+.title-md{font-size:16px;line-height:1.4;font-weight:600}
+.body-lg{font-size:16px;line-height:1.5;font-weight:400}
+.body-md{font-size:14px;line-height:1.5;font-weight:400}
+.label-lg{font-size:14px;line-height:1.3;font-weight:600}
+.label-md{font-size:12px;line-height:1.3;font-weight:600;letter-spacing:0.08em;text-transform:uppercase}
+.label-sm{font-size:11px;line-height:1.3;font-weight:500;letter-spacing:0.1em;text-transform:uppercase}
 
-  .app-tagline {
-    font-size: 1.25rem;
-    color: #49454F;
-    margin-bottom: 2rem;
-  }
+.container{max-width:1240px;margin:0 auto;padding:0 24px}
+@media (min-width:900px){.container{padding:0 48px}}
 
-  .app-description {
-    max-width: 600px;
-    margin: 0 auto 2rem;
-    font-size: 1.1rem;
-    line-height: 1.6;
-    color: #49454F;
-  }
+.nav{position:sticky;top:0;z-index:50;backdrop-filter:blur(20px);background:color-mix(in srgb, var(--bg) 80%, transparent);border-bottom:1px solid var(--outline-variant)}
+.nav-row{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;letter-spacing:-0.01em}
+.brand-mark{width:32px;height:32px;border-radius:8px;background:var(--primary);color:var(--on-primary);display:grid;place-items:center;font-weight:700;font-size:16px}
+.nav-links{display:none;gap:28px;align-items:center}
+.nav-links a{color:var(--on-surface-variant);text-decoration:none;font-size:14px;font-weight:500;transition:color .2s}
+.nav-links a:hover{color:var(--on-bg)}
+@media (min-width:840px){.nav-links{display:flex}}
+.nav-actions{display:flex;align-items:center;gap:12px}
 
-  .features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
-    max-width: 800px;
-    margin: 2rem auto;
-    text-align: left;
-  }
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:0 20px;height:48px;border-radius:var(--r-md);font-family:inherit;font-weight:600;font-size:14px;letter-spacing:0.02em;border:var(--border) solid transparent;cursor:pointer;transition:transform .15s ease, background .15s ease, color .15s ease;text-decoration:none;white-space:nowrap}
+.btn-primary{background:var(--primary);color:var(--on-primary);border-color:var(--primary)}
+.btn-primary:hover{transform:translateY(-1px)}
+.btn-outline{background:transparent;color:var(--on-bg);border-color:var(--outline-variant)}
+.btn-outline:hover{border-color:var(--primary);color:var(--primary)}
+.btn-ghost{background:transparent;color:var(--on-surface-variant);border-color:transparent;padding:0 12px}
+.btn-sm{height:36px;padding:0 14px;font-size:13px}
+.btn-icon{width:48px;padding:0}
 
-  .feature {
-    background: #F7F2FA;
-    padding: 1.5rem;
-    border-radius: 16px;
-  }
+.card{background:var(--surface);border:var(--border) solid var(--outline-variant);border-radius:var(--r-lg);padding:24px}
+.card-sm{padding:16px;border-radius:var(--r-md)}
 
-  .feature h3 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #6750A4;
-  }
+.chip{display:inline-flex;align-items:center;gap:6px;height:28px;padding:0 10px;border-radius:999px;font-size:11px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;border:1px solid var(--outline-variant);color:var(--on-surface-variant);background:transparent}
+.chip.dot::before{content:"";width:6px;height:6px;border-radius:999px;background:currentColor}
+.chip.on-time{color:var(--on-time);background:var(--on-time-container);border-color:transparent}
+.chip.delayed{color:var(--delayed);background:var(--delayed-container);border-color:transparent}
+.chip.cancelled{color:var(--cancelled);background:var(--cancelled-container);border-color:transparent}
+.chip.primary{color:var(--on-primary-container);background:var(--primary-container);border-color:transparent}
 
-  .feature p {
-    font-size: 0.95rem;
-    color: #49454F;
-    margin: 0;
-  }
+.hero{padding:56px 0 32px;position:relative}
+@media (min-width:900px){.hero{padding:88px 0 56px}}
+.hero-grid{display:grid;grid-template-columns:1fr;gap:48px;align-items:center}
+@media (min-width:1000px){.hero-grid{grid-template-columns:1.15fr 1fr;gap:64px}}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border:1px solid var(--outline-variant);border-radius:999px;font-size:12px;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--on-surface-variant);margin-bottom:28px}
+.hero-eyebrow .pulse{width:8px;height:8px;border-radius:999px;background:var(--on-time);box-shadow:0 0 0 0 color-mix(in srgb,var(--on-time) 60%, transparent);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--on-time) 60%, transparent)}70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.hero h1{margin:0 0 24px;font-weight:300;letter-spacing:-0.025em}
+.hero h1 em{font-style:normal;font-weight:600;color:var(--primary)}
+.hero-sub{color:var(--on-surface-variant);max-width:560px;font-size:18px;line-height:1.55;margin:0 0 32px}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+.hero-meta{display:flex;gap:28px;flex-wrap:wrap;color:var(--on-surface-variant);font-size:13px}
+.hero-meta b{color:var(--on-bg);font-weight:700}
 
-  .store-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-  }
+.device{width:100%;max-width:340px;margin:0 auto;aspect-ratio:9/19.5;border-radius:46px;padding:10px;background:#0a0908;border:1px solid #2a2623;box-shadow:0 40px 80px -30px rgba(0,0,0,.6), 0 0 0 1px rgba(255,255,255,.03) inset;position:relative}
+.device::before{content:"";position:absolute;top:18px;left:50%;transform:translateX(-50%);width:100px;height:28px;background:#0a0908;border-radius:20px;z-index:2}
+.device-screen{width:100%;height:100%;border-radius:38px;overflow:hidden;background:#1A1714;position:relative}
+.device-screen img{width:100%;height:100%;object-fit:cover;object-position:top}
 
-  .store-badge {
-    height: 50px;
-  }
+section{padding:72px 0;position:relative}
+@media (min-width:900px){section{padding:112px 0}}
+.section-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:48px;flex-wrap:wrap}
+.section-head h2{margin:0;font-weight:300;letter-spacing:-0.02em;max-width:720px}
+.section-head h2 em{font-style:normal;font-weight:600;color:var(--primary)}
+.section-head p{color:var(--on-surface-variant);max-width:420px;margin:0;font-size:16px;line-height:1.55}
+.kicker{display:inline-block;padding:4px 10px;border-radius:999px;background:var(--primary-container);color:var(--on-primary-container);font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:16px}
 
-  .store-badge-disabled {
-    opacity: 0.5;
-  }
+.line-wrap{background:var(--surface);border:var(--border) solid var(--outline-variant);border-radius:var(--r-xl);padding:32px;overflow-x:auto}
+.line{position:relative;min-width:980px;height:220px}
+.line-bar{position:absolute;left:0;right:0;top:90px;height:4px;background:var(--primary);border-radius:2px;opacity:.7}
+.line-stop{position:absolute;top:80px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer}
+.line-stop .dot{width:24px;height:24px;border-radius:999px;background:var(--surface);border:3px solid var(--primary);position:relative;z-index:2;transition:transform .2s}
+.line-stop:hover .dot{transform:scale(1.25)}
+.line-stop.status-delayed .dot{border-color:var(--delayed)}
+.line-stop.status-cancelled .dot{border-color:var(--cancelled)}
+.line-stop.highlight .dot{background:var(--primary);box-shadow:0 0 0 6px color-mix(in srgb,var(--primary) 25%,transparent)}
+.line-stop .label{font-size:10px;font-weight:600;letter-spacing:0.04em;text-transform:uppercase;color:var(--on-surface-variant);writing-mode:vertical-rl;transform:rotate(180deg);white-space:nowrap;position:absolute;top:-80px;left:50%;margin-left:-6px}
+.line-stop .code{font-size:10px;font-weight:600;color:var(--on-surface-variant);font-variant-numeric:tabular-nums;position:absolute;top:120px;left:50%;transform:translateX(-50%)}
+.line-endpoints{display:flex;justify-content:space-between;margin-bottom:18px;color:var(--on-surface-variant);font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase}
 
-  .coming-soon {
-    display: inline-block;
-    background: #E8DEF8;
-    color: #6750A4;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    margin-bottom: 2rem;
-  }
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.feature{background:var(--surface);border:var(--border) solid var(--outline-variant);border-radius:var(--r-lg);padding:28px;display:flex;flex-direction:column;gap:16px;transition:border-color .2s, transform .2s}
+.feature:hover{border-color:var(--primary);transform:translateY(-2px)}
+.feature-icon{width:48px;height:48px;border-radius:var(--r-md);background:var(--primary-container);color:var(--on-primary-container);display:grid;place-items:center}
+.feature h3{margin:0;font-size:20px;font-weight:600;letter-spacing:-0.01em}
+.feature p{margin:0;color:var(--on-surface-variant);font-size:14px;line-height:1.55}
+.feature:nth-child(2) .feature-icon{background:var(--secondary-container);color:var(--on-secondary-container)}
+.feature:nth-child(3) .feature-icon{background:var(--tertiary-container);color:var(--on-tertiary-container)}
+.feature:nth-child(4) .feature-icon{background:var(--on-time-container);color:var(--on-time)}
 
-  .footer-note {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid #E7E0EC;
-    font-size: 0.9rem;
-    color: #79747E;
-  }
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;counter-reset:step}
+.step{counter-increment:step;display:flex;flex-direction:column;gap:16px}
+.step-num{font-size:64px;font-weight:300;line-height:1;color:var(--primary);letter-spacing:-0.04em;font-variant-numeric:tabular-nums}
+.step h3{margin:0;font-size:20px;font-weight:600}
+.step p{margin:0;color:var(--on-surface-variant);font-size:14px;line-height:1.55}
 
-  .screenshots {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    max-width: 900px;
-    margin: 2.5rem auto;
-    padding: 0 1rem;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
+.feed-grid{display:grid;grid-template-columns:1fr;gap:32px;align-items:center}
+@media (min-width:1000px){.feed-grid{grid-template-columns:1fr 1.1fr}}
+.report-card{display:flex;gap:14px;padding:16px;border:1px solid var(--outline-variant);border-radius:var(--r-md);background:var(--surface);transition:border-color .2s}
+.report-card.new{border-color:var(--primary);animation:slideIn .4s ease}
+@keyframes slideIn{from{opacity:0;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+.report-avatar{width:40px;height:40px;border-radius:999px;background:var(--surface-variant);color:var(--on-surface-variant);display:grid;place-items:center;font-weight:600;font-size:13px;flex-shrink:0}
+.report-meta{display:flex;gap:8px;align-items:center;margin-bottom:6px;flex-wrap:wrap}
+.report-meta .name{font-size:13px;font-weight:600}
+.report-meta .when{font-size:11px;color:var(--on-surface-variant);letter-spacing:0.05em;text-transform:uppercase}
+.report-text{font-size:14px;line-height:1.45;margin:0 0 8px}
+.report-tags{display:flex;gap:6px;flex-wrap:wrap}
 
-  .screenshot-item {
-    flex: 0 0 auto;
-    text-align: center;
-  }
+.showcase{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px;align-items:start}
+.screen-item{display:flex;flex-direction:column;gap:16px}
+.screen-item .device{max-width:300px}
+.screen-caption{text-align:center;max-width:300px;margin:0 auto}
+.screen-caption .label-md{color:var(--primary);margin-bottom:6px;display:block}
+.screen-caption h3{margin:0 0 6px;font-size:20px;font-weight:600}
+.screen-caption p{margin:0;color:var(--on-surface-variant);font-size:13px;line-height:1.5}
 
-  .screenshot-item img {
-    width: 240px;
-    height: auto;
-    border-radius: 24px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-  }
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:var(--outline-variant);border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--outline-variant)}
+.stat{background:var(--surface);padding:32px 28px}
+.stat .n{font-size:48px;font-weight:300;letter-spacing:-0.03em;line-height:1;color:var(--primary);font-variant-numeric:tabular-nums}
+.stat .l{margin-top:10px;font-size:13px;color:var(--on-surface-variant);letter-spacing:0.04em;text-transform:uppercase;font-weight:600}
 
-  .screenshot-item p {
-    margin-top: 0.75rem;
-    font-size: 0.9rem;
-    font-weight: 500;
-    color: #49454F;
-  }
+.cta{background:var(--primary-container);color:var(--on-primary-container);border-radius:var(--r-xl);padding:56px 40px;text-align:center;position:relative;overflow:hidden}
+.cta h2{margin:0 0 16px;font-weight:300;letter-spacing:-0.02em;font-size:clamp(32px,5vw,56px)}
+.cta p{margin:0 auto 28px;max-width:560px;font-size:16px;line-height:1.55;opacity:.85}
+.store-badges{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.store-badge{display:inline-flex;align-items:center;gap:12px;padding:10px 20px;background:#000;color:#fff;border-radius:12px;text-decoration:none;min-width:180px;height:60px;transition:transform .15s}
+.store-badge:hover{transform:translateY(-2px)}
+.store-badge .small{font-size:10px;opacity:.8;letter-spacing:0.05em;text-transform:uppercase;line-height:1}
+.store-badge .big{font-size:18px;font-weight:600;line-height:1.1}
 
-  @media (max-width: 800px) {
-    .screenshots {
-      justify-content: flex-start;
-      padding-bottom: 0.5rem;
-    }
+footer{padding:48px 0 32px;border-top:1px solid var(--outline-variant);color:var(--on-surface-variant);font-size:13px}
+.foot-row{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
 
-    .screenshot-item img {
-      width: 200px;
-    }
-  }
+.sr{position:absolute;left:-9999px}
 </style>
+</head>
+<body>
+<div id="root"></div>
 
-<div class="app-landing">
-  <div class="app-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-      <path d="M12 2c-4 0-8 .5-8 4v9.5C4 17.43 5.57 19 7.5 19L6 20.5v.5h2l2-2h4l2 2h2v-.5L16.5 19c1.93 0 3.5-1.57 3.5-3.5V6c0-3.5-4-4-8-4zM7.5 17c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm3.5-6H6V6h5v5zm2 0V6h5v5h-5zm3.5 6c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
-    </svg>
-  </div>
+<script type="text/babel" data-presets="env,react">
+const { useState, useEffect } = React;
 
-  <h1 class="app-title">Commute Check</h1>
-  <p class="app-tagline">Real-time train updates from fellow commuters</p>
+const STATIONS = [
+  {code:"CPT", name:"Cape Town", status:"on-time"},
+  {code:"WOO", name:"Woodstock", status:"on-time"},
+  {code:"SAL", name:"Salt River", status:"on-time"},
+  {code:"OBS", name:"Observatory", status:"on-time"},
+  {code:"MWB", name:"Mowbray", status:"on-time"},
+  {code:"RBY", name:"Rosebank", status:"on-time"},
+  {code:"RDB", name:"Rondebosch", status:"delayed"},
+  {code:"NLD", name:"Newlands", status:"on-time"},
+  {code:"CLN", name:"Claremont", status:"on-time"},
+  {code:"HVN", name:"Harfield", status:"on-time"},
+  {code:"KFL", name:"Kenilworth", status:"on-time"},
+  {code:"WYN", name:"Wynberg", status:"on-time"},
+  {code:"WIT", name:"Wittebome", status:"on-time"},
+  {code:"PLM", name:"Plumstead", status:"on-time"},
+  {code:"DDL", name:"Diep River", status:"on-time"},
+  {code:"HTL", name:"Heathfield", status:"on-time"},
+  {code:"RTB", name:"Retreat", status:"on-time"},
+  {code:"STR", name:"Steenberg", status:"on-time"},
+  {code:"FHK", name:"Fish Hoek", status:"on-time"},
+];
 
-  <span class="coming-soon">Available on iOS & Android</span>
+const FEED_INITIAL = [
+  {id:1, who:"TB", name:"Thandi B.", when:"2 min", station:"Claremont", tag:"on-time", text:"07:24 service just pulled in. Pretty full already but all moving."},
+  {id:2, who:"KN", name:"Kevin N.", when:"5 min", station:"Rondebosch", tag:"delayed", text:"12 min delay on the inbound — signal issue reported at Mowbray."},
+  {id:3, who:"AM", name:"Asha M.", when:"11 min", station:"Kenilworth", tag:"on-time", text:"CPT-2 platform. Southbound right on time."},
+  {id:4, who:"SJ", name:"Sipho J.", when:"18 min", station:"Fish Hoek", tag:"on-time", text:"Light crowds on the 06:58. Clean ride all the way to CPT."},
+];
 
-  <p class="app-description">
-    Stay informed about Cape Town's Metrorail Southern Line with crowdsourced service updates.
-    Know before you go whether your train is running on time, delayed, or cancelled.
-  </p>
+const NEW_REPORTS = [
+  {who:"NM", name:"Noluthando M.", when:"just now", station:"Observatory", tag:"on-time", text:"All clear on the inbound — doors on time at OBS."},
+  {who:"RK", name:"Rafiq K.", when:"just now", station:"Wynberg", tag:"delayed", text:"Short hold at Wynberg. Maybe 4 mins behind."},
+  {who:"LD", name:"Lerato D.", when:"just now", station:"Cape Town", tag:"on-time", text:"CPT-1 filling up for 08:00 to Simon's Town."},
+];
 
-  <div class="screenshots">
-    <div class="screenshot-item">
-      <img src="images/home.png" alt="Commute Check home screen showing line status and quick actions" loading="lazy" width="540" height="1200">
-      <p>Live Line Status</p>
+const Icon = ({name, size=20}) => {
+  const common = {width:size, height:size, viewBox:"0 0 24 24", fill:"none", stroke:"currentColor", strokeWidth:"2", strokeLinecap:"round", strokeLinejoin:"round"};
+  switch(name){
+    case "train": return <svg {...common}><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16"/><circle cx="8.5" cy="15" r="1"/><circle cx="15.5" cy="15" r="1"/><path d="M8 19l-2 2M16 19l2 2"/></svg>;
+    case "check": return <svg {...common}><path d="M20 6L9 17l-5-5"/></svg>;
+    case "clock": return <svg {...common}><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>;
+    case "alert": return <svg {...common}><path d="M10.3 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.7 3.86a2 2 0 00-3.4 0z"/><path d="M12 9v4M12 17h.01"/></svg>;
+    case "users": return <svg {...common}><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>;
+    case "pin": return <svg {...common}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>;
+    case "bell": return <svg {...common}><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>;
+    case "arrow": return <svg {...common}><path d="M5 12h14M12 5l7 7-7 7"/></svg>;
+    case "wifi-off": return <svg {...common}><path d="M1 1l22 22"/><path d="M16.72 11.06A10.94 10.94 0 0119 12.55"/><path d="M5 12.55a10.94 10.94 0 015.17-2.39"/><path d="M10.71 5.05A16 16 0 0122.58 9"/><path d="M1.42 9a15.91 15.91 0 014.7-2.88"/><path d="M8.53 16.11a6 6 0 016.95 0"/><path d="M12 20h.01"/></svg>;
+    case "apple": return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>;
+    case "play": return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M3 3.5v17c0 .57.47 1 1 1 .18 0 .35-.05.5-.14l13-8.5a1 1 0 000-1.72l-13-8.5A1 1 0 003 3.5z"/></svg>;
+    default: return null;
+  }
+};
+
+const Chip = ({tone, children, dot}) => (
+  <span className={`chip ${dot ? "dot":""} ${tone||""}`}>{children}</span>
+);
+
+const Nav = () => (
+  <header className="nav">
+    <div className="container nav-row">
+      <div className="brand">
+        <span className="brand-mark"><Icon name="train" size={18}/></span>
+        Commute Check
+      </div>
+      <nav className="nav-links">
+        <a href="#features">Features</a>
+        <a href="#line">Southern Line</a>
+        <a href="#how">How it works</a>
+        <a href="#community">Community</a>
+      </nav>
+      <div className="nav-actions">
+        <a href="#download" className="btn btn-primary btn-sm">Download</a>
+      </div>
     </div>
-    <div class="screenshot-item">
-      <img src="images/schedule.png" alt="Train schedule showing departure and arrival times with platforms" loading="lazy" width="540" height="1200">
-      <p>Real-time Schedules</p>
-    </div>
-    <div class="screenshot-item">
-      <img src="images/stations.png" alt="List of 19 Southern Line stations" loading="lazy" width="540" height="1200">
-      <p>19 Stations Covered</p>
-    </div>
-  </div>
+  </header>
+);
 
-  <div class="features">
-    <div class="feature">
-      <h3>Real-Time Reports</h3>
-      <p>Get instant updates from commuters at stations along your route. See delays, cancellations, and service disruptions as they happen.</p>
+const Hero = () => (
+  <section className="hero">
+    <div className="container hero-grid">
+      <div>
+        <div className="hero-eyebrow"><span className="pulse"/> Live from Cape Town · Southern Line</div>
+        <h1 className="display-lg">Know if your <em>train's running</em> before you leave the house.</h1>
+        <p className="hero-sub">Real-time, crowdsourced updates from commuters at every stop between Cape Town and Fish Hoek. Delays, cancellations, crowding — reported by the people on the platform with you.</p>
+        <div className="hero-ctas">
+          <a href="https://apps.apple.com/za/app/commute-check/id6758906848" className="btn btn-primary">
+            <Icon name="apple" size={16}/> Download for iOS
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=asterixorobelix.commutecheck" className="btn btn-outline">
+            <Icon name="play" size={16}/> Get on Android
+          </a>
+        </div>
+        <div className="hero-meta">
+          <span><b>19</b> stations covered</span>
+          <span><b>Offline</b> schedules</span>
+          <span><b>Free</b>, community-powered</span>
+        </div>
+      </div>
+      <div>
+        <div className="device">
+          <div className="device-screen"><img src="images/home.png" alt="Commute Check home screen"/></div>
+        </div>
+      </div>
     </div>
+  </section>
+);
 
-    <div class="feature">
-      <h3>Train Schedules</h3>
-      <p>Access complete timetables for the Southern Line. Works offline so you always have schedule information, even without signal.</p>
+const StatsStrip = () => (
+  <section style={{padding:"0 0 40px"}}>
+    <div className="container">
+      <div className="stats">
+        <div className="stat"><div className="n">19</div><div className="l">Stations covered</div></div>
+        <div className="stat"><div className="n">3</div><div className="l">Schedule days · Weekday / Sat / Sun</div></div>
+        <div className="stat"><div className="n">0</div><div className="l">Signal required for schedules</div></div>
+        <div className="stat"><div className="n">&#8734;</div><div className="l">Saved routes</div></div>
+      </div>
     </div>
+  </section>
+);
 
-    <div class="feature">
-      <h3>Save Your Commutes</h3>
-      <p>Save your regular routes for quick access. Get personalized updates for the stations that matter to you.</p>
+const LineDiagram = () => {
+  const stops = STATIONS;
+  return (
+    <section id="line">
+      <div className="container">
+        <div className="section-head">
+          <div>
+            <span className="kicker">The Southern Line</span>
+            <h2 className="display-md">From <em>Cape Town</em> to <em>Fish Hoek</em>.<br/>All 19 stops, live.</h2>
+          </div>
+          <p>Tap any stop in the app to see departures, platforms and the latest reports from commuters actually standing there.</p>
+        </div>
+        <div className="line-endpoints">
+          <span>&#9673; Cape Town · Northern terminus</span>
+          <span>Fish Hoek · Southern terminus &#9673;</span>
+        </div>
+        <div className="line-wrap">
+          <div className="line">
+            <div className="line-bar"/>
+            {stops.map((s, i) => {
+              const left = (i/(stops.length-1))*100;
+              const highlight = i === 0 || i === stops.length-1;
+              return (
+                <div key={s.code} className={`line-stop status-${s.status} ${highlight?"highlight":""}`} style={{left:`${left}%`}} title={s.name}>
+                  <span className="label">{s.name}</span>
+                  <span className="dot"/>
+                  <span className="code">{s.code}</span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+        <div style={{display:"flex",gap:14,flexWrap:"wrap",marginTop:20}}>
+          <Chip tone="on-time" dot>On time</Chip>
+          <Chip tone="delayed" dot>Delayed · Rondebosch</Chip>
+          <Chip>Terminus</Chip>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Features = () => {
+  const items = [
+    {icon:"bell", title:"Real-time reports", body:"Instant updates from commuters at stations along your route. See delays, cancellations and service disruptions as they happen."},
+    {icon:"clock", title:"Train schedules", body:"Complete timetables for the Southern Line. Works offline so you always have schedule information, even without signal."},
+    {icon:"pin", title:"Save your commutes", body:"Save your regular routes for quick access. Personalized updates for the stations that matter to you."},
+    {icon:"users", title:"Community powered", body:"Help fellow commuters by submitting reports from your station. Build a network of trusted information."},
+  ];
+  return (
+    <section id="features" style={{background:"var(--bg-deep)"}}>
+      <div className="container">
+        <div className="section-head">
+          <div>
+            <span className="kicker">Why it works</span>
+            <h2 className="display-md">Built <em>for commuters</em>, by commuters.</h2>
+          </div>
+          <p>No corporate feeds. No delayed official announcements. Just the people actually on the platform, sharing what they see.</p>
+        </div>
+        <div className="features">
+          {items.map((f,i)=>(
+            <div key={i} className="feature">
+              <div className="feature-icon"><Icon name={f.icon} size={22}/></div>
+              <h3>{f.title}</h3>
+              <p>{f.body}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const HowItWorks = () => {
+  const steps = [
+    {h:"Check before you leave", p:"Open the app and see the live status of the Southern Line at a glance. All clear, delays, or disruptions — right on the home screen."},
+    {h:"See what commuters are saying", p:"Tap into your station for real-time reports from people on the platform. Crowding, delays, platform changes — everything from the source."},
+    {h:"Report back from your ride", p:"Two taps to share what's happening at your station. Help the next commuter make a better decision."},
+  ];
+  return (
+    <section id="how">
+      <div className="container">
+        <div className="section-head">
+          <div>
+            <span className="kicker">How it works</span>
+            <h2 className="display-md">Three steps. No logins. No ads.</h2>
+          </div>
+          <p>The fastest way to turn "is my train running?" from a gamble into a known answer.</p>
+        </div>
+        <div className="steps">
+          {steps.map((s,i)=>(
+            <div key={i} className="step">
+              <div className="step-num">0{i+1}</div>
+              <h3>{s.h}</h3>
+              <p>{s.p}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const CommunityFeed = () => {
+  const [feed, setFeed] = useState(FEED_INITIAL);
+  const [nextIdx, setNextIdx] = useState(0);
+  useEffect(()=>{
+    const t = setInterval(()=>{
+      setFeed(prev=>{
+        const add = NEW_REPORTS[nextIdx % NEW_REPORTS.length];
+        setNextIdx(i=>i+1);
+        const newItem = {...add, id: Date.now()+Math.random(), isNew:true};
+        const next = [newItem, ...prev].slice(0,4);
+        return next;
+      });
+    }, 4200);
+    return ()=>clearInterval(t);
+  },[nextIdx]);
+
+  return (
+    <section id="community" style={{background:"var(--bg-deep)"}}>
+      <div className="container">
+        <div className="section-head">
+          <div>
+            <span className="kicker">Live community feed</span>
+            <h2 className="display-md">Reports from <em>the platform</em>, not a press office.</h2>
+          </div>
+          <p>Hundreds of regulars post daily. Every report is timestamped, geotagged and tied to a station so you know exactly where it's coming from.</p>
+        </div>
+        <div className="feed-grid">
+          <div>
+            <div style={{display:"grid",gap:10}}>
+              {feed.map((r,i)=>(
+                <div key={r.id} className={`report-card ${r.isNew?"new":""}`}>
+                  <div className="report-avatar">{r.who}</div>
+                  <div style={{minWidth:0,flex:1}}>
+                    <div className="report-meta">
+                      <span className="name">{r.name}</span>
+                      <span style={{color:"var(--on-surface-variant)"}}>·</span>
+                      <span className="when">{r.when}</span>
+                    </div>
+                    <p className="report-text">{r.text}</p>
+                    <div className="report-tags">
+                      <Chip>{r.station}</Chip>
+                      <Chip tone={r.tag} dot>{r.tag==="on-time"?"On time":r.tag==="delayed"?"Delayed":"Cancelled"}</Chip>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div>
+            <div className="card" style={{padding:32}}>
+              <span className="label-md" style={{color:"var(--on-surface-variant)",marginBottom:12,display:"block"}}>Report in 2 taps</span>
+              <h3 className="headline-md" style={{margin:"0 0 16px"}}>See something? Say something.</h3>
+              <p style={{color:"var(--on-surface-variant)",margin:"0 0 24px",fontSize:15,lineHeight:1.55}}>A single screen, three buttons. On time, delayed, or cancelled — optionally add a note. Your report lands in fellow commuters' feeds in under a second.</p>
+              <div style={{display:"grid",gridTemplateColumns:"repeat(3,1fr)",gap:10,marginBottom:20}}>
+                <div className="card-sm" style={{background:"var(--on-time-container)",border:"none",color:"var(--on-time)",textAlign:"center",padding:"18px 8px"}}>
+                  <Icon name="check" size={20}/>
+                  <div style={{fontSize:11,fontWeight:700,letterSpacing:"0.08em",textTransform:"uppercase",marginTop:8}}>On time</div>
+                </div>
+                <div className="card-sm" style={{background:"var(--delayed-container)",border:"none",color:"var(--delayed)",textAlign:"center",padding:"18px 8px"}}>
+                  <Icon name="clock" size={20}/>
+                  <div style={{fontSize:11,fontWeight:700,letterSpacing:"0.08em",textTransform:"uppercase",marginTop:8}}>Delayed</div>
+                </div>
+                <div className="card-sm" style={{background:"var(--cancelled-container)",border:"none",color:"var(--cancelled)",textAlign:"center",padding:"18px 8px"}}>
+                  <Icon name="alert" size={20}/>
+                  <div style={{fontSize:11,fontWeight:700,letterSpacing:"0.08em",textTransform:"uppercase",marginTop:8}}>Cancelled</div>
+                </div>
+              </div>
+              <div style={{display:"flex",alignItems:"center",gap:10,color:"var(--on-surface-variant)",fontSize:13}}>
+                <Icon name="wifi-off" size={14}/> Works even on a weak signal
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+const Showcase = () => (
+  <section>
+    <div className="container">
+      <div className="section-head">
+        <div>
+          <span className="kicker">Inside the app</span>
+          <h2 className="display-md">Everything a commuter asks. Nothing they don't.</h2>
+        </div>
+        <p>Three screens do the work. No tabs bloat, no feed algorithm, no sign-up to read.</p>
+      </div>
+      <div className="showcase">
+        {[
+          {src:"images/home.png", label:"Home", h:"The glance", p:"Line status, last report, and quick access to your saved commutes. Open the app, get the answer, get on with your day."},
+          {src:"images/schedule.png", label:"Schedule", h:"Every departure", p:"Weekday, Saturday and Sunday timetables for the whole line. Platforms, arrival times and minutes-to-next — all cached offline."},
+          {src:"images/stations.png", label:"Stations", h:"All 19 stops", p:"Cape Town to Fish Hoek. Search, save, drill in to see platforms and the latest commuter reports for that station."},
+        ].map((s,i)=>(
+          <div key={i} className="screen-item">
+            <div className="device"><div className="device-screen"><img src={s.src} alt={s.h}/></div></div>
+            <div className="screen-caption">
+              <span className="label-md">{s.label}</span>
+              <h3>{s.h}</h3>
+              <p>{s.p}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
+  </section>
+);
 
-    <div class="feature">
-      <h3>Community Powered</h3>
-      <p>Help fellow commuters by submitting reports from your station. Build a network of trusted information.</p>
+const Download = () => (
+  <section id="download">
+    <div className="container">
+      <div className="cta">
+        <span className="kicker" style={{background:"color-mix(in srgb,var(--on-primary-container) 10%, transparent)",color:"var(--on-primary-container)"}}>Free · No ads · No tracking</span>
+        <h2>Made for your next Monday morning.</h2>
+        <p>Commute Check is built for Cape Town commuters, by Cape Town commuters. Download once, trust it every day.</p>
+        <div className="store-badges">
+          <a className="store-badge" href="https://apps.apple.com/za/app/commute-check/id6758906848">
+            <Icon name="apple" size={26}/>
+            <span style={{textAlign:"left"}}>
+              <span className="small">Download on the</span><br/>
+              <span className="big">App Store</span>
+            </span>
+          </a>
+          <a className="store-badge" href="https://play.google.com/store/apps/details?id=asterixorobelix.commutecheck">
+            <Icon name="play" size={24}/>
+            <span style={{textAlign:"left"}}>
+              <span className="small">Get it on</span><br/>
+              <span className="big">Google Play</span>
+            </span>
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
+);
 
-  <div class="store-buttons">
-    <a href="https://apps.apple.com/za/app/commute-check/id6758906848">
-      <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" class="store-badge">
-    </a>
-    <a href="https://play.google.com/store/apps/details?id=asterixorobelix.commutecheck">
-      <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="store-badge" style="height: 73px; margin: -11px 0;">
-    </a>
-  </div>
+const Footer = () => (
+  <footer>
+    <div className="container foot-row">
+      <div style={{display:"flex",alignItems:"center",gap:10}}>
+        <span className="brand-mark"><Icon name="train" size={16}/></span>
+        <div>
+          <div style={{fontWeight:700,color:"var(--on-bg)"}}>Commute Check</div>
+          <div>Built in Cape Town. For the 07:24 to town.</div>
+        </div>
+      </div>
+      <div style={{display:"flex",gap:28,flexWrap:"wrap"}}>
+        <a href="mailto:nathanstasin@gmail.com">Contact</a>
+      </div>
+    </div>
+  </footer>
+);
 
-  <div class="footer-note">
-    <p>Commute Check is built for Cape Town commuters, by Cape Town commuters.</p>
-    <p>Have questions? <a href="mailto:commutecheck@example.com">Get in touch</a></p>
-  </div>
-</div>
+const App = () => (
+  <>
+    <Nav/>
+    <Hero/>
+    <StatsStrip/>
+    <LineDiagram/>
+    <Features/>
+    <HowItWorks/>
+    <CommunityFeed/>
+    <Showcase/>
+    <Download/>
+    <Footer/>
+  </>
+);
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
+</body>
+</html>
