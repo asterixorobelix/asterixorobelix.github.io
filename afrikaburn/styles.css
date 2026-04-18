@@ -124,22 +124,9 @@ a { color: inherit; }
 }
 .brand-mark {
   width: 32px; height: 32px;
-  border-radius: 50%;
-  background: radial-gradient(circle at 32% 30%, oklch(0.96 0.03 75) 0 8%, oklch(0.85 0.14 70) 22%, oklch(0.62 0.17 45) 58%, oklch(0.35 0.12 30) 100%);
-  box-shadow:
-    0 0 0 1px oklch(1 0 0 / 0.2),
-    0 0 14px oklch(0.7 0.18 45 / 0.5),
-    inset 0 -4px 8px oklch(0 0 0 / 0.3);
-  position: relative;
+  border-radius: 8px;
+  object-fit: cover;
   flex-shrink: 0;
-}
-.brand-mark::after {
-  content: "";
-  position: absolute;
-  inset: 30%;
-  border-radius: 50%;
-  background: radial-gradient(circle at 40% 40%, oklch(0.98 0.02 80), transparent 70%);
-  opacity: 0.9;
 }
 .nav-links {
   display: flex;
