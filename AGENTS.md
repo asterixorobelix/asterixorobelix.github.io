@@ -14,7 +14,7 @@
 - `_includes/` — Partials (sidebar, head, post-meta)
 - `_sass/hydeout/` — SASS modules
 - `category/` — Category pages
-- `commutecheck/` — Product landing page (standalone layout)
+- `commutecheck/` — Redirect to the canonical Commute Check site, https://commutecheck.vercel.app/ (do not rebuild a landing page here)
 
 ## Commands
 

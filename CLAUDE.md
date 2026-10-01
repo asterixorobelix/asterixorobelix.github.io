@@ -5,7 +5,7 @@ Personal blog and portfolio site built with Jekyll, hosted on GitHub Pages.
 ## Key Patterns
 
 - **Front Matter:** layout, title, tags, category
-- **Standalone Layout:** For product pages like `/commutecheck/` (no sidebar)
+- **Standalone Layout:** For product pages like `/taxscanza/` (no sidebar). `/commutecheck/` is only a redirect to https://commutecheck.vercel.app/
 - **Sidebar Navigation:** Auto-populates from `category/` and `sidebar_link` pages
 - **Theme Customization:** SASS variables in `_sass/hydeout/_variables.scss`
 
