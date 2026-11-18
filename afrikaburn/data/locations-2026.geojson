@@ -1,0 +1,2758 @@
+{
+  "type": "FeatureCollection",
+  "attribution": "Positions (c) OpenStreetMap contributors, ODbL 1.0",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "/Kaggen Meets Rainbow Dancers",
+        "type": "camp",
+        "code": "kag",
+        "description": "/Kaggen Meets Rainbow Dancers is an indigenous-inspired Theme Camp rooted in storytelling, ceremony, and living heritage. We gather as a village of wisdom keepers, artists, healers, and dancers, weavi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.949417,
+          -32.514461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "ABnB",
+        "type": "camp",
+        "code": "abn",
+        "description": "Nestled in the dust you will find a safe haven for those of you looking to chill and connect. Morning collabs, afternoon loud-ish hydrating shindigs, and evening personalised elixirs. You may want to "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95635,
+          -32.512604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Alegra Space Station",
+        "type": "camp",
+        "code": "ass",
+        "description": "We will find you at the Binnekring (2 pm to 4 pm) to gift you the best craft beer (brewed by our camp members) and the coldest juice. We host adult-SIZED games (get your mind out of the gutter), so if"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958484,
+          -32.51168
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "BabaDoof",
+        "type": "camp",
+        "code": "bad",
+        "description": "BabaDoof: Noun /’b:. bə.du:f/ Etymology: From Baba (‘Guardians Of’) + Doof (‘The Party’) Our legendary Cereal Killers Munchie Mobile serves crunchy comfort to dusty dancers and sunrise survivors. Join"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954034,
+          -32.512578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bee-Have",
+        "type": "camp",
+        "code": "bee",
+        "description": "Inspired by the unity of a beehive, we believe in working together, supporting one another, and creating an atmosphere of mutual respect and shared effort. Our camp offers a cuddle puddle, the one and"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95113,
+          -32.515393
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bioskop & Bangaz",
+        "type": "camp",
+        "code": "bio",
+        "description": "Bioskop & Bangaz is a space to share; it’s about learning and teaching through film, music, and art. Or you can pull through to just relax and enjoy the vibes."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953315,
+          -32.511423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Birthday Suits",
+        "type": "camp",
+        "code": "bds",
+        "description": "Birthday Suits is a naturist camp and The Power Shower is our gift. Participants enjoy a naturist experience by queuing naked for the shower and receiving a warm, soapy wash. Cold orange juice during "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953918,
+          -32.513648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bloody Mzuris",
+        "type": "camp",
+        "code": "blm",
+        "description": "We’ll be producing and distributing Bloody Marys with a little bit of a Kenyan twist. ‘Mzuri’ means ‘good’ in Kiswahili, and we’ll be bringing some Kenyan flair and accent to the camp and the drink. W"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951641,
+          -32.516673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bull’s Eye",
+        "type": "camp",
+        "code": "bey",
+        "description": "Need a break from stomping the dust? Relax and refuel in the afternoon-ish at our Dinner in the Desert. We’re firing up the braai to bring you potjie (veg) with a drink. Bring a bowl/mug/cup, meet peo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953459,
+          -32.512584
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Burning Mail",
+        "type": "camp",
+        "code": "bma",
+        "description": "Each year, Tankwa Town’s official post office, Burning Mail, is the place where burners write postcards to anywhere in the world. We offer this service from our post office tent or from our mobile pos"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.950924,
+          -32.515993
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Buttery Beasts",
+        "type": "camp",
+        "code": "but",
+        "description": "Slithering, squawking, hopping, and hissing into Tankwa Town with the most convenient of convenience stores. Greasemonkeys fix what you’ve broken; Beasts help you find what you’ve forgotten! On market"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.950366,
+          -32.515267
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camp 404",
+        "type": "camp",
+        "code": "404",
+        "description": "Feeling lost? We are also not found. 404 is a blanket fort of confused and delicious nonsense. Our 24/7 lounge is a comfy, safe space with snacks, games, downtempo tunes, and lamps to talk to. Join us"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951131,
+          -32.517222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camp Why Not",
+        "type": "camp",
+        "code": "cwn",
+        "description": "Camp Why Not is a desert playground of music, joy, and delicious surprises. Dance at the Why Not Stage and party through the night until sunrise … sometimes beyond. Refuel with Why Not Fries, sunrise "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958682,
+          -32.513062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camp DelicioZA",
+        "type": "camp",
+        "code": "del",
+        "description": "Camp DelicioZA is a community of big hearts that flip ‘pancrêpes’ daily during the Burn from 9 am to 12-ish (or until the batter runs out!). We also host DJ performances in the evenings and every nigh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956866,
+          -32.512695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Camp Sand Mandala",
+        "type": "camp",
+        "code": "sam",
+        "description": "Step into our cosy camp for mystical tarot readings. The cards help uncover patterns, blocks, and hidden opportunities, offering clarity on your path. Readings run from Wednesday to Saturday, 2 pm to "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952524,
+          -32.511867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Chakana",
+        "type": "camp",
+        "code": "cha",
+        "description": "Welcome to Chakana. At AfrikaBurn, we’re creating a 5-metre celestial dome – a glowing, carpeted sanctuary in the desert where dust turns to magic. Step inside and you’ll find cascading textiles overh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952999,
+          -32.511819
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Close Encounters (of the Thirst Kind)",
+        "type": "camp",
+        "code": "cet",
+        "description": "An intergalactic pit stop for weary travellers with a hop-on-hop-off mutant transport service. Drinks (cosmic shooters) will be provided in camp and on our bus. Camp serves as a bus stop for our Mutan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95195,
+          -32.510979
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Concept Ground Control",
+        "type": "camp",
+        "code": "cgc",
+        "description": "Calling all passengers departing on Concept! Come visit our check-in counters, collect your boarding pass (no boarding without it!), check our daily departure schedule and, if you’re lucky, you may ge"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952579,
+          -32.512034
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Copacabana",
+        "type": "camp",
+        "code": "cop",
+        "description": "A Brazilian, Latin and South American-inspired Theme Camp celebrating the region’s rich cultures through food, dance, and music."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953754,
+          -32.513316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cosmic Canvas",
+        "type": "camp",
+        "code": "cos",
+        "description": "Cosmic Canvas is a UV and metallic face-painting playground inviting you to express yourself Through the Prism. Join us for painting sessions by day and glow transformations by night. Open daily for t"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95788,
+          -32.511948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cosmic CommuniTea Camp",
+        "type": "camp",
+        "code": "cct",
+        "description": "A cosy gathering of friends, drawn together to explore the true meaning of chosen family. In a warm, welcoming space, we serve a variety of teas and conduct daily workshops while embracing vulnerabili"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95124,
+          -32.516289
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "cRacKPoT",
+        "type": "camp",
+        "code": "cra",
+        "description": "cRacKPoT is our giant wooden teapot. It has a fire inside where we gift tea to little burners who might be cold and want a space to make friends while playing on some instruments they found in the des"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951412,
+          -32.515531
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Curiosity at Mad Hatter’s Village",
+        "type": "camp",
+        "code": "cur",
+        "description": "Camp CurioCity is a mischievous global collective of curious minds, uniting members from around the world … some with over 20 years in entertainment and production. We blend absurdity, intellect, and "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951605,
+          -32.518257
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cymatica at Mad Hatter’s Village",
+        "type": "camp",
+        "code": "cym",
+        "description": "CYMATICA is a sound camp from Miami, Florida. We join Mad Hatter’s village every year and bring music and cheer. We are activating the ‘Miniscule of Sound’ this year. The smallest nightclub on the Tan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951425,
+          -32.517784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "disko dolce",
+        "type": "camp",
+        "code": "did",
+        "description": "disko dolce, where the essence of the good life is celebrated through the joy of dancing and the sweetness of connection. Join us for our pasta parties, energising workouts, and unforgettable nights o"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.955567,
+          -32.51272
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DisFUNKtion at Mad Hatter’s Village",
+        "type": "camp",
+        "code": "dis",
+        "description": "Please join our DisFUNKtional family. Friendly vibes, BIG lasers, warm fire hoods in the evenings, chilled sounds, fun and games. It’s our second year as part of the Mad Hatter’s Village. In addition "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951831,
+          -32.517658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "DMT",
+        "type": "camp",
+        "code": "dmt",
+        "description": "DMT is a desert family brought together by music, love, and community. We share acoustic grooves and soulful electronic journeys, creating a warm space for locals and internationals alike. Built throu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956652,
+          -32.512003
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dust Devil Saloon",
+        "type": "camp",
+        "code": "dds",
+        "description": "When the sun hits its peak, the music gets deep. Escape the midday heat to where beer is frost-bitten and tequila flows. A place for connections, belly laughs, and Binnekring madness. Join our mischie"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951898,
+          -32.51666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ekasi Theme Camp",
+        "type": "camp",
+        "code": "eka",
+        "description": "Ekasi Theme Camp is a vibrant cocktail of creatives brought together in one communal space, each contributing unique skills and offerings. We are entertainment, culture, and lived experience. At the h"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95327,
+          -32.510316
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Enos Nookie",
+        "type": "camp",
+        "code": "eno",
+        "description": "Spacemonkey Enos crashed his flaming rocket at the edge of Binnekring and created a wild but safe nookie for all cosmic wanderers. Follow landing lights to play with glowing sand, have a stomp at PSYJ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95996,
+          -32.512241
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Family Business at Mad Hatter’s Village",
+        "type": "camp",
+        "code": "fam",
+        "description": "Family Business is a co-created camp run like a family: a warm, mischievous shelter from the storm where dark humour, open hearts, and playful connection collide. Join us for daily family therapy from"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951311,
+          -32.51843
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fractal Chill Ethiopian Tea and Coffee House",
+        "type": "camp",
+        "code": "fcc",
+        "description": "Fractal Chill is an Ethiopian tea and coffee house that has been brewing since 2015. Open from midday to late afternoon, we serve freshly roasted Arabica coffee, chai, rooibos, and mint teas. A shaded"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.950944,
+          -32.51857
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Funky Fiasco",
+        "type": "camp",
+        "code": "ffi",
+        "description": "Welcome to Funky Fiasco, a gloriously chaotic blend of young-at-heart legends, seasoned adventure seekers, questionable dance moves, and excellent taste in music. We are a mix of young and old and are"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.950089,
+          -32.514851
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garden of Weeden",
+        "type": "camp",
+        "code": "gow",
+        "description": "We turn five at this Burn, offering a 24-hour lounge and a mutant dance floor. We will be running sound from 12 pm to 12 am every day. Our camp is made up of 60 members from around the world."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952181,
+          -32.517906
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Grease Monkeys",
+        "type": "camp",
+        "code": "tgm",
+        "description": "Busted bike, grumpy generator, or a tyre having a wobbly? The Greasemonkeys teach sentient beings to fix their own mechanical mishaps. Self-service Monday to Saturday, closed Sunday. Monkeys may appea"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95064,
+          -32.515441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HeartSpace",
+        "type": "camp",
+        "code": "hsp",
+        "description": "HeartSpace is offering something sacred, something cosy, something whimsical. HeartSpace will have two gifts this year. The first will be a space where we host workshops that encourage presence throug"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954271,
+          -32.513268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Home of the Psychic Cat",
+        "type": "camp",
+        "code": "cat",
+        "description": "We provide psychic readings and life coaching to all people. We also provide a kickass croquet court to play our peculiar form of Antarctic Croquet. Come by to find out a bit more about yourself. If y"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951729,
+          -32.510313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Huggas and the Little Bookie Nook",
+        "type": "camp",
+        "code": "hug",
+        "description": "Every day, our expert Huggas will top you up with oxytocin and make you happy! Choose from the hug menu or place an off-menu hug order. The little bookie nook is a space to reset and dive into a good "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.950159,
+          -32.515694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hydration Station",
+        "type": "camp",
+        "code": "hyd",
+        "description": "We always have a glass of refreshing water for visitors to our camp. We hand out good, clean drinking water at the dance floors on the Binnekring late at night – when it’s most needed. You will find u"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953441,
+          -32.51357
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Imbizo Lounge",
+        "type": "camp",
+        "code": "imb",
+        "description": "Imbizo Lounge is an African-rooted oasis bringing soulful Afro sounds, rhythm, and warmth to the desert. We create a space that reminds you that you are in Africa … grounded, welcoming, and full of fe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.957151,
+          -32.512673
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jelly People",
+        "type": "camp",
+        "code": "jel",
+        "description": "We are a camp of friends creating our first independent Theme Camp. We have participated in Burning Man projects in the USA, China, and Bali, and now we bring this experience into our own space. In Je"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95236,
+          -32.511313
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kooky Kutters",
+        "type": "camp",
+        "code": "koo",
+        "description": "Kooky Kutters will offer a relaxed space for burners of all ages and abilities to sit and engage in the simple and tactile activity of biscuit decorating."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951151,
+          -32.518916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kreme",
+        "type": "camp",
+        "code": "kre",
+        "description": "Kreme is a look, a touch, a taste of something sweet that’s shared among souls that warm your own. Crème brûlée served daily at 9 pm is just the apéritif. Tea ceremonies, fitness sessions, toning, mul"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953662,
+          -32.513872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "La Casa Timeless",
+        "type": "camp",
+        "code": "lct",
+        "description": "La Casa Timeless offers daily art labs, performances, and rituals. Nights pulse with live music, DJs, a bar, and hot gyoza until 2 am. Don’t miss ‘MANTIS’, our contemporary dance ritual after sunset ("
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953964,
+          -32.511879
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lands of Love",
+        "type": "camp",
+        "code": "lol",
+        "description": "We are a distributed camp dedicated to loving the land in whatever form it takes. We are open to anyone if they drive or arrive in a vehicle that waves at each other. We also host Early Erections, giv"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.9513,
+          -32.510672
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Le Petit Paris",
+        "type": "camp",
+        "code": "lpp",
+        "description": "Le Petit Paris brings a sunset bar experience at the foot of the Eiffel Tower, offering pastis and bubbles. As night falls, the tempo rises with deep house music, dazzling light displays, and champagn"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952104,
+          -32.515577
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Letters We Never Sent",
+        "type": "camp",
+        "code": "lns",
+        "description": "Letters We Never Sent is a quiet participatory Theme Camp offering a ritual space for reflection and release. Burners write words they never got to share and safely release them into fire. This is not"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953297,
+          -32.510802
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Luminosity Lounge",
+        "type": "camp",
+        "code": "lum",
+        "description": "Luminosity Lounge is both a day and a night camp from 11 am until sunrise. By day, we host a DJ (11 am to 5 pm) on the camo-shade dance floor, serve wine, and cook food in the Dodge Truck braai fire. "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.957594,
+          -32.512702
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mad Hatter’s Village",
+        "type": "camp",
+        "code": "mhv",
+        "description": "Mad Hatter’s Village is a creative hub where local and international AfrikaBurn participants unite to co-create whimsical, interactive experiences rooted in family, magic, and joyful madness. Five dis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952138,
+          -32.517566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MadWay",
+        "type": "camp",
+        "code": "mad",
+        "description": "We are bringing several mutant cars that are like mini art cars. We also plan to make our art in the same style as Mad Max. In the Theme Camp, we will cook pancakes for breakfast and treat neighbours "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.957488,
+          -32.511885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mahala",
+        "type": "camp",
+        "code": "mal",
+        "description": "Mahala is a co-creative Theme Camp where music, meditation, reverence, and play converge. Rooted in freedom and connection, we invite participants to explore, create, and celebrate together. Our space"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958747,
+          -32.511143
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marah",
+        "type": "camp",
+        "code": "mar",
+        "description": "MARAH is a midday miracle! When the Tankwa sun blazes and burners feel spent, MARAH offers a refreshing liquid lounge with shade, sweet sounds, chilled vibes, and a playful vintage clothing swap. As t"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952265,
+          -32.510813
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Memento Mori Conversation Camp",
+        "type": "camp",
+        "code": "mem",
+        "description": "We offer a welcoming space for meaningful conversation, connection, and reflection. Memento Mori is a stoic reminder that life is finite, so we should live with intention. Each day, we’ll host thought"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953499,
+          -32.510946
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mimosa Avenue",
+        "type": "camp",
+        "code": "mim",
+        "description": "Craving some daytime mischief? Well, Mimosa Avenue has got you covered! Join us daily from 12 pm for ice-cold mimosas and groovy beats with a rogue rhythm. Bubbles in your glass, bass in your bones, g"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953421,
+          -32.511611
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mudita",
+        "type": "camp",
+        "code": "mud",
+        "description": "Camp Mudita is a space rooted in Mudita: ‘the joy found in celebrating others’ happiness’. We’re here to share warmth, music, and connection. You’re welcomed exactly as you are. Come rest, dance, drin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952822,
+          -32.511707
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "No Drama Llamas",
+        "type": "camp",
+        "code": "ndl",
+        "description": "No Drama Llamas is a drop-in space offering shade, comfy seating, and gentle humour in the middle of the Burn. It’s a place to pause, slow down, and leave the drama at the gate. With playful llama mom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951281,
+          -32.515971
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oasis “Quenching the Beat”",
+        "type": "camp",
+        "code": "qtb",
+        "description": "We are a group of artists and DJs passionate about creating an immersive experience at AfrikaBurn 2026. Our project combines music, art, and interactive elements to bring a unique experience to the Bi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956926,
+          -32.512435
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pamoja Project",
+        "type": "camp",
+        "code": "pap",
+        "description": "Emphasising the ‘Africa’ in ‘AfrikaBurn’, we bring African music (Afro house, Afrobeats and amapiano) to the desert through our (Afro) house parties hosted from 1 pm to 4 pm(ish) each afternoon. Durin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.950531,
+          -32.515756
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pedals for Peace",
+        "type": "camp",
+        "code": "pfp",
+        "description": "We are an AfrikaBurn outreach initiative. We ‘pre-rent’ bikes to burners attending AB 2026. These bikes are gifted back to Pedals for Peace. With the ‘pre-rent’ revenue received, we purchase new bicyc"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.949199,
+          -32.514996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pickles & Prickles",
+        "type": "camp",
+        "code": "pic",
+        "description": "Pickles & Prickles invites you to refresh, unite, and dance! Pickle up your day at our daily afternoon parties at 3 pm(ish) with refreshing pickled pleasures, bubbly beverages, and bouncy beats. Expre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951769,
+          -32.516301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Playa Tours",
+        "type": "camp",
+        "code": "plt",
+        "description": "Daily, guided, hop-on-hop-off walking tours of the Binnekring, with partially qualified tour guides and outlandish soundtracks. Join us at our camp for sundowners from 4 pm each evening, and help plan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954779,
+          -32.509787
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Professor Cuchulain’s Magic Elixirs and Apothecary",
+        "type": "camp",
+        "code": "pcm",
+        "description": "A theatrical gifting experience. A flamboyant snake-oil salesman drifts through Tankwa Town like a beautifully dressed mistake, expecting profit and armed with absurd elixirs and bold marketing dreams"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95374,
+          -32.511464
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ra Ra",
+        "type": "camp",
+        "code": "rrh",
+        "description": "Welcome to the Ra Ra Hive. We dance with the sun, welcome the moon, and celebrate life’s sweetness. Inspired by Ra, the Egyptian sun god, we flow with golden energy in a perfect spot for the sunset. C"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.950713,
+          -32.511066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sacred Garden",
+        "type": "camp",
+        "code": "sac",
+        "description": "Sacred Garden Camp is an immersive, Eden-like sanctuary at AfrikaBurn. We offer a Beauty Bar for transformation in our dreamy chill space with fantasy decor every day from 3.30 pm to 5.30 pm, a Costum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952921,
+          -32.509858
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sexico City at Mad Hatter’s Village",
+        "type": "camp",
+        "code": "sex",
+        "description": "Sexico City is your desert living room, cultural salon, and nourishment hub offering a comfortable break from the scorching sun. Part of the greater Mad Hatter’s Village and home to The Maneater art c"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951044,
+          -32.517884
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Smokescreen",
+        "type": "camp",
+        "code": "sms",
+        "description": "Tankwa’s original and best theatre and party venue. Lovingly homemade, stylishly curated, and just a little bit wabi-sabi, we bring movies, art, music, costume, and personality to the Binnekring. Just"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95182,
+          -32.516929
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Soberland Camp",
+        "type": "camp",
+        "code": "sob",
+        "description": "Soberland is the safest, most teetotalling, trip-free, fruit-juice-friendly spot at AfrikaBurn. It is a space for burners who are in recovery or just want to experience the Burn without any substances"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951448,
+          -32.514608
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Space Cowboys",
+        "type": "camp",
+        "code": "scb",
+        "description": "Space Cowboys is a creators’ camp (est. 2012) known for world-class sound, DJs, and a warm, inclusive vibe. We build hard, host generously, and value participation, respect, and diversity … creating a"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958104,
+          -32.512844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bureau of Karmic Redistribution",
+        "type": "camp",
+        "code": "bkr",
+        "description": "The universe’s accounting department is overwhelmed and your karma file is overdue for review. Our certified agents (qualifications pending) will stamp your complaints, assess your misdeeds, and assig"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958319,
+          -32.512116
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sunset Oasis",
+        "type": "camp",
+        "code": "sso",
+        "description": "Sunset Oasis is a playful sanctuary of co-creation, where soulfully curious humans gather to celebrate creativity, presence, and connection under the desert sun. Guided by warmth, whimsy, and purpose,"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951802,
+          -32.518791
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sunrisers",
+        "type": "camp",
+        "code": "sun",
+        "description": "Sunrisers will return with 40 to 45 like-minded sunnies to present coffee to burners on three selected mornings. We are introducing our very own Coffee Rave. Pretty much like the Friday and Saturday m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.948858,
+          -32.515539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Super Tramps",
+        "type": "camp",
+        "code": "str",
+        "description": "A glowing, high-energy playground of trampolines and lights. By day, it is a joyful space for movement and connection; by night, it transforms into a shimmering interactive experience, where we invite"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951118,
+          -32.51081
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Reflections",
+        "type": "camp",
+        "code": "swr",
+        "description": "Once upon a time, it was said, ‘Let there be light’. The light expanded the vastness of the Universe until it hit the Burning Prism and reflected a World of Sweetness. Come join us in contemplation of"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952475,
+          -32.511511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SWEET LOVE CINEMA",
+        "type": "camp",
+        "code": "slc",
+        "description": "We are a family camp that’s been burning from the early days. We play movies from sunset till late, starting off with family-friendly musicals. Late evenings always get interesting with arthouse, worl"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95115,
+          -32.516751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tangawizi Collective",
+        "type": "camp",
+        "code": "tan",
+        "description": "Tangawizi Collective is a daytime Dawa (Kenyan tea) bar serving a ginger-based drink, offered hot or cold. Open daily in the afternoons, the camp invites participants to stop, hydrate, and share a sim"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.9531,
+          -32.512136
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tankquility Base",
+        "type": "camp",
+        "code": "taq",
+        "description": "Touch down at our cosmic moon base in the Tankwa dust! Swing by for fresh pancakes in the morning, chilled vibes, and relaxed lunar lounging. Let your creativity take over in our tranquil oasis – all "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951704,
+          -32.511062
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The ArtSluts",
+        "type": "camp",
+        "code": "tas",
+        "description": "We offer our skills, our hands, our saws, and our axes to the beautiful artists of AfrikaBurn who may need additional assistance with their artworks. Come join us for a builders’ breakfast from Monday"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952062,
+          -32.51025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Burning Arms",
+        "type": "camp",
+        "code": "tba",
+        "description": "Somewhere between salt and sky, a rogue English pub has slipped its moorings and rolled defiantly into the dust. Each day, this tavern on wheels roams unapologetically across the Binnekring in pursuit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952705,
+          -32.511375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Department of Homely Affairs",
+        "type": "camp",
+        "code": "dha",
+        "description": "The DHA is your most and least favourite department. Roll up and join the queue to collect all your most absurd and unnecessary documentation. Tankwa Town ID cards, marriage certificates, licences to "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952894,
+          -32.510535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Dusty Dungeon",
+        "type": "camp",
+        "code": "tdd",
+        "description": "The Dusty Dungeon is a bold, consent-led, kink-positive Theme Camp offering immersive workshops, curated play spaces, and intentional community connection. By day it builds skills, language, and confi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.957903,
+          -32.511557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Holy Mountain",
+        "type": "camp",
+        "code": "thm",
+        "description": "Leave your dust-covered shoes with your ego at the door and step into the magick of the Alchemist’s Lounge. Surrender into the couches and cushions and the gentle music – we might serve you charmed ch"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953041,
+          -32.510954
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The House of Boho",
+        "type": "camp",
+        "code": "hob",
+        "description": "We are a collective of art gods dedicated to creating and sustaining fun amongst humanity. Our mission is to craft vibrant spaces and pockets of engagement, where entertainment meets art and flourishe"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.957759,
+          -32.512198
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The inside scoop",
+        "type": "camp",
+        "code": "ins",
+        "description": "We are gifting ice-cold ice creams and hot banging beats at 12 pm(ish) daily. Come join us for some scoops, beats, and Binnekring treats."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953575,
+          -32.51285
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Keepers",
+        "type": "camp",
+        "code": "kee",
+        "description": "The Keepers guard an immersive threshold of fire, sound, and secret ritual. Daily (Monday to Saturday, 2 pm to 3 pm), we offer Nourishment of the Flame … braai-bread broken in ritual gathering. Our so"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953143,
+          -32.511131
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Last Resort",
+        "type": "camp",
+        "code": "tlr",
+        "description": "Hotel grand opening – welcome drinks with freaky beats as Tuesday’s sun sets. After that, it’s open when it’s open and quiet until it’s not. Check-in: Lobbyboy hands you a key. Fish for inner peace at"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95941,
+          -32.5126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Lion’s Den",
+        "type": "camp",
+        "code": "tld",
+        "description": "A South African-run Theme Camp by a community that has become a family. We host everything from yoga and stretches in the morning, juice bar with fresh local produce during the heat, 420-friendly chil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.955009,
+          -32.512795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The MemberBerries",
+        "type": "camp",
+        "code": "tmb",
+        "description": "The MemberBerries is a collection of dispersed berries that found one another in the immediacy of the default and experimental worlds. If it is relaxation or reflection, radical self-expression or rad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953278,
+          -32.512325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Motherfucking Queens",
+        "type": "camp",
+        "code": "mfq",
+        "description": "We honour divine feminine power and embrace in energy to awaken your inner royalty. A sensual consent-led oasis in the heart of the Tankwa, offering embodied practices, meditation, and yoga by day, an"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956063,
+          -32.512632
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Pancake People",
+        "type": "camp",
+        "code": "pan",
+        "description": "Your favourite Theme Camp – The Pancake People – is your home in the mornings, spreading joy onto the Binnekring! Follow the laughter and music and find us between 9 am and 11 am as we serve the most "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951891,
+          -32.517203
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Steampunk Saloon",
+        "type": "camp",
+        "code": "sps",
+        "description": "Welcome to the Steampunk Saloon, where dusty wanderers discover glitz, glamour, and a little delicious trouble. Join us Thursday to Saturday for early-evening burlesque shows, then kick off your boots"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951835,
+          -32.516032
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Teahouse at the End of the Universe",
+        "type": "camp",
+        "code": "tea",
+        "description": "Have you come to the end of your tether? Escape the hubbub and come chill in our quiet and comfy Teahouse on the edge of the Burn. We have delicious tea and free desert views to reset your burner mojo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.9515,
+          -32.510502
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Wet Spot",
+        "type": "camp",
+        "code": "tws",
+        "description": "Welcome to The Wet Spot at AfrikaBurn: your desert oasis of steamy, soul-reviving showers. Bring your own 5L of water … we supply the bliss. Open 8 am to 12 pm, Monday to Saturday. Step in dusty, step"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.949651,
+          -32.515742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "THIRSTY",
+        "type": "camp",
+        "code": "thi",
+        "description": "Fresh fruit and berry shots, daytime parties and a sunset chill zone with music in the desert. Come cool down, dance, and recharge with us. We’re open daily from 10 am to 6 pm, serving refreshing flav"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.950977,
+          -32.511534
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "‘This is Fine’ Lab",
+        "type": "camp",
+        "code": "tif",
+        "description": "We are ‘This is Fine’ Lab camp where curiosity is the only entry requirement. By day, we host workshops, talks, and experiments – and anyone can run their own session. Our open schedule board and open"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.951422,
+          -32.511361
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Time to Shine",
+        "type": "camp",
+        "code": "tts",
+        "description": "This is our second year setting up Time to Shine, a unique performance venue where the performer or performers do not know whether they have an audience or not, as they are behind one-way screens. The"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953818,
+          -32.512366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tulpa",
+        "type": "camp",
+        "code": "tul",
+        "description": "Tulpa Theme Camp is a space for art, connection, and transformation. Join us daily for morning workshops around 10ish exploring creativity, presence, and collective expression. The camp comes alive wi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952583,
+          -32.510001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Two Couches & a Rug",
+        "type": "camp",
+        "code": "tcr",
+        "description": "Delivering on our promise to bring two couches and one rug to the Kiwiburn paddock since 2015, but now in Tankwa Town! Stop by for the best (and probably only) sports bar in town!"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954025,
+          -32.512992
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vagabonds",
+        "type": "camp",
+        "code": "vag",
+        "description": "Vagabonds is a wellness camp where everyone can feel at home. Escape the dust in our Scandinavian forest-inspired lounge, cosy up around our cabin campfire, stargaze over the Binnekring from our Sky L"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954583,
+          -32.513072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wild & Juicy",
+        "type": "camp",
+        "code": "waj",
+        "description": "Did you take your vitamins today? No worries, we’ve got you covered! We gift freshly squeezed fruit and veggie juice daily somewhere on the Binnekring. Make your Mom so proud – let us serve you with a"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.949387,
+          -32.515685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wildrock Workshop",
+        "type": "camp",
+        "code": "wrw",
+        "description": "We create and allow you to create small jewellery accessories with elements of AfrikaBurn in your own unique and creative style."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958303,
+          -32.511784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "You’re Probably Fine",
+        "type": "camp",
+        "code": "ypf",
+        "description": "Out here, identity becomes negotiable. Names loosen. Certainty fades. New versions of you begin to circulate. Who are you? Who would you prefer to be? Our staff will assist in confirming or gently que"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952581,
+          -32.511178
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SiFUNKtion at Mad Hatter’s Village",
+        "type": "camp",
+        "code": "sif",
+        "description": "SiFUNKtion is a dessert family brought together by music. We share acoustic grooves and have sound electronics, creating a warm space for locals and internationals alike. Built through endless collabo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952138,
+          -32.517566
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "8DoC (8th Day of Creation)",
+        "type": "artwork",
+        "code": "dc",
+        "description": "Come and let your spirit be REBORN! Our ‘Birthing Arena’ is a place to remind people of their childlike, vibrant state of being. Be embraced by the melodies of incredible musicians/ DJs and by worksho"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.959497,
+          -32.513738
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A Tale of Chapters",
+        "type": "artwork",
+        "code": "ta",
+        "description": "Every chapter is different for everyone; all you have to do is take a moment, be still, manifest, and let go of the rest."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954702,
+          -32.513399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amphitheatre Evolution",
+        "type": "artwork",
+        "code": "ae",
+        "description": "It’s not a snake or a worm. Last year’s amphibian lives in the ground."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.955978,
+          -32.518648
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bangers & Mash",
+        "type": "artwork",
+        "code": "bm",
+        "description": "When our trailer crate of potatoes got stuck in a field of butter blobs and giant cutlery, we did what anybody would do when life hands you potatoes … we made mash! At night, this ‘accident scene’ tur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953688,
+          -32.515041
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Beautiful Life",
+        "type": "artwork",
+        "code": "bl",
+        "description": "The structure is the spelling of the word LIFE in towering freestanding letters, with vivid colour blocks, line drawings, and poignant wording. Interactive slots invite burners to post letters to anyo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954037,
+          -32.516658
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Big Head",
+        "type": "artwork",
+        "code": "bh",
+        "description": "Big Head is a very big head … in the desert. Not too big, not too small, just a perfectly unreasonable human head roughly the size of a big head. It looks like a head because it is a head, just bigger"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.959127,
+          -32.515656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Blowing in the Wind",
+        "type": "artwork",
+        "code": "bw",
+        "description": "The ancient elements of the Karoo, particularly the colours, are reflected in the artwork."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956413,
+          -32.51396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Coffee and Spliff – for Cyndi",
+        "type": "artwork",
+        "code": "cs",
+        "description": "Before DPW had money, before AfrikaBurn was popular, before the kitchen was a palace, there was a woman who kept the pots boiling and the troops fed despite whatever the desert threw at her. She kept "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952948,
+          -32.516181
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Cognito",
+        "type": "artwork",
+        "code": "cg",
+        "description": "Cognito is an immersive journey into the mind, connecting to the ether as you delve into the realms of the unknown. Experience the powerful search for words driven by your subconscious, allowing your "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.957505,
+          -32.514859
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Concept",
+        "type": "artwork",
+        "code": "cp",
+        "description": "Come find our sound-powered vessel of freedom, expression, and magic. Where music flies. Where we all take off together."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.961123,
+          -32.515887
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Contemporary Objects (Giant Kaleidoscope)",
+        "type": "artwork",
+        "code": "gk",
+        "description": "Discover the magic of the Giant Kaleidoscope, an immersive installation that transforms everyday objects into mesmerising patterns. Visitors peer through a lens to witness ordinary items multiplied an"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953438,
+          -32.517429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Die Meermin van die Karoo",
+        "type": "artwork",
+        "code": "mk",
+        "description": "Through the beautiful expanses of the vast Karoo, she is waiting. She is watching. She is longing for you at secret rock pools and a bubbling spring. She is waiting with her flower. With her song, she"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958296,
+          -32.514652
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dischord",
+        "type": "artwork",
+        "code": "di",
+        "description": "The team of the Dead Piano Society gave discarded and unusable pianos a last-chance performance opportunity in this art piece assembled from the parts of 10 pianos. The history, the love, the memories"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954777,
+          -32.517918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Drifters Landing",
+        "type": "artwork",
+        "code": "dl",
+        "description": "Built from the dust up, Drifters Landing features a Crow’s Nest to see the world and a plank to let it go. This landing is designed as a heart-centred hub for people to gather and engage. Ascend our m"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.957314,
+          -32.513923
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Free Your Mind 2",
+        "type": "artwork",
+        "code": "fr",
+        "description": "Free Your Mind 2 is an expression of how beauty can be born out of the darkness of our life experiences – be they childhood trauma, our own negative thoughts, the bullying, the manipulation, the gasli"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95681,
+          -32.513403
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ego Check Booth",
+        "type": "artwork",
+        "code": "ec",
+        "description": "Feeling heavy? Slightly self-important? We’ve got you. Store your ego at our on-site climate-questionable desert vault and roam the Binnekring lighter, freer, and surprisingly more lovable. Upgrades a"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956429,
+          -32.513602
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Garden Of DeLights",
+        "type": "artwork",
+        "code": "gd",
+        "description": "The Garden of DeLights invites explorers to step through the looking glass, towards ancient Karoo fossils, while imagining playful futures. Skeletaur returns, joined by a hand-built wooden dinosaur, s"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952365,
+          -32.516624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fowl Play",
+        "type": "artwork",
+        "code": "fp",
+        "description": "Something fowl is afoot at the Burn. Keep your eyes peeled and your ears open."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952795,
+          -32.518072
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glory Glory by the Holy Mountain",
+        "type": "artwork",
+        "code": "gg",
+        "description": "This alchemic social prism invites curious bodies to circle, peek, wait, and choose. A queer-coded structure that rewards mischief, restraint, and consent, it fractures one encounter into many perspec"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.957293,
+          -32.516624
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HiAI",
+        "type": "artwork",
+        "code": "hi",
+        "description": "Hi, Party Animal. I can process everything – except being YOU. You can juMp, smell and fall in love. How I envy your spirit, your movement, your joy! Come watch yourself through my eyes. I have put on"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.955555,
+          -32.513838
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "House of Umbra",
+        "type": "artwork",
+        "code": "hu",
+        "description": "This prism shines bright in the desert, illuminating bodies and creating shadows. Come search for this bright light on your journey and dance in a sea of colour. House of Umbra is an interactive light"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956815,
+          -32.516022
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Incy Wincy Spinnekop",
+        "type": "artwork",
+        "code": "iw",
+        "description": "IncyWincy Spinnekop – perched on the Binnekring, silhouetted against the desert sky – is a Supernatural Spider, a bold, alien, captivating piece of art created to make you Spin ... Spin a round, Spin "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956646,
+          -32.517398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Inside the Mirror",
+        "type": "artwork",
+        "code": "im",
+        "description": "Come walk Inside the Mirror – a world filled with tentacles, humans, colour, and the sounds of visitors past. Experience the infinite with your fellow travellers of the Binnekring. In daylight, see in"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.960136,
+          -32.517334
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jura the Solmare",
+        "type": "artwork",
+        "code": "js",
+        "description": "Come find the blazing Solmare and pay homage to the Chinese year of the fire horse, a year of speed, impulse and strength."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954377,
+          -32.517045
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "KwaNjakazi",
+        "type": "artwork",
+        "code": "kn",
+        "description": "KwaNjakazi is an interactive installation built around a life-sized dog house, an intimate sanctuary of comfort, loyalty, and reflection. Participants co-create evolving artworks and record conversati"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954787,
+          -32.513987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Light as Air",
+        "type": "artwork",
+        "code": "la",
+        "description": "Light as Air – barely there, layers of perception shift through hanging fabric panels on a line."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953192,
+          -32.519374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lumen Mori",
+        "type": "artwork",
+        "code": "lm",
+        "description": "Through the Prism of Light, we reflect on Mortality. Step inside the clock and become the gnomon within these twelve ‘hours of life’. Moments of beginning, change, and release. Engage with the liminal"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958317,
+          -32.515462
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Luminous Soul in the Desert",
+        "type": "artwork",
+        "code": "ls",
+        "description": "Dive into an underwater world made from waste. Beneath a canopy of glowing jellyfish and bottle chandeliers, dance through waves of refracted light. By day it shimmers; by night it breathes. A living "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.957368,
+          -32.515471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Madway Springbok",
+        "type": "artwork",
+        "code": "ms",
+        "description": "A towering 5.2-metre springbok rising from the dust, where South African icon meets Madway’s apocalyptic desert aesthetic. By day, a striking sculptural landmark; by night, its horns ignite in control"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.957612,
+          -32.517395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mankala",
+        "type": "artwork",
+        "code": "mn",
+        "description": "Mankala is a living circle of rhythm and exchange, inspired by the ancient African game. It’s a space where drummers, dancers, and dreamers share pulse and breath – where stories move like seeds throu"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956177,
+          -32.514982
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Minikring 2026",
+        "type": "artwork",
+        "code": "mi",
+        "description": "Come and experience past iconic AfrikaBurn art pieces and live in the world of mini make-believe. Get down in the dust to photograph a mini AfrikaBurn in perspective."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952693,
+          -32.515595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "MIRROR STUDY 02",
+        "type": "artwork",
+        "code": "ms-mirror-study",
+        "description": "A constructivist light show."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956587,
+          -32.51925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oe-aa-sie-sA",
+        "type": "artwork",
+        "code": "oa",
+        "description": "In the middle of nowhere, through intention, we close the circle. The Oe-aa-sieS is sometimes a place to rest, sometimes anything but. When the Oe-aa-sies-sawA connects, it turns into a full Ossewa bo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954074,
+          -32.516925
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Palm to Soul | Sanctuary for Release",
+        "type": "artwork",
+        "code": "ps",
+        "description": "Palm to Soul is a monumental queer-led sanctuary for release. Two towering open palms rise from the dust, encircled by hand-built ceramic sculptures. The world is a bit of a shitshow; let’s transmute "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954007,
+          -32.514801
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "PerspectaScope – A Portal of Reflection",
+        "type": "artwork",
+        "code": "pr",
+        "description": "A portal of mirrors and light, where the Binnekring and its people merge into living geometry. Every face, every colour, every grain of dust becomes another fragment in a dance between reflection and "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.957947,
+          -32.514471
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rainbow PHLUPH",
+        "type": "artwork",
+        "code": "rp",
+        "description": "Red, orange, yellow, green, indigo, violet, blue, whichever way you are inclined and whatever your shade or hue, magical beings congregate where the colours meet the clouds, and you may just discover "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.959551,
+          -32.514656
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pendulum",
+        "type": "artwork",
+        "code": "pn",
+        "description": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958108,
+          -32.515837
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Postboxes of Desire",
+        "type": "artwork",
+        "code": "pd",
+        "description": "A scattered constellation of sensual post-boxes, a prism refracting lust and tenderness, inviting you to write, whisper, or surrender your untamed longings. Each glows like an ember in the night, gath"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95549,
+          -32.519657
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Penny for Your Thoughts",
+        "type": "artwork",
+        "code": "pt",
+        "description": "Set within the stark and infinite landscape of the Tankwa, ‘Penny For Your Thoughts’ is both a sculpture and a chair, allowing you to sit and become part of the artwork, serving both as a functional p"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.955498,
+          -32.518384
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Re Dance of the Tetrahedra",
+        "type": "artwork",
+        "code": "rt",
+        "description": "Re Dance of the Tetrahedra: a constellation of spinning tetrahedra harnesses the desert wind and the sun’s rays, storing energy to illuminate its perimeters and structures by night. Step within this l"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.95534,
+          -32.518698
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reflections in the Desert",
+        "type": "artwork",
+        "code": "rd",
+        "description": "Experience the beauty of natural sunlight etching images inside a giant camera. Participants become models for the project and have fun making their own photo memories."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956086,
+          -32.51609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SeaBurst",
+        "type": "artwork",
+        "code": "sb",
+        "description": "A dynamic representation of the life cycles of the Earth between the past, present, and future. An eruption of life depicted by the materials that were once life itself. A way to celebrate and bring t"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958355,
+          -32.51419
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "RocKET",
+        "type": "artwork",
+        "code": "rk",
+        "description": "Enos’s RocKET crash-landed in the dust, and monkeys from around the world gathered to build a playful nookie from the wreckage. Space junk became a glowing stage and tower. Follow the leading lights, "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.960651,
+          -32.512575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ruby the Rubik",
+        "type": "artwork",
+        "code": "rr",
+        "description": "Ruby the Rubik is an interactive Rubik’s Cube. Come play with Ruby."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953331,
+          -32.517239
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "SongCatcher: The Continuum",
+        "type": "artwork",
+        "code": "sc",
+        "description": "From the ashes of The Birth of Song comes The Continuum. A quiet dreamcatcher reborn in metal and light. Join sunrise meditations, gentle yoga, or simply sit and listen for the echo within. A place fo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953548,
+          -32.518029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Spiral Up",
+        "type": "artwork",
+        "code": "su",
+        "description": "Open your eyes, look up to the skies, and see. Rising from the Tankwa dust, three stacks of serenity merge to offer the weary dancer a calming refuge from the pulse-pounding magic of the Binnekring. E"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.955458,
+          -32.517352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sweet Synchronicity",
+        "type": "artwork",
+        "code": "ss",
+        "description": "Come play with us in Tankwa Town, where synchronicities run wild as you follow your feet, open to the magic of who you might meet. Join us in celebratory ceremonies and weave your magic into the field"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952757,
+          -32.516945
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sandfish II",
+        "type": "artwork",
+        "code": "sf",
+        "description": "Remember the shoal of Sandfish rod puppets from Creation in 2024? They’re back in scaled-down steel form, still swimming through the Tankwa air."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956287,
+          -32.517873
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Shrowhouse",
+        "type": "artwork",
+        "code": "sh",
+        "description": "Shrow House, in the middle of Shrow Street, Shrow House. Looking for a fairy tea party? Cuddle puddle with the gang? Or just an energy resonance chamber? Find it in the middle of Shrow Street."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956059,
+          -32.515493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Switch Off to Switch On",
+        "type": "artwork",
+        "code": "so",
+        "description": "Switch Off to Switch On is an eight-metre-tall transformative mindspace. Climb above the dust. Enter a brain-shaped sanctuary of sound and light. Pause. Breathe. Reset. When ready, descend the spiral "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.959025,
+          -32.516493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Crossing",
+        "type": "artwork",
+        "code": "tc",
+        "description": "A small forest of spikes grows from the barren earth."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.96143,
+          -32.518692
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Clam Cabaret 2.0",
+        "type": "artwork",
+        "code": "cc-clam-cabaret",
+        "description": "The Clam Cabaret opens to reveal a stage showcasing a diversity of art, music, and performance. Collaborating with a crew from Soweto, the clam celebrates South African creativity, community, and an i"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953803,
+          -32.514509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Talk To God",
+        "type": "artwork",
+        "code": "tg",
+        "description": "Dearly Beloved, you are invited to take a moment to Talk To God* at Through The Prism. Look for the phone box on the edge of the Binnekring, pick up the receiver and follow the instructions. If your c"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952883,
+          -32.515441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Take a Moment",
+        "type": "artwork",
+        "code": "mo",
+        "description": "Take a Moment invites you to collapse into a world of cascading, colourful softness. Oh, what’s in that pocket? Come on in and find out. Come sit, explore, play, and take a moment."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.955817,
+          -32.513399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Cinema at the End of the World",
+        "type": "artwork",
+        "code": "ci",
+        "description": "The Cinema at the End of the World is hosting the first movie to be filmed at AfrikaBurn: This Is How The World Ends."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958752,
+          -32.514996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Egg",
+        "type": "artwork",
+        "code": "eg",
+        "description": "In all historical texts, scriptures, and oral traditions, nothing is known about The Egg … Occasionally, for some reason, people love to dance in front of it!"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.955163,
+          -32.516647
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Hut of Echoes",
+        "type": "artwork",
+        "code": "th",
+        "description": "A living sound sanctuary built from earth, reed, and story. Step inside to sit, listen, or co-create with indigenous musicians and storytellers as they lead immersive sound journeys. By day, it hums w"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952492,
+          -32.516416
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Nest That Fell To Earth",
+        "type": "artwork",
+        "code": "ne",
+        "description": "There’s something on the edge of Tankwa Town, a bit like a nest but upside-down. It might have fallen from the sky; it definitely came from somewhere high. Strange sounds and colours come from inside;"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953975,
+          -32.519634
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Old Skool",
+        "type": "artwork",
+        "code": "sk",
+        "description": "The school bell tolls... calling us back to the soundtrack of our youth. As the sun begins to set ... 70s, 80s, 90s, and 00s anthems echo down the school corridors as we sing and dance into the night."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954393,
+          -32.518872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Reel Swing Shady",
+        "type": "artwork",
+        "code": "rs",
+        "description": "The Reel Swing Shady ... Beach Art Bar, two ever-evolving art canvases layered with memory, two swings for childlike escape, and a bouncing tiki bar built from salvaged beach waste. Paint, swing, gath"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952787,
+          -32.516572
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Sentinel",
+        "type": "artwork",
+        "code": "se",
+        "description": "The Sentinel is a large-scale sculpture that embodies the journey of confronting fear. A towering humanoid creature looms over visitors, inviting a moment of primal confrontation. Participants can att"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953326,
+          -32.51685
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Sticker Magnet",
+        "type": "artwork",
+        "code": "sm",
+        "description": "Participate in an interactive sticker and paste-up experience at AfrikaBurn 2026! Contribute your non-commercial stickers and paste-ups to adorn a towering four-sided art column rising two metres high"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954694,
+          -32.517597
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Transit Lounge (aka ‘The Moth-trap’)",
+        "type": "artwork",
+        "code": "tl",
+        "description": "A suspiciously inviting patch of shade by day and a gentle beacon by night. Moths, travellers, and wanderers welcome. Sit. Rest. Tea may appear. Departures are delayed indefinitely. Please remain seat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.960125,
+          -32.515294
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "The Skollie Trollie",
+        "type": "artwork",
+        "code": "st",
+        "description": "The Skollie Trollie is a giant monument to modern madness. It transforms a tool of commodification into a playground of irony and joy. Through play, performance, and fire, this big empty trollie asks:"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.953664,
+          -32.515961
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tip of the Iceberg, Penguin art colony",
+        "type": "artwork",
+        "code": "ti",
+        "description": "‘Tip of the Iceberg’ is a collaborative African penguin art colony. Artists create or decorate life-size penguin sculptures in any medium and bring them to Tankwa to form a collective installation. Af"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.952749,
+          -32.516004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tracings of Impermanence",
+        "type": "artwork",
+        "code": "tr",
+        "description": "A map of the wind, the sun, the storms, the beetle, and its holy pilgrimage. ‘Tracings of Impermanence’ is a cartographical sigil raised from the earth."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.956692,
+          -32.51844
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Twisted Da Vinci",
+        "type": "artwork",
+        "code": "tw",
+        "description": "This collection was not simply created. It endured! Carried forward from past gatherings where art lives briefly, then returns to dust, these multi-coloured works hold the residue of AfrikaBurn: movem"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.955496,
+          -32.51448
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Changing Room",
+        "type": "artwork",
+        "code": "ts",
+        "description": "‘Changing Room’ is an immersive, open-air chamber of movement, light, and colour. Wind animates its skin; sunlight paints its interior; people activate it through presence and play. It is a threshold "
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.958661,
+          -32.514444
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ubuntu in the Dust!",
+        "type": "artwork",
+        "code": "ud",
+        "description": "My group of figures is called Ubuntu, an ancient African word meaning ‘I am because we are’. Show humanity to all, even and especially to those who are different. Recognise the value of every person a"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.955922,
+          -32.519261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "WHOES",
+        "type": "artwork",
+        "code": "wh",
+        "description": "The sculpture asks important questions like: ‘Whose authority do you live by?’ and ‘Who are you, uninterrupted?’ The organisation (Org) has become a monolith on the Binnekring and needs to burn to ris"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          19.954106,
+          -32.517759
+        ]
+      }
+    }
+  ]
+}
